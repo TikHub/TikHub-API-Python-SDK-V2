@@ -47,36 +47,46 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 
-import time
+# pip install git+https://github.com/TikHub/TikHub-API-Python-SDK-V2.git
 import tikhub_sdk_v2
 from tikhub_sdk_v2.rest import ApiException
-from pprint import pprint
 
-# Defining the host is optional and defaults to http://localhost
-# See configuration.py for a list of all supported configuration parameters.
+# Defining the host is optional and defaults to: https://api.tikhub.io
 configuration = tikhub_sdk_v2.Configuration(
-    host = "http://localhost"
+    host="https://api.tikhub.io"
 )
 
-
+# Defining the API Key
+api_key = "YOUR_API_KEY"
 
 # Enter a context with an instance of the API client
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Set the API Key
+    api_client.default_headers["Authorization"] = f"Bearer {api_key}"
+
     # Create an instance of the API class
-    api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
-    
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    aweme_id = '7350810998023949599'  # str | 作品id/Video id
+
     try:
-        # 获取所有直播分区列表/Get a list of all live areas
-        api_response = api_instance.fetch_collect_folders_api_v1_bilibili_web_fetch_all_live_areas_get()
-        pprint(api_response)
+        # 获取单个作品数据/Get single video data
+        api_response = api_instance.fetch_one_video_api_v1_tiktok_app_v3_fetch_one_video_get(
+            aweme_id,
+            # Make sure to set the _preload_content parameter as False to prevent the Exception!!!
+            _preload_content=False
+        )
+        print(f"Response: \n{api_response.json()}")
     except ApiException as e:
-        print("Exception when calling BilibiliWebAPIApi->fetch_collect_folders_api_v1_bilibili_web_fetch_all_live_areas_get: %s\n" % e)
-    
+        print("Exception: %s\n" % e)
 ```
+
+## Documentation For Authorization
+
+See our Documentation: https://docs.tikhub.io/4592766m0
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *https://api.tikhub.io*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -1156,17 +1166,6 @@ Class | Method | HTTP request | Description
  - [ValidationError](docs/ValidationError.md)
  - [XBogusModel](docs/XBogusModel.md)
  - [XhsWebSignRequestModel](docs/XhsWebSignRequestModel.md)
-
-
-## Documentation For Authorization
-
-
-## bearer
-
-- **Type**: Bearer authentication
-
-
-## Author
 
 
 
