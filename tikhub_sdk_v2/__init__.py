@@ -14,7 +14,7 @@
 
 from __future__ import absolute_import
 
-__version__ = "1.0.0"
+__version__ = "2.0.0"
 
 # import apis into sdk package
 from tikhub_sdk_v2.api.bilibili_web_api_api import BilibiliWebAPIApi
@@ -32,6 +32,7 @@ from tikhub_sdk_v2.api.kuaishou_app_api_api import KuaishouAppAPIApi
 from tikhub_sdk_v2.api.kuaishou_web_api_api import KuaishouWebAPIApi
 from tikhub_sdk_v2.api.lemon8_app_api_api import Lemon8AppAPIApi
 from tikhub_sdk_v2.api.net_ease_cloud_music_api_api import NetEaseCloudMusicAPIApi
+from tikhub_sdk_v2.api.pi_pi_xia_app_api_api import PiPiXiaAppAPIApi
 from tikhub_sdk_v2.api.temp_mail_api_api import TempMailAPIApi
 from tikhub_sdk_v2.api.tik_hub_user_api_api import TikHubUserAPIApi
 from tikhub_sdk_v2.api.tik_tok_app_v2_api_api import TikTokAppV2APIApi

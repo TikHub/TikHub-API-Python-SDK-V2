@@ -8,7 +8,7 @@ stages:
   script:
    - pip install -r requirements.txt
    - pip install -r test-requirements.txt
-   - nosetests
+   - pytest --cov=tikhub_sdk_v2
 
 nosetest-2.7:
   extends: .nosetest

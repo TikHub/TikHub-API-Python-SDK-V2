@@ -294,6 +294,20 @@ class TestTikTokAppV3APIApi(unittest.TestCase):
         """
         pass
 
+    def test_fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post(self):
+        """Test case for fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post
+
+        批量获取视频信息 V2/Batch Get Video Information V2  # noqa: E501
+        """
+        pass
+
+    def test_fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0(self):
+        """Test case for fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0
+
+        批量获取视频信息 V2/Batch Get Video Information V2  # noqa: E501
+        """
+        pass
+
     def test_fetch_music_detail_api_v1_tiktok_app_v3_fetch_music_detail_get(self):
         """Test case for fetch_music_detail_api_v1_tiktok_app_v3_fetch_music_detail_get
 
@@ -364,6 +378,20 @@ class TestTikTokAppV3APIApi(unittest.TestCase):
         """
         pass
 
+    def test_fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get(self):
+        """Test case for fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get
+
+        获取单个作品数据 V2/Get single video data V2  # noqa: E501
+        """
+        pass
+
+    def test_fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0(self):
+        """Test case for fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0
+
+        获取单个作品数据 V2/Get single video data V2  # noqa: E501
+        """
+        pass
+
     def test_fetch_product_detail_api_v1_tiktok_app_v3_fetch_product_detail_get(self):
         """Test case for fetch_product_detail_api_v1_tiktok_app_v3_fetch_product_detail_get
 
@@ -389,6 +417,34 @@ class TestTikTokAppV3APIApi(unittest.TestCase):
         """Test case for fetch_product_detail_v2_api_v1_tiktok_app_v3_fetch_product_detail_v2_get_0
 
         获取商品详情数据V2/Get product detail data V2  # noqa: E501
+        """
+        pass
+
+    def test_fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get(self):
+        """Test case for fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get
+
+        获取商品详情数据V3/Get product detail data V3  # noqa: E501
+        """
+        pass
+
+    def test_fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0(self):
+        """Test case for fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0
+
+        获取商品详情数据V3/Get product detail data V3  # noqa: E501
+        """
+        pass
+
+    def test_fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get(self):
+        """Test case for fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get
+
+        通过分享链接获取商品ID/Get Product ID by Share Link  # noqa: E501
+        """
+        pass
+
+    def test_fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0(self):
+        """Test case for fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0
+
+        通过分享链接获取商品ID/Get Product ID by Share Link  # noqa: E501
         """
         pass
 
@@ -476,6 +532,20 @@ class TestTikTokAppV3APIApi(unittest.TestCase):
         """
         pass
 
+    def test_fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get(self):
+        """Test case for fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get
+
+        通过分享链接获取店铺ID/Get Shop ID by Share Link  # noqa: E501
+        """
+        pass
+
+    def test_fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0(self):
+        """Test case for fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0
+
+        通过分享链接获取店铺ID/Get Shop ID by Share Link  # noqa: E501
+        """
+        pass
+
     def test_fetch_shop_info_api_v1_tiktok_app_v3_fetch_shop_info_get(self):
         """Test case for fetch_shop_info_api_v1_tiktok_app_v3_fetch_shop_info_get
 
@@ -515,6 +585,20 @@ class TestTikTokAppV3APIApi(unittest.TestCase):
         """Test case for fetch_shop_product_list_api_v1_tiktok_app_v3_fetch_shop_product_list_get_0
 
         获取商家商品列表数据/Get shop product list data  # noqa: E501
+        """
+        pass
+
+    def test_fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get(self):
+        """Test case for fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get
+
+        获取商家商品列表数据 V2/Get shop product list data V2  # noqa: E501
+        """
+        pass
+
+    def test_fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0(self):
+        """Test case for fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0
+
+        获取商家商品列表数据 V2/Get shop product list data V2  # noqa: E501
         """
         pass
 

@@ -42,6 +42,8 @@ Method | HTTP request | Description
 [**fetch_location_search_api_v1_tiktok_app_v3_fetch_location_search_get_0**](TikTokAppV3APIApi.md#fetch_location_search_api_v1_tiktok_app_v3_fetch_location_search_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_location_search | 获取地点搜索结果/Get location search results
 [**fetch_multi_video_api_v1_tiktok_app_v3_fetch_multi_video_post**](TikTokAppV3APIApi.md#fetch_multi_video_api_v1_tiktok_app_v3_fetch_multi_video_post) | **POST** /api/v1/tiktok/app/v3/fetch_multi_video | 批量获取视频信息/Batch Get Video Information
 [**fetch_multi_video_api_v1_tiktok_app_v3_fetch_multi_video_post_0**](TikTokAppV3APIApi.md#fetch_multi_video_api_v1_tiktok_app_v3_fetch_multi_video_post_0) | **POST** /api/v1/tiktok/app/v3/fetch_multi_video | 批量获取视频信息/Batch Get Video Information
+[**fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post**](TikTokAppV3APIApi.md#fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post) | **POST** /api/v1/tiktok/app/v3/fetch_multi_video_v2 | 批量获取视频信息 V2/Batch Get Video Information V2
+[**fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0**](TikTokAppV3APIApi.md#fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0) | **POST** /api/v1/tiktok/app/v3/fetch_multi_video_v2 | 批量获取视频信息 V2/Batch Get Video Information V2
 [**fetch_music_detail_api_v1_tiktok_app_v3_fetch_music_detail_get**](TikTokAppV3APIApi.md#fetch_music_detail_api_v1_tiktok_app_v3_fetch_music_detail_get) | **GET** /api/v1/tiktok/app/v3/fetch_music_detail | 获取指定音乐的详情数据/Get details of specified music
 [**fetch_music_detail_api_v1_tiktok_app_v3_fetch_music_detail_get_0**](TikTokAppV3APIApi.md#fetch_music_detail_api_v1_tiktok_app_v3_fetch_music_detail_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_music_detail | 获取指定音乐的详情数据/Get details of specified music
 [**fetch_music_search_result_api_v1_tiktok_app_v3_fetch_music_search_result_get**](TikTokAppV3APIApi.md#fetch_music_search_result_api_v1_tiktok_app_v3_fetch_music_search_result_get) | **GET** /api/v1/tiktok/app/v3/fetch_music_search_result | 获取指定关键词的音乐搜索结果/Get music search results of specified keywords
@@ -52,10 +54,16 @@ Method | HTTP request | Description
 [**fetch_one_video_api_v1_tiktok_app_v3_fetch_one_video_get_0**](TikTokAppV3APIApi.md#fetch_one_video_api_v1_tiktok_app_v3_fetch_one_video_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_one_video | 获取单个作品数据/Get single video data
 [**fetch_one_video_by_share_url_api_v1_tiktok_app_v3_fetch_one_video_by_share_url_get**](TikTokAppV3APIApi.md#fetch_one_video_by_share_url_api_v1_tiktok_app_v3_fetch_one_video_by_share_url_get) | **GET** /api/v1/tiktok/app/v3/fetch_one_video_by_share_url | 根据分享链接获取单个作品数据/Get single video data by sharing link
 [**fetch_one_video_by_share_url_api_v1_tiktok_app_v3_fetch_one_video_by_share_url_get_0**](TikTokAppV3APIApi.md#fetch_one_video_by_share_url_api_v1_tiktok_app_v3_fetch_one_video_by_share_url_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_one_video_by_share_url | 根据分享链接获取单个作品数据/Get single video data by sharing link
+[**fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get**](TikTokAppV3APIApi.md#fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get) | **GET** /api/v1/tiktok/app/v3/fetch_one_video_v2 | 获取单个作品数据 V2/Get single video data V2
+[**fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0**](TikTokAppV3APIApi.md#fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_one_video_v2 | 获取单个作品数据 V2/Get single video data V2
 [**fetch_product_detail_api_v1_tiktok_app_v3_fetch_product_detail_get**](TikTokAppV3APIApi.md#fetch_product_detail_api_v1_tiktok_app_v3_fetch_product_detail_get) | **GET** /api/v1/tiktok/app/v3/fetch_product_detail | 获取商品详情数据（即将弃用，使用 fetch_product_detail_v2 代替）/Get product detail data (will be deprecated, use fetch_product_detail_v2 instead)
 [**fetch_product_detail_api_v1_tiktok_app_v3_fetch_product_detail_get_0**](TikTokAppV3APIApi.md#fetch_product_detail_api_v1_tiktok_app_v3_fetch_product_detail_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_product_detail | 获取商品详情数据（即将弃用，使用 fetch_product_detail_v2 代替）/Get product detail data (will be deprecated, use fetch_product_detail_v2 instead)
 [**fetch_product_detail_v2_api_v1_tiktok_app_v3_fetch_product_detail_v2_get**](TikTokAppV3APIApi.md#fetch_product_detail_v2_api_v1_tiktok_app_v3_fetch_product_detail_v2_get) | **GET** /api/v1/tiktok/app/v3/fetch_product_detail_v2 | 获取商品详情数据V2/Get product detail data V2
 [**fetch_product_detail_v2_api_v1_tiktok_app_v3_fetch_product_detail_v2_get_0**](TikTokAppV3APIApi.md#fetch_product_detail_v2_api_v1_tiktok_app_v3_fetch_product_detail_v2_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_product_detail_v2 | 获取商品详情数据V2/Get product detail data V2
+[**fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get**](TikTokAppV3APIApi.md#fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get) | **GET** /api/v1/tiktok/app/v3/fetch_product_detail_v3 | 获取商品详情数据V3/Get product detail data V3
+[**fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0**](TikTokAppV3APIApi.md#fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_product_detail_v3 | 获取商品详情数据V3/Get product detail data V3
+[**fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get**](TikTokAppV3APIApi.md#fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get) | **GET** /api/v1/tiktok/app/v3/fetch_product_id_by_share_link | 通过分享链接获取商品ID/Get Product ID by Share Link
+[**fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0**](TikTokAppV3APIApi.md#fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_product_id_by_share_link | 通过分享链接获取商品ID/Get Product ID by Share Link
 [**fetch_product_review_api_v1_tiktok_app_v3_fetch_product_review_get**](TikTokAppV3APIApi.md#fetch_product_review_api_v1_tiktok_app_v3_fetch_product_review_get) | **GET** /api/v1/tiktok/app/v3/fetch_product_review | 获取商品评价数据/Get product review data
 [**fetch_product_review_api_v1_tiktok_app_v3_fetch_product_review_get_0**](TikTokAppV3APIApi.md#fetch_product_review_api_v1_tiktok_app_v3_fetch_product_review_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_product_review | 获取商品评价数据/Get product review data
 [**fetch_product_search_api_v1_tiktok_app_v3_fetch_product_search_get**](TikTokAppV3APIApi.md#fetch_product_search_api_v1_tiktok_app_v3_fetch_product_search_get) | **GET** /api/v1/tiktok/app/v3/fetch_product_search | 获取商品搜索结果/Get product search results
@@ -68,12 +76,16 @@ Method | HTTP request | Description
 [**fetch_shop_home_api_v1_tiktok_app_v3_fetch_shop_home_get_0**](TikTokAppV3APIApi.md#fetch_shop_home_api_v1_tiktok_app_v3_fetch_shop_home_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_shop_home | 获取商家主页数据/Get shop home page data
 [**fetch_shop_home_page_list_api_v1_tiktok_app_v3_fetch_shop_home_page_list_get**](TikTokAppV3APIApi.md#fetch_shop_home_page_list_api_v1_tiktok_app_v3_fetch_shop_home_page_list_get) | **GET** /api/v1/tiktok/app/v3/fetch_shop_home_page_list | 获取商家主页Page列表数据/Get shop home page list data
 [**fetch_shop_home_page_list_api_v1_tiktok_app_v3_fetch_shop_home_page_list_get_0**](TikTokAppV3APIApi.md#fetch_shop_home_page_list_api_v1_tiktok_app_v3_fetch_shop_home_page_list_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_shop_home_page_list | 获取商家主页Page列表数据/Get shop home page list data
+[**fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get**](TikTokAppV3APIApi.md#fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get) | **GET** /api/v1/tiktok/app/v3/fetch_shop_id_by_share_link | 通过分享链接获取店铺ID/Get Shop ID by Share Link
+[**fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0**](TikTokAppV3APIApi.md#fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_shop_id_by_share_link | 通过分享链接获取店铺ID/Get Shop ID by Share Link
 [**fetch_shop_info_api_v1_tiktok_app_v3_fetch_shop_info_get**](TikTokAppV3APIApi.md#fetch_shop_info_api_v1_tiktok_app_v3_fetch_shop_info_get) | **GET** /api/v1/tiktok/app/v3/fetch_shop_info | 获取商家信息数据/Get shop information data
 [**fetch_shop_info_api_v1_tiktok_app_v3_fetch_shop_info_get_0**](TikTokAppV3APIApi.md#fetch_shop_info_api_v1_tiktok_app_v3_fetch_shop_info_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_shop_info | 获取商家信息数据/Get shop information data
 [**fetch_shop_product_category_api_v1_tiktok_app_v3_fetch_shop_product_category_get**](TikTokAppV3APIApi.md#fetch_shop_product_category_api_v1_tiktok_app_v3_fetch_shop_product_category_get) | **GET** /api/v1/tiktok/app/v3/fetch_shop_product_category | 获取商家产品分类数据/Get shop product category data
 [**fetch_shop_product_category_api_v1_tiktok_app_v3_fetch_shop_product_category_get_0**](TikTokAppV3APIApi.md#fetch_shop_product_category_api_v1_tiktok_app_v3_fetch_shop_product_category_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_shop_product_category | 获取商家产品分类数据/Get shop product category data
 [**fetch_shop_product_list_api_v1_tiktok_app_v3_fetch_shop_product_list_get**](TikTokAppV3APIApi.md#fetch_shop_product_list_api_v1_tiktok_app_v3_fetch_shop_product_list_get) | **GET** /api/v1/tiktok/app/v3/fetch_shop_product_list | 获取商家商品列表数据/Get shop product list data
 [**fetch_shop_product_list_api_v1_tiktok_app_v3_fetch_shop_product_list_get_0**](TikTokAppV3APIApi.md#fetch_shop_product_list_api_v1_tiktok_app_v3_fetch_shop_product_list_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_shop_product_list | 获取商家商品列表数据/Get shop product list data
+[**fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get**](TikTokAppV3APIApi.md#fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get) | **GET** /api/v1/tiktok/app/v3/fetch_shop_product_list_v2 | 获取商家商品列表数据 V2/Get shop product list data V2
+[**fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0**](TikTokAppV3APIApi.md#fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_shop_product_list_v2 | 获取商家商品列表数据 V2/Get shop product list data V2
 [**fetch_shop_product_recommend_api_v1_tiktok_app_v3_fetch_shop_product_recommend_get**](TikTokAppV3APIApi.md#fetch_shop_product_recommend_api_v1_tiktok_app_v3_fetch_shop_product_recommend_get) | **GET** /api/v1/tiktok/app/v3/fetch_shop_product_recommend | 获取商家商品推荐数据/Get shop product recommend data
 [**fetch_shop_product_recommend_api_v1_tiktok_app_v3_fetch_shop_product_recommend_get_0**](TikTokAppV3APIApi.md#fetch_shop_product_recommend_api_v1_tiktok_app_v3_fetch_shop_product_recommend_get_0) | **GET** /api/v1/tiktok/app/v3/fetch_shop_product_recommend | 获取商家商品推荐数据/Get shop product recommend data
 [**fetch_user_follower_list_api_v1_tiktok_app_v3_fetch_user_follower_list_get**](TikTokAppV3APIApi.md#fetch_user_follower_list_api_v1_tiktok_app_v3_fetch_user_follower_list_get) | **GET** /api/v1/tiktok/app/v3/fetch_user_follower_list | 获取指定用户的粉丝列表数据/Get follower list of specified user
@@ -2984,6 +2996,152 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post**
+> ResponseModel fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post(request_body=request_body)
+
+批量获取视频信息 V2/Batch Get Video Information V2
+
+# [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",     ]
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    request_body = ["7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570"] # list[str] |  (optional)
+
+    try:
+        # 批量获取视频信息 V2/Batch Get Video Information V2
+        api_response = api_instance.fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post(request_body=request_body)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request_body** | [**list[str]**](str.md)|  | [optional] 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0**
+> ResponseModel fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0(request_body=request_body)
+
+批量获取视频信息 V2/Batch Get Video Information V2
+
+# [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",     ]
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    request_body = ["7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570","7339393672959757570"] # list[str] |  (optional)
+
+    try:
+        # 批量获取视频信息 V2/Batch Get Video Information V2
+        api_response = api_instance.fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0(request_body=request_body)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request_body** | [**list[str]**](str.md)|  | [optional] 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **fetch_music_detail_api_v1_tiktok_app_v3_fetch_music_detail_get**
 > ResponseModel fetch_music_detail_api_v1_tiktok_app_v3_fetch_music_detail_get(music_id)
 
@@ -3730,6 +3888,152 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get**
+> ResponseModel fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get(aweme_id)
+
+获取单个作品数据 V2/Get single video data V2
+
+# [中文] ### 用途: - 获取单个作品数据 V2 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data V2 ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7463308759842966791\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    aweme_id = '7463308759842966791' # str | 作品id/Video id
+
+    try:
+        # 获取单个作品数据 V2/Get single video data V2
+        api_response = api_instance.fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get(aweme_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **aweme_id** | **str**| 作品id/Video id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0**
+> ResponseModel fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0(aweme_id)
+
+获取单个作品数据 V2/Get single video data V2
+
+# [中文] ### 用途: - 获取单个作品数据 V2 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data V2 ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7463308759842966791\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    aweme_id = '7463308759842966791' # str | 作品id/Video id
+
+    try:
+        # 获取单个作品数据 V2/Get single video data V2
+        api_response = api_instance.fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0(aweme_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **aweme_id** | **str**| 作品id/Video id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **fetch_product_detail_api_v1_tiktok_app_v3_fetch_product_detail_get**
 > ResponseModel fetch_product_detail_api_v1_tiktok_app_v3_fetch_product_detail_get(product_id)
 
@@ -4000,6 +4304,298 @@ with tikhub_sdk_v2.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **product_id** | **str**| 商品id/Product id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get**
+> ResponseModel fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get(product_id)
+
+获取商品详情数据V3/Get product detail data V3
+
+# [中文] ### 用途: - 获取商品详情数据V3，如果商品详情数据V2无法获取，可以尝试使用此接口。 ### 参数: - product_id: 商品id，有时候需要从product_id_str字段中获取。 ### 返回: - 商品详情数据V3  # [English] ### Purpose: - Get product detail data V3, if the product detail data V2 cannot be obtained, you can try using this interface. ### Parameters: - product_id: Product id, sometimes need to get from the product_id_str field. ### Return: - Product detail data V3  # [示例/Example] product_id = \"1729385239712731370\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    product_id = '1729385239712731370' # str | 商品id/Product id
+
+    try:
+        # 获取商品详情数据V3/Get product detail data V3
+        api_response = api_instance.fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get(product_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **product_id** | **str**| 商品id/Product id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0**
+> ResponseModel fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0(product_id)
+
+获取商品详情数据V3/Get product detail data V3
+
+# [中文] ### 用途: - 获取商品详情数据V3，如果商品详情数据V2无法获取，可以尝试使用此接口。 ### 参数: - product_id: 商品id，有时候需要从product_id_str字段中获取。 ### 返回: - 商品详情数据V3  # [English] ### Purpose: - Get product detail data V3, if the product detail data V2 cannot be obtained, you can try using this interface. ### Parameters: - product_id: Product id, sometimes need to get from the product_id_str field. ### Return: - Product detail data V3  # [示例/Example] product_id = \"1729385239712731370\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    product_id = '1729385239712731370' # str | 商品id/Product id
+
+    try:
+        # 获取商品详情数据V3/Get product detail data V3
+        api_response = api_instance.fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0(product_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **product_id** | **str**| 商品id/Product id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get**
+> ResponseModel fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get(share_link)
+
+通过分享链接获取商品ID/Get Product ID by Share Link
+
+# [中文] ### 用途: - 通过分享链接获取商品ID ### 参数: - share_link: 分享链接 ### 返回: - 商品ID  # [English] ### Purpose: - Get Product ID by Share Link ### Parameters: - share_link: Share link ### Return: - Product ID  # [示例/Example] share_link = \"https://www.tiktok.com/t/ZT2A9N1kw/\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    share_link = 'https://www.tiktok.com/t/ZT2A9N1kw/' # str | 分享链接/Share link
+
+    try:
+        # 通过分享链接获取商品ID/Get Product ID by Share Link
+        api_response = api_instance.fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get(share_link)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **share_link** | **str**| 分享链接/Share link | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0**
+> ResponseModel fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0(share_link)
+
+通过分享链接获取商品ID/Get Product ID by Share Link
+
+# [中文] ### 用途: - 通过分享链接获取商品ID ### 参数: - share_link: 分享链接 ### 返回: - 商品ID  # [English] ### Purpose: - Get Product ID by Share Link ### Parameters: - share_link: Share link ### Return: - Product ID  # [示例/Example] share_link = \"https://www.tiktok.com/t/ZT2A9N1kw/\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    share_link = 'https://www.tiktok.com/t/ZT2A9N1kw/' # str | 分享链接/Share link
+
+    try:
+        # 通过分享链接获取商品ID/Get Product ID by Share Link
+        api_response = api_instance.fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0(share_link)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **share_link** | **str**| 分享链接/Share link | 
 
 ### Return type
 
@@ -4950,6 +5546,152 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get**
+> ResponseModel fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get(share_link)
+
+通过分享链接获取店铺ID/Get Shop ID by Share Link
+
+# [中文] ### 用途: - 通过分享链接获取店铺ID ### 参数: - share_link: 分享链接 ### 返回: - 店铺ID  # [English] ### Purpose: - Get Shop ID by Share Link ### Parameters: - share_link: Share link ### Return: - Shop ID  # [示例/Example] share_link = \"https://vt.tiktok.com/ZT2AHoGsE/\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    share_link = 'https://vt.tiktok.com/ZT2AHoGsE/' # str | 分享链接/Share link
+
+    try:
+        # 通过分享链接获取店铺ID/Get Shop ID by Share Link
+        api_response = api_instance.fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get(share_link)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **share_link** | **str**| 分享链接/Share link | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0**
+> ResponseModel fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0(share_link)
+
+通过分享链接获取店铺ID/Get Shop ID by Share Link
+
+# [中文] ### 用途: - 通过分享链接获取店铺ID ### 参数: - share_link: 分享链接 ### 返回: - 店铺ID  # [English] ### Purpose: - Get Shop ID by Share Link ### Parameters: - share_link: Share link ### Return: - Shop ID  # [示例/Example] share_link = \"https://vt.tiktok.com/ZT2AHoGsE/\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    share_link = 'https://vt.tiktok.com/ZT2AHoGsE/' # str | 分享链接/Share link
+
+    try:
+        # 通过分享链接获取店铺ID/Get Shop ID by Share Link
+        api_response = api_instance.fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0(share_link)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **share_link** | **str**| 分享链接/Share link | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **fetch_shop_info_api_v1_tiktok_app_v3_fetch_shop_info_get**
 > ResponseModel fetch_shop_info_api_v1_tiktok_app_v3_fetch_shop_info_get(shop_id)
 
@@ -5371,6 +6113,168 @@ sort_order = 0 # int | 排序方式/Sorting method (optional) (default to 0)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling TikTokAppV3APIApi->fetch_shop_product_list_api_v1_tiktok_app_v3_fetch_shop_product_list_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **seller_id** | **str**| 商家id,店铺id/Seller id, shop id | 
+ **scroll_params** | **str**| 滚动参数，用于加载更多商品数据/Scroll parameter, used to load more product data | [optional] [default to &#39;&#39;]
+ **page_size** | **int**| 每页数量/Number per page | [optional] [default to 10]
+ **sort_field** | **int**| 排序字段/Sorting field | [optional] [default to 1]
+ **sort_order** | **int**| 排序方式/Sorting method | [optional] [default to 0]
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get**
+> ResponseModel fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get(seller_id, scroll_params=scroll_params, page_size=page_size, sort_field=sort_field, sort_order=sort_order)
+
+获取商家商品列表数据 V2/Get shop product list data V2
+
+# [中文] ### 用途: - 获取商家商品列表数据 ### 参数: - seller_id: 商家id,店铺id - scroll_params: 滚动参数，用于加载更多商品数据 - page_size: 每页数量 - sort_field: 排序字段     - 1: 综合排序     - 3: 最新发布     - 4: 销量最好     - 5: 价格排序 - sort_order: 排序方式     - 0: 默认价格排序     - 1: 价格从高到低     - 2: 价格从低到高 ### 返回: - 商家商品列表数据  # [English] ### Purpose: - Get shop product list data ### Parameters: - seller_id: Seller id, shop id - scroll_params: Scroll parameter, used to load more product data - page_size: Number per page - sort_field: Sorting field     - 1: Comprehensive sorting     - 3: Latest release     - 4: Best sales     - 5: Price sorting - sort_order: Sorting method     - 0: Default price sorting     - 1: Price high to low     - 2: Price low to high ### Return: - Shop product list data  # [示例/Example] seller_id = \"8646929864612614278\" scroll_params = \"\" page_size = 10 sort_field = 1 sort_order = 0
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    seller_id = '8646929864612614278' # str | 商家id,店铺id/Seller id, shop id
+scroll_params = '' # str | 滚动参数，用于加载更多商品数据/Scroll parameter, used to load more product data (optional) (default to '')
+page_size = 10 # int | 每页数量/Number per page (optional) (default to 10)
+sort_field = 1 # int | 排序字段/Sorting field (optional) (default to 1)
+sort_order = 0 # int | 排序方式/Sorting method (optional) (default to 0)
+
+    try:
+        # 获取商家商品列表数据 V2/Get shop product list data V2
+        api_response = api_instance.fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get(seller_id, scroll_params=scroll_params, page_size=page_size, sort_field=sort_field, sort_order=sort_order)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **seller_id** | **str**| 商家id,店铺id/Seller id, shop id | 
+ **scroll_params** | **str**| 滚动参数，用于加载更多商品数据/Scroll parameter, used to load more product data | [optional] [default to &#39;&#39;]
+ **page_size** | **int**| 每页数量/Number per page | [optional] [default to 10]
+ **sort_field** | **int**| 排序字段/Sorting field | [optional] [default to 1]
+ **sort_order** | **int**| 排序方式/Sorting method | [optional] [default to 0]
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0**
+> ResponseModel fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0(seller_id, scroll_params=scroll_params, page_size=page_size, sort_field=sort_field, sort_order=sort_order)
+
+获取商家商品列表数据 V2/Get shop product list data V2
+
+# [中文] ### 用途: - 获取商家商品列表数据 ### 参数: - seller_id: 商家id,店铺id - scroll_params: 滚动参数，用于加载更多商品数据 - page_size: 每页数量 - sort_field: 排序字段     - 1: 综合排序     - 3: 最新发布     - 4: 销量最好     - 5: 价格排序 - sort_order: 排序方式     - 0: 默认价格排序     - 1: 价格从高到低     - 2: 价格从低到高 ### 返回: - 商家商品列表数据  # [English] ### Purpose: - Get shop product list data ### Parameters: - seller_id: Seller id, shop id - scroll_params: Scroll parameter, used to load more product data - page_size: Number per page - sort_field: Sorting field     - 1: Comprehensive sorting     - 3: Latest release     - 4: Best sales     - 5: Price sorting - sort_order: Sorting method     - 0: Default price sorting     - 1: Price high to low     - 2: Price low to high ### Return: - Shop product list data  # [示例/Example] seller_id = \"8646929864612614278\" scroll_params = \"\" page_size = 10 sort_field = 1 sort_order = 0
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokAppV3APIApi(api_client)
+    seller_id = '8646929864612614278' # str | 商家id,店铺id/Seller id, shop id
+scroll_params = '' # str | 滚动参数，用于加载更多商品数据/Scroll parameter, used to load more product data (optional) (default to '')
+page_size = 10 # int | 每页数量/Number per page (optional) (default to 10)
+sort_field = 1 # int | 排序字段/Sorting field (optional) (default to 1)
+sort_order = 0 # int | 排序方式/Sorting method (optional) (default to 0)
+
+    try:
+        # 获取商家商品列表数据 V2/Get shop product list data V2
+        api_response = api_instance.fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0(seller_id, scroll_params=scroll_params, page_size=page_size, sort_field=sort_field, sort_order=sort_order)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokAppV3APIApi->fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0: %s\n" % e)
 ```
 
 ### Parameters

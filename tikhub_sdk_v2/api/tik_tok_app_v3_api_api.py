@@ -4658,6 +4658,234 @@ class TikTokAppV3APIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post(self, **kwargs):  # noqa: E501
+        """批量获取视频信息 V2/Batch Get Video Information V2  # noqa: E501
+
+        # [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",     ]  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param list[str] request_body:
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_with_http_info(**kwargs)  # noqa: E501
+
+    def fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_with_http_info(self, **kwargs):  # noqa: E501
+        """批量获取视频信息 V2/Batch Get Video Information V2  # noqa: E501
+
+        # [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",     ]  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param list[str] request_body:
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'request_body'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'request_body' in local_var_params:
+            body_params = local_var_params['request_body']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_multi_video_v2', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0(self, **kwargs):  # noqa: E501
+        """批量获取视频信息 V2/Batch Get Video Information V2  # noqa: E501
+
+        # [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",     ]  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param list[str] request_body:
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0_with_http_info(**kwargs)  # noqa: E501
+
+    def fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0_with_http_info(self, **kwargs):  # noqa: E501
+        """批量获取视频信息 V2/Batch Get Video Information V2  # noqa: E501
+
+        # [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",         \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\", \"7339393672959757570\",     ]  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param list[str] request_body:
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'request_body'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_multi_video_v2_api_v1_tiktok_app_v3_fetch_multi_video_v2_post_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'request_body' in local_var_params:
+            body_params = local_var_params['request_body']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_multi_video_v2', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def fetch_music_detail_api_v1_tiktok_app_v3_fetch_music_detail_get(self, music_id, **kwargs):  # noqa: E501
         """获取指定音乐的详情数据/Get details of specified music  # noqa: E501
 
@@ -5838,6 +6066,234 @@ class TikTokAppV3APIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get(self, aweme_id, **kwargs):  # noqa: E501
+        """获取单个作品数据 V2/Get single video data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取单个作品数据 V2 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data V2 ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7463308759842966791\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get(aweme_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str aweme_id: 作品id/Video id (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_with_http_info(aweme_id, **kwargs)  # noqa: E501
+
+    def fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_with_http_info(self, aweme_id, **kwargs):  # noqa: E501
+        """获取单个作品数据 V2/Get single video data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取单个作品数据 V2 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data V2 ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7463308759842966791\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_with_http_info(aweme_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str aweme_id: 作品id/Video id (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'aweme_id'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'aweme_id' is set
+        if self.api_client.client_side_validation and ('aweme_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['aweme_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `aweme_id` when calling `fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'aweme_id' in local_var_params and local_var_params['aweme_id'] is not None:  # noqa: E501
+            query_params.append(('aweme_id', local_var_params['aweme_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_one_video_v2', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0(self, aweme_id, **kwargs):  # noqa: E501
+        """获取单个作品数据 V2/Get single video data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取单个作品数据 V2 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data V2 ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7463308759842966791\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0(aweme_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str aweme_id: 作品id/Video id (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0_with_http_info(aweme_id, **kwargs)  # noqa: E501
+
+    def fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0_with_http_info(self, aweme_id, **kwargs):  # noqa: E501
+        """获取单个作品数据 V2/Get single video data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取单个作品数据 V2 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data V2 ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7463308759842966791\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0_with_http_info(aweme_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str aweme_id: 作品id/Video id (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'aweme_id'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'aweme_id' is set
+        if self.api_client.client_side_validation and ('aweme_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['aweme_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `aweme_id` when calling `fetch_one_video_v2_api_v1_tiktok_app_v3_fetch_one_video_v2_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'aweme_id' in local_var_params and local_var_params['aweme_id'] is not None:  # noqa: E501
+            query_params.append(('aweme_id', local_var_params['aweme_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_one_video_v2', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def fetch_product_detail_api_v1_tiktok_app_v3_fetch_product_detail_get(self, product_id, **kwargs):  # noqa: E501
         """获取商品详情数据（即将弃用，使用 fetch_product_detail_v2 代替）/Get product detail data (will be deprecated, use fetch_product_detail_v2 instead)  # noqa: E501
 
@@ -6280,6 +6736,462 @@ class TikTokAppV3APIApi(object):
 
         return self.api_client.call_api(
             '/api/v1/tiktok/app/v3/fetch_product_detail_v2', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get(self, product_id, **kwargs):  # noqa: E501
+        """获取商品详情数据V3/Get product detail data V3  # noqa: E501
+
+        # [中文] ### 用途: - 获取商品详情数据V3，如果商品详情数据V2无法获取，可以尝试使用此接口。 ### 参数: - product_id: 商品id，有时候需要从product_id_str字段中获取。 ### 返回: - 商品详情数据V3  # [English] ### Purpose: - Get product detail data V3, if the product detail data V2 cannot be obtained, you can try using this interface. ### Parameters: - product_id: Product id, sometimes need to get from the product_id_str field. ### Return: - Product detail data V3  # [示例/Example] product_id = \"1729385239712731370\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get(product_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str product_id: 商品id/Product id (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_with_http_info(product_id, **kwargs)  # noqa: E501
+
+    def fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_with_http_info(self, product_id, **kwargs):  # noqa: E501
+        """获取商品详情数据V3/Get product detail data V3  # noqa: E501
+
+        # [中文] ### 用途: - 获取商品详情数据V3，如果商品详情数据V2无法获取，可以尝试使用此接口。 ### 参数: - product_id: 商品id，有时候需要从product_id_str字段中获取。 ### 返回: - 商品详情数据V3  # [English] ### Purpose: - Get product detail data V3, if the product detail data V2 cannot be obtained, you can try using this interface. ### Parameters: - product_id: Product id, sometimes need to get from the product_id_str field. ### Return: - Product detail data V3  # [示例/Example] product_id = \"1729385239712731370\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_with_http_info(product_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str product_id: 商品id/Product id (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'product_id'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'product_id' is set
+        if self.api_client.client_side_validation and ('product_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['product_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `product_id` when calling `fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'product_id' in local_var_params and local_var_params['product_id'] is not None:  # noqa: E501
+            query_params.append(('product_id', local_var_params['product_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_product_detail_v3', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0(self, product_id, **kwargs):  # noqa: E501
+        """获取商品详情数据V3/Get product detail data V3  # noqa: E501
+
+        # [中文] ### 用途: - 获取商品详情数据V3，如果商品详情数据V2无法获取，可以尝试使用此接口。 ### 参数: - product_id: 商品id，有时候需要从product_id_str字段中获取。 ### 返回: - 商品详情数据V3  # [English] ### Purpose: - Get product detail data V3, if the product detail data V2 cannot be obtained, you can try using this interface. ### Parameters: - product_id: Product id, sometimes need to get from the product_id_str field. ### Return: - Product detail data V3  # [示例/Example] product_id = \"1729385239712731370\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0(product_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str product_id: 商品id/Product id (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0_with_http_info(product_id, **kwargs)  # noqa: E501
+
+    def fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0_with_http_info(self, product_id, **kwargs):  # noqa: E501
+        """获取商品详情数据V3/Get product detail data V3  # noqa: E501
+
+        # [中文] ### 用途: - 获取商品详情数据V3，如果商品详情数据V2无法获取，可以尝试使用此接口。 ### 参数: - product_id: 商品id，有时候需要从product_id_str字段中获取。 ### 返回: - 商品详情数据V3  # [English] ### Purpose: - Get product detail data V3, if the product detail data V2 cannot be obtained, you can try using this interface. ### Parameters: - product_id: Product id, sometimes need to get from the product_id_str field. ### Return: - Product detail data V3  # [示例/Example] product_id = \"1729385239712731370\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0_with_http_info(product_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str product_id: 商品id/Product id (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'product_id'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'product_id' is set
+        if self.api_client.client_side_validation and ('product_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['product_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `product_id` when calling `fetch_product_detail_v3_api_v1_tiktok_app_v3_fetch_product_detail_v3_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'product_id' in local_var_params and local_var_params['product_id'] is not None:  # noqa: E501
+            query_params.append(('product_id', local_var_params['product_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_product_detail_v3', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get(self, share_link, **kwargs):  # noqa: E501
+        """通过分享链接获取商品ID/Get Product ID by Share Link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取商品ID ### 参数: - share_link: 分享链接 ### 返回: - 商品ID  # [English] ### Purpose: - Get Product ID by Share Link ### Parameters: - share_link: Share link ### Return: - Product ID  # [示例/Example] share_link = \"https://www.tiktok.com/t/ZT2A9N1kw/\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get(share_link, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_link: 分享链接/Share link (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_with_http_info(share_link, **kwargs)  # noqa: E501
+
+    def fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_with_http_info(self, share_link, **kwargs):  # noqa: E501
+        """通过分享链接获取商品ID/Get Product ID by Share Link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取商品ID ### 参数: - share_link: 分享链接 ### 返回: - 商品ID  # [English] ### Purpose: - Get Product ID by Share Link ### Parameters: - share_link: Share link ### Return: - Product ID  # [示例/Example] share_link = \"https://www.tiktok.com/t/ZT2A9N1kw/\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_with_http_info(share_link, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_link: 分享链接/Share link (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'share_link'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'share_link' is set
+        if self.api_client.client_side_validation and ('share_link' not in local_var_params or  # noqa: E501
+                                                        local_var_params['share_link'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `share_link` when calling `fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'share_link' in local_var_params and local_var_params['share_link'] is not None:  # noqa: E501
+            query_params.append(('share_link', local_var_params['share_link']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_product_id_by_share_link', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0(self, share_link, **kwargs):  # noqa: E501
+        """通过分享链接获取商品ID/Get Product ID by Share Link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取商品ID ### 参数: - share_link: 分享链接 ### 返回: - 商品ID  # [English] ### Purpose: - Get Product ID by Share Link ### Parameters: - share_link: Share link ### Return: - Product ID  # [示例/Example] share_link = \"https://www.tiktok.com/t/ZT2A9N1kw/\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0(share_link, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_link: 分享链接/Share link (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0_with_http_info(share_link, **kwargs)  # noqa: E501
+
+    def fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0_with_http_info(self, share_link, **kwargs):  # noqa: E501
+        """通过分享链接获取商品ID/Get Product ID by Share Link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取商品ID ### 参数: - share_link: 分享链接 ### 返回: - 商品ID  # [English] ### Purpose: - Get Product ID by Share Link ### Parameters: - share_link: Share link ### Return: - Product ID  # [示例/Example] share_link = \"https://www.tiktok.com/t/ZT2A9N1kw/\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0_with_http_info(share_link, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_link: 分享链接/Share link (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'share_link'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'share_link' is set
+        if self.api_client.client_side_validation and ('share_link' not in local_var_params or  # noqa: E501
+                                                        local_var_params['share_link'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `share_link` when calling `fetch_product_id_by_share_link_api_v1_tiktok_app_v3_fetch_product_id_by_share_link_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'share_link' in local_var_params and local_var_params['share_link'] is not None:  # noqa: E501
+            query_params.append(('share_link', local_var_params['share_link']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_product_id_by_share_link', 'GET',
             path_params,
             query_params,
             header_params,
@@ -7800,6 +8712,234 @@ class TikTokAppV3APIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get(self, share_link, **kwargs):  # noqa: E501
+        """通过分享链接获取店铺ID/Get Shop ID by Share Link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取店铺ID ### 参数: - share_link: 分享链接 ### 返回: - 店铺ID  # [English] ### Purpose: - Get Shop ID by Share Link ### Parameters: - share_link: Share link ### Return: - Shop ID  # [示例/Example] share_link = \"https://vt.tiktok.com/ZT2AHoGsE/\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get(share_link, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_link: 分享链接/Share link (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_with_http_info(share_link, **kwargs)  # noqa: E501
+
+    def fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_with_http_info(self, share_link, **kwargs):  # noqa: E501
+        """通过分享链接获取店铺ID/Get Shop ID by Share Link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取店铺ID ### 参数: - share_link: 分享链接 ### 返回: - 店铺ID  # [English] ### Purpose: - Get Shop ID by Share Link ### Parameters: - share_link: Share link ### Return: - Shop ID  # [示例/Example] share_link = \"https://vt.tiktok.com/ZT2AHoGsE/\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_with_http_info(share_link, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_link: 分享链接/Share link (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'share_link'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'share_link' is set
+        if self.api_client.client_side_validation and ('share_link' not in local_var_params or  # noqa: E501
+                                                        local_var_params['share_link'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `share_link` when calling `fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'share_link' in local_var_params and local_var_params['share_link'] is not None:  # noqa: E501
+            query_params.append(('share_link', local_var_params['share_link']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_shop_id_by_share_link', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0(self, share_link, **kwargs):  # noqa: E501
+        """通过分享链接获取店铺ID/Get Shop ID by Share Link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取店铺ID ### 参数: - share_link: 分享链接 ### 返回: - 店铺ID  # [English] ### Purpose: - Get Shop ID by Share Link ### Parameters: - share_link: Share link ### Return: - Shop ID  # [示例/Example] share_link = \"https://vt.tiktok.com/ZT2AHoGsE/\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0(share_link, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_link: 分享链接/Share link (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0_with_http_info(share_link, **kwargs)  # noqa: E501
+
+    def fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0_with_http_info(self, share_link, **kwargs):  # noqa: E501
+        """通过分享链接获取店铺ID/Get Shop ID by Share Link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取店铺ID ### 参数: - share_link: 分享链接 ### 返回: - 店铺ID  # [English] ### Purpose: - Get Shop ID by Share Link ### Parameters: - share_link: Share link ### Return: - Shop ID  # [示例/Example] share_link = \"https://vt.tiktok.com/ZT2AHoGsE/\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0_with_http_info(share_link, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_link: 分享链接/Share link (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'share_link'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'share_link' is set
+        if self.api_client.client_side_validation and ('share_link' not in local_var_params or  # noqa: E501
+                                                        local_var_params['share_link'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `share_link` when calling `fetch_shop_id_by_share_link_api_v1_tiktok_app_v3_fetch_shop_id_by_share_link_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'share_link' in local_var_params and local_var_params['share_link'] is not None:  # noqa: E501
+            query_params.append(('share_link', local_var_params['share_link']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_shop_id_by_share_link', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def fetch_shop_info_api_v1_tiktok_app_v3_fetch_shop_info_get(self, shop_id, **kwargs):  # noqa: E501
         """获取商家信息数据/Get shop information data  # noqa: E501
 
@@ -8510,6 +9650,274 @@ class TikTokAppV3APIApi(object):
 
         return self.api_client.call_api(
             '/api/v1/tiktok/app/v3/fetch_shop_product_list', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get(self, seller_id, **kwargs):  # noqa: E501
+        """获取商家商品列表数据 V2/Get shop product list data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取商家商品列表数据 ### 参数: - seller_id: 商家id,店铺id - scroll_params: 滚动参数，用于加载更多商品数据 - page_size: 每页数量 - sort_field: 排序字段     - 1: 综合排序     - 3: 最新发布     - 4: 销量最好     - 5: 价格排序 - sort_order: 排序方式     - 0: 默认价格排序     - 1: 价格从高到低     - 2: 价格从低到高 ### 返回: - 商家商品列表数据  # [English] ### Purpose: - Get shop product list data ### Parameters: - seller_id: Seller id, shop id - scroll_params: Scroll parameter, used to load more product data - page_size: Number per page - sort_field: Sorting field     - 1: Comprehensive sorting     - 3: Latest release     - 4: Best sales     - 5: Price sorting - sort_order: Sorting method     - 0: Default price sorting     - 1: Price high to low     - 2: Price low to high ### Return: - Shop product list data  # [示例/Example] seller_id = \"8646929864612614278\" scroll_params = \"\" page_size = 10 sort_field = 1 sort_order = 0  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get(seller_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str seller_id: 商家id,店铺id/Seller id, shop id (required)
+        :param str scroll_params: 滚动参数，用于加载更多商品数据/Scroll parameter, used to load more product data
+        :param int page_size: 每页数量/Number per page
+        :param int sort_field: 排序字段/Sorting field
+        :param int sort_order: 排序方式/Sorting method
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_with_http_info(seller_id, **kwargs)  # noqa: E501
+
+    def fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_with_http_info(self, seller_id, **kwargs):  # noqa: E501
+        """获取商家商品列表数据 V2/Get shop product list data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取商家商品列表数据 ### 参数: - seller_id: 商家id,店铺id - scroll_params: 滚动参数，用于加载更多商品数据 - page_size: 每页数量 - sort_field: 排序字段     - 1: 综合排序     - 3: 最新发布     - 4: 销量最好     - 5: 价格排序 - sort_order: 排序方式     - 0: 默认价格排序     - 1: 价格从高到低     - 2: 价格从低到高 ### 返回: - 商家商品列表数据  # [English] ### Purpose: - Get shop product list data ### Parameters: - seller_id: Seller id, shop id - scroll_params: Scroll parameter, used to load more product data - page_size: Number per page - sort_field: Sorting field     - 1: Comprehensive sorting     - 3: Latest release     - 4: Best sales     - 5: Price sorting - sort_order: Sorting method     - 0: Default price sorting     - 1: Price high to low     - 2: Price low to high ### Return: - Shop product list data  # [示例/Example] seller_id = \"8646929864612614278\" scroll_params = \"\" page_size = 10 sort_field = 1 sort_order = 0  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_with_http_info(seller_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str seller_id: 商家id,店铺id/Seller id, shop id (required)
+        :param str scroll_params: 滚动参数，用于加载更多商品数据/Scroll parameter, used to load more product data
+        :param int page_size: 每页数量/Number per page
+        :param int sort_field: 排序字段/Sorting field
+        :param int sort_order: 排序方式/Sorting method
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'seller_id',
+            'scroll_params',
+            'page_size',
+            'sort_field',
+            'sort_order'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'seller_id' is set
+        if self.api_client.client_side_validation and ('seller_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['seller_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `seller_id` when calling `fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'seller_id' in local_var_params and local_var_params['seller_id'] is not None:  # noqa: E501
+            query_params.append(('seller_id', local_var_params['seller_id']))  # noqa: E501
+        if 'scroll_params' in local_var_params and local_var_params['scroll_params'] is not None:  # noqa: E501
+            query_params.append(('scroll_params', local_var_params['scroll_params']))  # noqa: E501
+        if 'page_size' in local_var_params and local_var_params['page_size'] is not None:  # noqa: E501
+            query_params.append(('page_size', local_var_params['page_size']))  # noqa: E501
+        if 'sort_field' in local_var_params and local_var_params['sort_field'] is not None:  # noqa: E501
+            query_params.append(('sort_field', local_var_params['sort_field']))  # noqa: E501
+        if 'sort_order' in local_var_params and local_var_params['sort_order'] is not None:  # noqa: E501
+            query_params.append(('sort_order', local_var_params['sort_order']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_shop_product_list_v2', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0(self, seller_id, **kwargs):  # noqa: E501
+        """获取商家商品列表数据 V2/Get shop product list data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取商家商品列表数据 ### 参数: - seller_id: 商家id,店铺id - scroll_params: 滚动参数，用于加载更多商品数据 - page_size: 每页数量 - sort_field: 排序字段     - 1: 综合排序     - 3: 最新发布     - 4: 销量最好     - 5: 价格排序 - sort_order: 排序方式     - 0: 默认价格排序     - 1: 价格从高到低     - 2: 价格从低到高 ### 返回: - 商家商品列表数据  # [English] ### Purpose: - Get shop product list data ### Parameters: - seller_id: Seller id, shop id - scroll_params: Scroll parameter, used to load more product data - page_size: Number per page - sort_field: Sorting field     - 1: Comprehensive sorting     - 3: Latest release     - 4: Best sales     - 5: Price sorting - sort_order: Sorting method     - 0: Default price sorting     - 1: Price high to low     - 2: Price low to high ### Return: - Shop product list data  # [示例/Example] seller_id = \"8646929864612614278\" scroll_params = \"\" page_size = 10 sort_field = 1 sort_order = 0  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0(seller_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str seller_id: 商家id,店铺id/Seller id, shop id (required)
+        :param str scroll_params: 滚动参数，用于加载更多商品数据/Scroll parameter, used to load more product data
+        :param int page_size: 每页数量/Number per page
+        :param int sort_field: 排序字段/Sorting field
+        :param int sort_order: 排序方式/Sorting method
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0_with_http_info(seller_id, **kwargs)  # noqa: E501
+
+    def fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0_with_http_info(self, seller_id, **kwargs):  # noqa: E501
+        """获取商家商品列表数据 V2/Get shop product list data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取商家商品列表数据 ### 参数: - seller_id: 商家id,店铺id - scroll_params: 滚动参数，用于加载更多商品数据 - page_size: 每页数量 - sort_field: 排序字段     - 1: 综合排序     - 3: 最新发布     - 4: 销量最好     - 5: 价格排序 - sort_order: 排序方式     - 0: 默认价格排序     - 1: 价格从高到低     - 2: 价格从低到高 ### 返回: - 商家商品列表数据  # [English] ### Purpose: - Get shop product list data ### Parameters: - seller_id: Seller id, shop id - scroll_params: Scroll parameter, used to load more product data - page_size: Number per page - sort_field: Sorting field     - 1: Comprehensive sorting     - 3: Latest release     - 4: Best sales     - 5: Price sorting - sort_order: Sorting method     - 0: Default price sorting     - 1: Price high to low     - 2: Price low to high ### Return: - Shop product list data  # [示例/Example] seller_id = \"8646929864612614278\" scroll_params = \"\" page_size = 10 sort_field = 1 sort_order = 0  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0_with_http_info(seller_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str seller_id: 商家id,店铺id/Seller id, shop id (required)
+        :param str scroll_params: 滚动参数，用于加载更多商品数据/Scroll parameter, used to load more product data
+        :param int page_size: 每页数量/Number per page
+        :param int sort_field: 排序字段/Sorting field
+        :param int sort_order: 排序方式/Sorting method
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'seller_id',
+            'scroll_params',
+            'page_size',
+            'sort_field',
+            'sort_order'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'seller_id' is set
+        if self.api_client.client_side_validation and ('seller_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['seller_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `seller_id` when calling `fetch_shop_product_list_v2_api_v1_tiktok_app_v3_fetch_shop_product_list_v2_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'seller_id' in local_var_params and local_var_params['seller_id'] is not None:  # noqa: E501
+            query_params.append(('seller_id', local_var_params['seller_id']))  # noqa: E501
+        if 'scroll_params' in local_var_params and local_var_params['scroll_params'] is not None:  # noqa: E501
+            query_params.append(('scroll_params', local_var_params['scroll_params']))  # noqa: E501
+        if 'page_size' in local_var_params and local_var_params['page_size'] is not None:  # noqa: E501
+            query_params.append(('page_size', local_var_params['page_size']))  # noqa: E501
+        if 'sort_field' in local_var_params and local_var_params['sort_field'] is not None:  # noqa: E501
+            query_params.append(('sort_field', local_var_params['sort_field']))  # noqa: E501
+        if 'sort_order' in local_var_params and local_var_params['sort_order'] is not None:  # noqa: E501
+            query_params.append(('sort_order', local_var_params['sort_order']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/tiktok/app/v3/fetch_shop_product_list_v2', 'GET',
             path_params,
             query_params,
             header_params,
