@@ -42,20 +42,6 @@ class TestTikTokAppV3APIApi(unittest.TestCase):
         """
         pass
 
-    def test_add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get(self):
-        """Test case for add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get
-
-        TikHub内部测试接口/TikHub internal test interface  # noqa: E501
-        """
-        pass
-
-    def test_add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0(self):
-        """Test case for add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0
-
-        TikHub内部测试接口/TikHub internal test interface  # noqa: E501
-        """
-        pass
-
     def test_check_live_room_online_api_v1_tiktok_app_v3_check_live_room_online_get(self):
         """Test case for check_live_room_online_api_v1_tiktok_app_v3_check_live_room_online_get
 
@@ -182,15 +168,15 @@ class TestTikTokAppV3APIApi(unittest.TestCase):
         """
         pass
 
-    def test_fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get(self):
-        """Test case for fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get
+    def test_fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post(self):
+        """Test case for fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post
 
         获取主页视频推荐数据/Get home feed(recommend) video data  # noqa: E501
         """
         pass
 
-    def test_fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_0(self):
-        """Test case for fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_0
+    def test_fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_0(self):
+        """Test case for fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_0
 
         获取主页视频推荐数据/Get home feed(recommend) video data  # noqa: E501
         """

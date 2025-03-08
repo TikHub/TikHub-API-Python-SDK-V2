@@ -28,6 +28,34 @@ class TestPiPiXiaAppAPIApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get(self):
+        """Test case for fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get
+
+        获取话题详情/Get hashtag detail  # noqa: E501
+        """
+        pass
+
+    def test_fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get_0(self):
+        """Test case for fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get_0
+
+        获取话题详情/Get hashtag detail  # noqa: E501
+        """
+        pass
+
+    def test_fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get(self):
+        """Test case for fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get
+
+        获取话题作品列表/Get hashtag post list  # noqa: E501
+        """
+        pass
+
+    def test_fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get_0(self):
+        """Test case for fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get_0
+
+        获取话题作品列表/Get hashtag post list  # noqa: E501
+        """
+        pass
+
     def test_fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get(self):
         """Test case for fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get
 
@@ -39,6 +67,20 @@ class TestPiPiXiaAppAPIApi(unittest.TestCase):
         """Test case for fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get_0
 
         获取首页推荐/Get home feed  # noqa: E501
+        """
+        pass
+
+    def test_fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get(self):
+        """Test case for fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get
+
+        获取首页短剧推荐/Get home short drama feed  # noqa: E501
+        """
+        pass
+
+    def test_fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get_0(self):
+        """Test case for fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get_0
+
+        获取首页短剧推荐/Get home short drama feed  # noqa: E501
         """
         pass
 

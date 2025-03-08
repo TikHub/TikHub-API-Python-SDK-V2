@@ -1593,7 +1593,7 @@ Name | Type | Description  | Notes
 
 批量获取视频信息/Batch Get Video Information
 
-# [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [\"7372484719365098803\", \"7126745726494821640\", \"7372484719365098803\", \"7126745726494821640\", \"7372484719365098803\", \"7126745726494821640\", \"7372484719365098803\", \"7126745726494821640\", \"7372484719365098803\", \"7126745726494821640\"]
+# [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [\"7448118827402972455\", \"7126745726494821640\", \"7448118827402972455\", \"7126745726494821640\", \"7448118827402972455\", \"7126745726494821640\", \"7448118827402972455\", \"7126745726494821640\", \"7448118827402972455\", \"7126745726494821640\"]
 
 ### Example
 
@@ -1624,7 +1624,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    request_body = ["7372484719365098803","7126745726494821640","7372484719365098803","7126745726494821640","7372484719365098803","7126745726494821640","7372484719365098803","7126745726494821640","7372484719365098803","7126745726494821640"] # list[str] |  (optional)
+    request_body = ["7448118827402972455","7126745726494821640","7448118827402972455","7126745726494821640","7448118827402972455","7126745726494821640","7448118827402972455","7126745726494821640","7448118827402972455","7126745726494821640"] # list[str] |  (optional)
 
     try:
         # 批量获取视频信息/Batch Get Video Information
@@ -1666,7 +1666,7 @@ Name | Type | Description  | Notes
 
 批量获取视频信息/Batch Get Video Information
 
-# [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [\"7372484719365098803\", \"7126745726494821640\", \"7372484719365098803\", \"7126745726494821640\", \"7372484719365098803\", \"7126745726494821640\", \"7372484719365098803\", \"7126745726494821640\", \"7372484719365098803\", \"7126745726494821640\"]
+# [中文] ### 用途: - 批量获取视频信息，支持图文、视频等，一次性最多支持10个视频，此接口收费固定价格为0.001$ * 10 = 0.01$一次。 ### 参数: - aweme_ids: 作品id列表，最多支持10个作品id。 ### 返回: - 作品数据  # [English] ### Purpose: - Batch Get Video Information, support photo, video, etc., up to 10 videos at a time, this interface charges a fixed price of 0.001$ * 10 = 0.01$ each time. ### Parameters: - aweme_ids: List of video ids, up to 10 video ids are supported. ### Return: - Video data  # [示例/Example] aweme_ids = [\"7448118827402972455\", \"7126745726494821640\", \"7448118827402972455\", \"7126745726494821640\", \"7448118827402972455\", \"7126745726494821640\", \"7448118827402972455\", \"7126745726494821640\", \"7448118827402972455\", \"7126745726494821640\"]
 
 ### Example
 
@@ -1697,7 +1697,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    request_body = ["7372484719365098803","7126745726494821640","7372484719365098803","7126745726494821640","7372484719365098803","7126745726494821640","7372484719365098803","7126745726494821640","7372484719365098803","7126745726494821640"] # list[str] |  (optional)
+    request_body = ["7448118827402972455","7126745726494821640","7448118827402972455","7126745726494821640","7448118827402972455","7126745726494821640","7448118827402972455","7126745726494821640","7448118827402972455","7126745726494821640"] # list[str] |  (optional)
 
     try:
         # 批量获取视频信息/Batch Get Video Information
@@ -1739,7 +1739,7 @@ Name | Type | Description  | Notes
 
 根据视频ID批量获取作品的统计数据（点赞数、下载数、播放数、分享数）/Get the statistical data of the Post according to the video ID (like count, download count, play count, share count)
 
-# [中文] ### 用途: - 根据视频ID获取作品的统计数据，支持多个视频id，一次性最多支持50个视频。 - 抖音大多数接口已经不再返回作品的播放数，只能通过此接口获取。 - 价格为：0.025$一次。 - 可以获取到的统计有：     - 点赞数（digg_count）     - 下载数（download_count）     - 播放数（play_count）     - 分享数（share_count） ### 参数: - aweme_ids: 作品id，支持多个视频id，用逗号隔开即可，不能超过50个，单个也可以，则无需逗号。 ### 返回: - 作品统计数据  # [English] ### Purpose: - Get the statistical data of the Post according to the video ID, support multiple video ids, up to 50 videos at a time. - Most of the Douyin interfaces no longer return the number of plays of the Post, and can only be obtained through this interface. - Price: 0.025$ each time. - List of statistics that can be obtained:     - Like count (digg_count)     - Download count (download_count)     - Play count (play_count)     - Share count (share_count) ### Parameters: - aweme_ids: Video id, supports multiple video ids, separated by commas, no more than 50, single is also possible, no need for commas. ### Return: - Post statistics data  # [示例/Example] aweme_ids = \"7372484719365098803,7126745726494821640\"
+# [中文] ### 用途: - 根据视频ID获取作品的统计数据，支持多个视频id，一次性最多支持50个视频。 - 抖音大多数接口已经不再返回作品的播放数，只能通过此接口获取。 - 价格为：0.025$一次。 - 可以获取到的统计有：     - 点赞数（digg_count）     - 下载数（download_count）     - 播放数（play_count）     - 分享数（share_count） ### 参数: - aweme_ids: 作品id，支持多个视频id，用逗号隔开即可，不能超过50个，单个也可以，则无需逗号。 ### 返回: - 作品统计数据  # [English] ### Purpose: - Get the statistical data of the Post according to the video ID, support multiple video ids, up to 50 videos at a time. - Most of the Douyin interfaces no longer return the number of plays of the Post, and can only be obtained through this interface. - Price: 0.025$ each time. - List of statistics that can be obtained:     - Like count (digg_count)     - Download count (download_count)     - Play count (play_count)     - Share count (share_count) ### Parameters: - aweme_ids: Video id, supports multiple video ids, separated by commas, no more than 50, single is also possible, no need for commas. ### Return: - Post statistics data  # [示例/Example] aweme_ids = \"7448118827402972455,7126745726494821640\"
 
 ### Example
 
@@ -1770,7 +1770,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_ids = '7372484719365098803,7126745726494821640' # str | 作品id/Video id
+    aweme_ids = '7448118827402972455,7126745726494821640' # str | 作品id/Video id
 
     try:
         # 根据视频ID批量获取作品的统计数据（点赞数、下载数、播放数、分享数）/Get the statistical data of the Post according to the video ID (like count, download count, play count, share count)
@@ -1812,7 +1812,7 @@ Name | Type | Description  | Notes
 
 根据视频ID批量获取作品的统计数据（点赞数、下载数、播放数、分享数）/Get the statistical data of the Post according to the video ID (like count, download count, play count, share count)
 
-# [中文] ### 用途: - 根据视频ID获取作品的统计数据，支持多个视频id，一次性最多支持50个视频。 - 抖音大多数接口已经不再返回作品的播放数，只能通过此接口获取。 - 价格为：0.025$一次。 - 可以获取到的统计有：     - 点赞数（digg_count）     - 下载数（download_count）     - 播放数（play_count）     - 分享数（share_count） ### 参数: - aweme_ids: 作品id，支持多个视频id，用逗号隔开即可，不能超过50个，单个也可以，则无需逗号。 ### 返回: - 作品统计数据  # [English] ### Purpose: - Get the statistical data of the Post according to the video ID, support multiple video ids, up to 50 videos at a time. - Most of the Douyin interfaces no longer return the number of plays of the Post, and can only be obtained through this interface. - Price: 0.025$ each time. - List of statistics that can be obtained:     - Like count (digg_count)     - Download count (download_count)     - Play count (play_count)     - Share count (share_count) ### Parameters: - aweme_ids: Video id, supports multiple video ids, separated by commas, no more than 50, single is also possible, no need for commas. ### Return: - Post statistics data  # [示例/Example] aweme_ids = \"7372484719365098803,7126745726494821640\"
+# [中文] ### 用途: - 根据视频ID获取作品的统计数据，支持多个视频id，一次性最多支持50个视频。 - 抖音大多数接口已经不再返回作品的播放数，只能通过此接口获取。 - 价格为：0.025$一次。 - 可以获取到的统计有：     - 点赞数（digg_count）     - 下载数（download_count）     - 播放数（play_count）     - 分享数（share_count） ### 参数: - aweme_ids: 作品id，支持多个视频id，用逗号隔开即可，不能超过50个，单个也可以，则无需逗号。 ### 返回: - 作品统计数据  # [English] ### Purpose: - Get the statistical data of the Post according to the video ID, support multiple video ids, up to 50 videos at a time. - Most of the Douyin interfaces no longer return the number of plays of the Post, and can only be obtained through this interface. - Price: 0.025$ each time. - List of statistics that can be obtained:     - Like count (digg_count)     - Download count (download_count)     - Play count (play_count)     - Share count (share_count) ### Parameters: - aweme_ids: Video id, supports multiple video ids, separated by commas, no more than 50, single is also possible, no need for commas. ### Return: - Post statistics data  # [示例/Example] aweme_ids = \"7448118827402972455,7126745726494821640\"
 
 ### Example
 
@@ -1843,7 +1843,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_ids = '7372484719365098803,7126745726494821640' # str | 作品id/Video id
+    aweme_ids = '7448118827402972455,7126745726494821640' # str | 作品id/Video id
 
     try:
         # 根据视频ID批量获取作品的统计数据（点赞数、下载数、播放数、分享数）/Get the statistical data of the Post according to the video ID (like count, download count, play count, share count)
@@ -2475,7 +2475,7 @@ Name | Type | Description  | Notes
 
 获取单个作品数据/Get single video data
 
-# [中文] ### 用途: - 获取单个作品数据，支持图文、视频等。 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data, support photo, video, etc. ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7372484719365098803\"
+# [中文] ### 用途: - 获取单个作品数据，支持图文、视频等。 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data, support photo, video, etc. ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7448118827402972455\"
 
 ### Example
 
@@ -2506,7 +2506,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_id = '7372484719365098803' # str | 作品id/Video id
+    aweme_id = '7448118827402972455' # str | 作品id/Video id
 
     try:
         # 获取单个作品数据/Get single video data
@@ -2548,7 +2548,7 @@ Name | Type | Description  | Notes
 
 获取单个作品数据/Get single video data
 
-# [中文] ### 用途: - 获取单个作品数据，支持图文、视频等。 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data, support photo, video, etc. ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7372484719365098803\"
+# [中文] ### 用途: - 获取单个作品数据，支持图文、视频等。 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data, support photo, video, etc. ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7448118827402972455\"
 
 ### Example
 
@@ -2579,7 +2579,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_id = '7372484719365098803' # str | 作品id/Video id
+    aweme_id = '7448118827402972455' # str | 作品id/Video id
 
     try:
         # 获取单个作品数据/Get single video data
@@ -2621,7 +2621,7 @@ Name | Type | Description  | Notes
 
 获取单个作品数据/Get single video data
 
-# [中文] ### 用途: - 获取单个作品数据，支持图文、视频等。 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data, support photo, video, etc. ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7372484719365098803\"
+# [中文] ### 用途: - 获取单个作品数据，支持图文、视频等。 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data, support photo, video, etc. ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7448118827402972455\"
 
 ### Example
 
@@ -2652,7 +2652,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_id = '7372484719365098803' # str | 作品id/Video id
+    aweme_id = '7448118827402972455' # str | 作品id/Video id
 
     try:
         # 获取单个作品数据/Get single video data
@@ -2694,7 +2694,7 @@ Name | Type | Description  | Notes
 
 获取单个作品数据/Get single video data
 
-# [中文] ### 用途: - 获取单个作品数据，支持图文、视频等。 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data, support photo, video, etc. ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7372484719365098803\"
+# [中文] ### 用途: - 获取单个作品数据，支持图文、视频等。 ### 参数: - aweme_id: 作品id ### 返回: - 作品数据  # [English] ### Purpose: - Get single video data, support photo, video, etc. ### Parameters: - aweme_id: Video id ### Return: - Video data  # [示例/Example] aweme_id = \"7448118827402972455\"
 
 ### Example
 
@@ -2725,7 +2725,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_id = '7372484719365098803' # str | 作品id/Video id
+    aweme_id = '7448118827402972455' # str | 作品id/Video id
 
     try:
         # 获取单个作品数据/Get single video data
@@ -3691,7 +3691,7 @@ Name | Type | Description  | Notes
 
 获取单个视频评论数据/Get single video comments data
 
-# [中文] ### 用途: - 获取单个视频评论数据 ### 参数: - aweme_id: 作品id - cursor: 游标，用于翻页，第一页为0，第二页为第一次响应中的cursor值。 - count: 数量，请保持默认，否则会出现BUG。 ### 返回: - 评论数据  # [English] ### Purpose: - Get single video comments data ### Parameters: - aweme_id: Video id - cursor: Cursor, used for paging, the first page is 0, the second page is the cursor value in the first response. - count: Number Please keep the default, otherwise there will be BUG. ### Return: - Comments data  # [示例/Example] aweme_id = \"7372484719365098803\" cursor = 0 count = 20
+# [中文] ### 用途: - 获取单个视频评论数据 ### 参数: - aweme_id: 作品id - cursor: 游标，用于翻页，第一页为0，第二页为第一次响应中的cursor值。 - count: 数量，请保持默认，否则会出现BUG。 ### 返回: - 评论数据  # [English] ### Purpose: - Get single video comments data ### Parameters: - aweme_id: Video id - cursor: Cursor, used for paging, the first page is 0, the second page is the cursor value in the first response. - count: Number Please keep the default, otherwise there will be BUG. ### Return: - Comments data  # [示例/Example] aweme_id = \"7448118827402972455\" cursor = 0 count = 20
 
 ### Example
 
@@ -3722,7 +3722,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_id = '7372484719365098803' # str | 作品id/Video id
+    aweme_id = '7448118827402972455' # str | 作品id/Video id
 cursor = 0 # int | 游标/Cursor (optional) (default to 0)
 count = 20 # int | 数量/Number (optional) (default to 20)
 
@@ -3768,7 +3768,7 @@ Name | Type | Description  | Notes
 
 获取单个视频评论数据/Get single video comments data
 
-# [中文] ### 用途: - 获取单个视频评论数据 ### 参数: - aweme_id: 作品id - cursor: 游标，用于翻页，第一页为0，第二页为第一次响应中的cursor值。 - count: 数量，请保持默认，否则会出现BUG。 ### 返回: - 评论数据  # [English] ### Purpose: - Get single video comments data ### Parameters: - aweme_id: Video id - cursor: Cursor, used for paging, the first page is 0, the second page is the cursor value in the first response. - count: Number Please keep the default, otherwise there will be BUG. ### Return: - Comments data  # [示例/Example] aweme_id = \"7372484719365098803\" cursor = 0 count = 20
+# [中文] ### 用途: - 获取单个视频评论数据 ### 参数: - aweme_id: 作品id - cursor: 游标，用于翻页，第一页为0，第二页为第一次响应中的cursor值。 - count: 数量，请保持默认，否则会出现BUG。 ### 返回: - 评论数据  # [English] ### Purpose: - Get single video comments data ### Parameters: - aweme_id: Video id - cursor: Cursor, used for paging, the first page is 0, the second page is the cursor value in the first response. - count: Number Please keep the default, otherwise there will be BUG. ### Return: - Comments data  # [示例/Example] aweme_id = \"7448118827402972455\" cursor = 0 count = 20
 
 ### Example
 
@@ -3799,7 +3799,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_id = '7372484719365098803' # str | 作品id/Video id
+    aweme_id = '7448118827402972455' # str | 作品id/Video id
 cursor = 0 # int | 游标/Cursor (optional) (default to 0)
 count = 20 # int | 数量/Number (optional) (default to 20)
 
@@ -4635,7 +4635,7 @@ Name | Type | Description  | Notes
 
 根据视频ID获取作品的统计数据（点赞数、下载数、播放数、分享数）/Get the statistical data of the Post according to the video ID (like count, download count, play count, share count)
 
-# [中文] ### 用途: - 根据视频ID获取作品的统计数据 - 抖音大多数接口已经不再返回作品的播放数，只能通过此接口获取。 - 可以获取到的统计有：     - 点赞数（digg_count）     - 下载数（download_count）     - 播放数（play_count）     - 分享数（share_count） ### 参数: - aweme_ids: 作品id，支持多个视频id，用逗号隔开即可，不能超过2个，单个也可以，则无需逗号。 ### 返回: - 作品统计数据  # [English] ### Purpose: - Get the statistical data of the Post according to the video ID - Most of the Douyin interfaces no longer return the number of plays of the Post, and can only be obtained through this interface. - List of statistics that can be obtained:     - Like count (digg_count)     - Download count (download_count)     - Play count (play_count)     - Share count (share_count) ### Parameters: - aweme_ids: Video id, supports multiple video ids, separated by commas, no more than 2, single is also possible, no need for commas. ### Return: - Post statistics data  # [示例/Example] aweme_ids = \"7372484719365098803,7126745726494821640\"
+# [中文] ### 用途: - 根据视频ID获取作品的统计数据 - 抖音大多数接口已经不再返回作品的播放数，只能通过此接口获取。 - 可以获取到的统计有：     - 点赞数（digg_count）     - 下载数（download_count）     - 播放数（play_count）     - 分享数（share_count） ### 参数: - aweme_ids: 作品id，支持多个视频id，用逗号隔开即可，不能超过2个，单个也可以，则无需逗号。 ### 返回: - 作品统计数据  # [English] ### Purpose: - Get the statistical data of the Post according to the video ID - Most of the Douyin interfaces no longer return the number of plays of the Post, and can only be obtained through this interface. - List of statistics that can be obtained:     - Like count (digg_count)     - Download count (download_count)     - Play count (play_count)     - Share count (share_count) ### Parameters: - aweme_ids: Video id, supports multiple video ids, separated by commas, no more than 2, single is also possible, no need for commas. ### Return: - Post statistics data  # [示例/Example] aweme_ids = \"7448118827402972455,7126745726494821640\"
 
 ### Example
 
@@ -4666,7 +4666,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_ids = '7372484719365098803,7126745726494821640' # str | 作品id/Video id
+    aweme_ids = '7448118827402972455,7126745726494821640' # str | 作品id/Video id
 
     try:
         # 根据视频ID获取作品的统计数据（点赞数、下载数、播放数、分享数）/Get the statistical data of the Post according to the video ID (like count, download count, play count, share count)
@@ -4708,7 +4708,7 @@ Name | Type | Description  | Notes
 
 根据视频ID获取作品的统计数据（点赞数、下载数、播放数、分享数）/Get the statistical data of the Post according to the video ID (like count, download count, play count, share count)
 
-# [中文] ### 用途: - 根据视频ID获取作品的统计数据 - 抖音大多数接口已经不再返回作品的播放数，只能通过此接口获取。 - 可以获取到的统计有：     - 点赞数（digg_count）     - 下载数（download_count）     - 播放数（play_count）     - 分享数（share_count） ### 参数: - aweme_ids: 作品id，支持多个视频id，用逗号隔开即可，不能超过2个，单个也可以，则无需逗号。 ### 返回: - 作品统计数据  # [English] ### Purpose: - Get the statistical data of the Post according to the video ID - Most of the Douyin interfaces no longer return the number of plays of the Post, and can only be obtained through this interface. - List of statistics that can be obtained:     - Like count (digg_count)     - Download count (download_count)     - Play count (play_count)     - Share count (share_count) ### Parameters: - aweme_ids: Video id, supports multiple video ids, separated by commas, no more than 2, single is also possible, no need for commas. ### Return: - Post statistics data  # [示例/Example] aweme_ids = \"7372484719365098803,7126745726494821640\"
+# [中文] ### 用途: - 根据视频ID获取作品的统计数据 - 抖音大多数接口已经不再返回作品的播放数，只能通过此接口获取。 - 可以获取到的统计有：     - 点赞数（digg_count）     - 下载数（download_count）     - 播放数（play_count）     - 分享数（share_count） ### 参数: - aweme_ids: 作品id，支持多个视频id，用逗号隔开即可，不能超过2个，单个也可以，则无需逗号。 ### 返回: - 作品统计数据  # [English] ### Purpose: - Get the statistical data of the Post according to the video ID - Most of the Douyin interfaces no longer return the number of plays of the Post, and can only be obtained through this interface. - List of statistics that can be obtained:     - Like count (digg_count)     - Download count (download_count)     - Play count (play_count)     - Share count (share_count) ### Parameters: - aweme_ids: Video id, supports multiple video ids, separated by commas, no more than 2, single is also possible, no need for commas. ### Return: - Post statistics data  # [示例/Example] aweme_ids = \"7448118827402972455,7126745726494821640\"
 
 ### Example
 
@@ -4739,7 +4739,7 @@ configuration = tikhub_sdk_v2.Configuration(
 with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.DouyinAppV3APIApi(api_client)
-    aweme_ids = '7372484719365098803,7126745726494821640' # str | 作品id/Video id
+    aweme_ids = '7448118827402972455,7126745726494821640' # str | 作品id/Video id
 
     try:
         # 根据视频ID获取作品的统计数据（点赞数、下载数、播放数、分享数）/Get the statistical data of the Post according to the video ID (like count, download count, play count, share count)

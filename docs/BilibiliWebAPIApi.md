@@ -24,6 +24,10 @@ Method | HTTP request | Description
 [**fetch_collect_folders_api_v1_bilibili_web_fetch_user_profile_get_0**](BilibiliWebAPIApi.md#fetch_collect_folders_api_v1_bilibili_web_fetch_user_profile_get_0) | **GET** /api/v1/bilibili/web/fetch_user_profile | 获取指定用户的信息/Get information of specified user
 [**fetch_collect_folders_api_v1_bilibili_web_fetch_video_comments_get**](BilibiliWebAPIApi.md#fetch_collect_folders_api_v1_bilibili_web_fetch_video_comments_get) | **GET** /api/v1/bilibili/web/fetch_video_comments | 获取指定视频的评论/Get comments on the specified video
 [**fetch_collect_folders_api_v1_bilibili_web_fetch_video_comments_get_0**](BilibiliWebAPIApi.md#fetch_collect_folders_api_v1_bilibili_web_fetch_video_comments_get_0) | **GET** /api/v1/bilibili/web/fetch_video_comments | 获取指定视频的评论/Get comments on the specified video
+[**fetch_general_search_api_v1_bilibili_web_fetch_general_search_get**](BilibiliWebAPIApi.md#fetch_general_search_api_v1_bilibili_web_fetch_general_search_get) | **GET** /api/v1/bilibili/web/fetch_general_search | 获取综合搜索信息/Get general search data
+[**fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0**](BilibiliWebAPIApi.md#fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0) | **GET** /api/v1/bilibili/web/fetch_general_search | 获取综合搜索信息/Get general search data
+[**fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get**](BilibiliWebAPIApi.md#fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get) | **GET** /api/v1/bilibili/web/fetch_hot_search | 获取热门搜索信息/Get hot search data
+[**fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0**](BilibiliWebAPIApi.md#fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0) | **GET** /api/v1/bilibili/web/fetch_hot_search | 获取热门搜索信息/Get hot search data
 [**fetch_one_video_api_v1_bilibili_web_bv_to_aid_get**](BilibiliWebAPIApi.md#fetch_one_video_api_v1_bilibili_web_bv_to_aid_get) | **GET** /api/v1/bilibili/web/bv_to_aid | 通过bv号获得视频aid号/Generate aid by bvid
 [**fetch_one_video_api_v1_bilibili_web_bv_to_aid_get_0**](BilibiliWebAPIApi.md#fetch_one_video_api_v1_bilibili_web_bv_to_aid_get_0) | **GET** /api/v1/bilibili/web/bv_to_aid | 通过bv号获得视频aid号/Generate aid by bvid
 [**fetch_one_video_api_v1_bilibili_web_fetch_one_video_get**](BilibiliWebAPIApi.md#fetch_one_video_api_v1_bilibili_web_fetch_one_video_get) | **GET** /api/v1/bilibili/web/fetch_one_video | 获取单个视频详情信息/Get single video data
@@ -34,6 +38,8 @@ Method | HTTP request | Description
 [**fetch_one_video_api_v1_bilibili_web_fetch_video_parts_get_0**](BilibiliWebAPIApi.md#fetch_one_video_api_v1_bilibili_web_fetch_video_parts_get_0) | **GET** /api/v1/bilibili/web/fetch_video_parts | 通过bv号获得视频分p信息/Get Video Parts By bvid
 [**fetch_one_video_api_v1_bilibili_web_fetch_video_playurl_get**](BilibiliWebAPIApi.md#fetch_one_video_api_v1_bilibili_web_fetch_video_playurl_get) | **GET** /api/v1/bilibili/web/fetch_video_playurl | 获取视频流地址/Get video playurl
 [**fetch_one_video_api_v1_bilibili_web_fetch_video_playurl_get_0**](BilibiliWebAPIApi.md#fetch_one_video_api_v1_bilibili_web_fetch_video_playurl_get_0) | **GET** /api/v1/bilibili/web/fetch_video_playurl | 获取视频流地址/Get video playurl
+[**fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get**](BilibiliWebAPIApi.md#fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get) | **GET** /api/v1/bilibili/web/fetch_one_video_v2 | 获取单个视频详情信息V2/Get single video data V2
+[**fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0**](BilibiliWebAPIApi.md#fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0) | **GET** /api/v1/bilibili/web/fetch_one_video_v2 | 获取单个视频详情信息V2/Get single video data V2
 [**fetch_user_collection_videos_api_v1_bilibili_web_fetch_user_collection_videos_get**](BilibiliWebAPIApi.md#fetch_user_collection_videos_api_v1_bilibili_web_fetch_user_collection_videos_get) | **GET** /api/v1/bilibili/web/fetch_user_collection_videos | 获取指定收藏夹内视频数据/Gets video data from a collection folder
 [**fetch_user_collection_videos_api_v1_bilibili_web_fetch_user_collection_videos_get_0**](BilibiliWebAPIApi.md#fetch_user_collection_videos_api_v1_bilibili_web_fetch_user_collection_videos_get_0) | **GET** /api/v1/bilibili/web/fetch_user_collection_videos | 获取指定收藏夹内视频数据/Gets video data from a collection folder
 [**fetch_user_post_videos_api_v1_bilibili_web_fetch_user_post_videos_get**](BilibiliWebAPIApi.md#fetch_user_post_videos_api_v1_bilibili_web_fetch_user_post_videos_get) | **GET** /api/v1/bilibili/web/fetch_user_post_videos | 获取用户主页作品数据/Get user homepage video data
@@ -49,6 +55,7 @@ Method | HTTP request | Description
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -61,9 +68,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     
@@ -84,7 +100,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -107,6 +123,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -119,9 +136,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     
@@ -142,7 +168,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -165,6 +191,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -177,9 +204,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     uid = '178360345' # str | 用户UID
@@ -204,7 +240,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -228,6 +264,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -240,9 +277,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     uid = '178360345' # str | 用户UID
@@ -267,7 +313,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -291,6 +337,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -303,9 +350,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     pn = 1 # int | 页码/Page number (optional) (default to 1)
@@ -330,7 +386,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -354,6 +410,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -366,9 +423,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     pn = 1 # int | 页码/Page number (optional) (default to 1)
@@ -393,7 +459,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -417,6 +483,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -429,9 +496,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1M1421t7hT' # str | 作品id/Video id
@@ -460,7 +536,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -484,6 +560,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -496,9 +573,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1M1421t7hT' # str | 作品id/Video id
@@ -527,7 +613,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -551,6 +637,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -563,9 +650,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     room_id = '22816111' # str | 直播间ID/Live room ID
@@ -590,7 +686,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -614,6 +710,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -626,9 +723,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     room_id = '22816111' # str | 直播间ID/Live room ID
@@ -653,7 +759,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -677,6 +783,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -689,9 +796,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     area_id = '9' # str | 直播分区id/Live area ID
@@ -718,7 +834,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -742,6 +858,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -754,9 +871,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     area_id = '9' # str | 直播分区id/Live area ID
@@ -783,7 +909,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -807,6 +933,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -819,9 +946,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     room_id = '1815229528' # str | 直播间ID/Live room ID
@@ -846,7 +982,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -870,6 +1006,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -882,9 +1019,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     room_id = '1815229528' # str | 直播间ID/Live room ID
@@ -909,7 +1055,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -933,6 +1079,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -945,9 +1092,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     uid = '16015678' # str | 用户UID
@@ -974,7 +1130,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -998,6 +1154,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1010,9 +1167,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     uid = '16015678' # str | 用户UID
@@ -1039,7 +1205,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1063,6 +1229,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1075,9 +1242,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     uid = '178360345' # str | 用户UID
@@ -1102,7 +1278,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1126,6 +1302,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1138,9 +1315,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     uid = '178360345' # str | 用户UID
@@ -1165,7 +1351,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1189,6 +1375,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1201,9 +1388,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1M1421t7hT' # str | 作品id/Video id
@@ -1230,7 +1426,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1254,6 +1450,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1266,9 +1463,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1M1421t7hT' # str | 作品id/Video id
@@ -1295,7 +1501,311 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_general_search_api_v1_bilibili_web_fetch_general_search_get**
+> ResponseModel fetch_general_search_api_v1_bilibili_web_fetch_general_search_get(keyword, order, page, page_size)
+
+获取综合搜索信息/Get general search data
+
+# [中文] ### 用途: - 获取综合搜索信息 ### 参数: - keyword: 搜索关键词 - order: 排序方式     - totalrank 综合排序     - click 最多播放     - pubdate 最新发布     - dm 最多弹幕     - stow 最多收藏 - page: 页码 - page_size: 每页数量 ### 返回: - 综合搜索信息  # [English] ### Purpose: - Get general search data ### Parameters: - keyword: Search keyword - order: Order method     - totalrank Comprehensive sorting     - click Most played     - pubdate Latest release     - dm Most barrage     - stow Most collection - page: Page number - page_size: Number per page ### Return: - General search data  # [示例/Example] keyword = \"火影忍者\" order = \"totalrank\" page = 1 page_size = 42
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
+    keyword = '火影忍者' # str | 搜索关键词/Search keyword
+order = 'totalrank' # str | 排序方式/Order method
+page = 1 # int | 页码/Page number
+page_size = 42 # int | 每页数量/Number per page
+
+    try:
+        # 获取综合搜索信息/Get general search data
+        api_response = api_instance.fetch_general_search_api_v1_bilibili_web_fetch_general_search_get(keyword, order, page, page_size)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling BilibiliWebAPIApi->fetch_general_search_api_v1_bilibili_web_fetch_general_search_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **keyword** | **str**| 搜索关键词/Search keyword | 
+ **order** | **str**| 排序方式/Order method | 
+ **page** | **int**| 页码/Page number | 
+ **page_size** | **int**| 每页数量/Number per page | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0**
+> ResponseModel fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0(keyword, order, page, page_size)
+
+获取综合搜索信息/Get general search data
+
+# [中文] ### 用途: - 获取综合搜索信息 ### 参数: - keyword: 搜索关键词 - order: 排序方式     - totalrank 综合排序     - click 最多播放     - pubdate 最新发布     - dm 最多弹幕     - stow 最多收藏 - page: 页码 - page_size: 每页数量 ### 返回: - 综合搜索信息  # [English] ### Purpose: - Get general search data ### Parameters: - keyword: Search keyword - order: Order method     - totalrank Comprehensive sorting     - click Most played     - pubdate Latest release     - dm Most barrage     - stow Most collection - page: Page number - page_size: Number per page ### Return: - General search data  # [示例/Example] keyword = \"火影忍者\" order = \"totalrank\" page = 1 page_size = 42
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
+    keyword = '火影忍者' # str | 搜索关键词/Search keyword
+order = 'totalrank' # str | 排序方式/Order method
+page = 1 # int | 页码/Page number
+page_size = 42 # int | 每页数量/Number per page
+
+    try:
+        # 获取综合搜索信息/Get general search data
+        api_response = api_instance.fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0(keyword, order, page, page_size)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling BilibiliWebAPIApi->fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **keyword** | **str**| 搜索关键词/Search keyword | 
+ **order** | **str**| 排序方式/Order method | 
+ **page** | **int**| 页码/Page number | 
+ **page_size** | **int**| 每页数量/Number per page | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get**
+> ResponseModel fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get(limit)
+
+获取热门搜索信息/Get hot search data
+
+# [中文] ### 用途: - 获取热门搜索信息 ### 参数: - limit: 返回数量 ### 返回: - 热门搜索信息 ### 说明: - limit默认为10，上限为50  # [English] ### Purpose: - Get hot search data ### Parameters: - limit: Return number ### Return: - Hot search data ### Note: - limit default is 10, maximum is 50  # [示例/Example] limit = 10
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
+    limit = '10' # str | 返回数量/Return number
+
+    try:
+        # 获取热门搜索信息/Get hot search data
+        api_response = api_instance.fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get(limit)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling BilibiliWebAPIApi->fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **str**| 返回数量/Return number | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0**
+> ResponseModel fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0(limit)
+
+获取热门搜索信息/Get hot search data
+
+# [中文] ### 用途: - 获取热门搜索信息 ### 参数: - limit: 返回数量 ### 返回: - 热门搜索信息 ### 说明: - limit默认为10，上限为50  # [English] ### Purpose: - Get hot search data ### Parameters: - limit: Return number ### Return: - Hot search data ### Note: - limit default is 10, maximum is 50  # [示例/Example] limit = 10
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
+    limit = '10' # str | 返回数量/Return number
+
+    try:
+        # 获取热门搜索信息/Get hot search data
+        api_response = api_instance.fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0(limit)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling BilibiliWebAPIApi->fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **str**| 返回数量/Return number | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1319,6 +1829,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1331,9 +1842,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1M1421t7hT' # str | 作品id/Video id
@@ -1358,7 +1878,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1382,6 +1902,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1394,9 +1915,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1M1421t7hT' # str | 作品id/Video id
@@ -1421,7 +1951,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1445,6 +1975,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1457,9 +1988,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1M1421t7hT' # str | 作品id/Video id
@@ -1484,7 +2024,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1508,6 +2048,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1520,9 +2061,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1M1421t7hT' # str | 作品id/Video id
@@ -1547,7 +2097,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1571,6 +2121,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1583,9 +2134,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     cid = '1639235405' # str | 作品cid/Video cid
@@ -1610,7 +2170,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1634,6 +2194,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1646,9 +2207,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     cid = '1639235405' # str | 作品cid/Video cid
@@ -1673,7 +2243,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1697,6 +2267,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1709,9 +2280,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1vf421i7hV' # str | 作品id/Video id
@@ -1736,7 +2316,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1760,6 +2340,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1772,9 +2353,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1vf421i7hV' # str | 作品id/Video id
@@ -1799,7 +2389,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1823,6 +2413,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1835,9 +2426,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1y7411Q7Eq' # str | 作品id/Video id
@@ -1864,7 +2464,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1888,6 +2488,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1900,9 +2501,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     bv_id = 'BV1y7411Q7Eq' # str | 作品id/Video id
@@ -1929,7 +2539,157 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get**
+> ResponseModel fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get(a_id, c_id)
+
+获取单个视频详情信息V2/Get single video data V2
+
+# [中文] ### 用途: - 获取单个视频详情信息V2 ### 参数: - a_id: 作品id - c_id: 作品cid ### 返回: - 视频详情信息V2  # [English] ### Purpose: - Get single video data V2 ### Parameters: - a_id: Video id - c_id: Video cid ### Return: - Video data V2  # [示例/Example] a_id = \"114006081739452\" c_id = \"28400484458\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
+    a_id = '114006081739452' # str | 作品id/Video id
+c_id = '28400484458' # str | 作品cid/Video cid
+
+    try:
+        # 获取单个视频详情信息V2/Get single video data V2
+        api_response = api_instance.fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get(a_id, c_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling BilibiliWebAPIApi->fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **a_id** | **str**| 作品id/Video id | 
+ **c_id** | **str**| 作品cid/Video cid | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0**
+> ResponseModel fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0(a_id, c_id)
+
+获取单个视频详情信息V2/Get single video data V2
+
+# [中文] ### 用途: - 获取单个视频详情信息V2 ### 参数: - a_id: 作品id - c_id: 作品cid ### 返回: - 视频详情信息V2  # [English] ### Purpose: - Get single video data V2 ### Parameters: - a_id: Video id - c_id: Video cid ### Return: - Video data V2  # [示例/Example] a_id = \"114006081739452\" c_id = \"28400484458\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
+    a_id = '114006081739452' # str | 作品id/Video id
+c_id = '28400484458' # str | 作品cid/Video cid
+
+    try:
+        # 获取单个视频详情信息V2/Get single video data V2
+        api_response = api_instance.fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0(a_id, c_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling BilibiliWebAPIApi->fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **a_id** | **str**| 作品id/Video id | 
+ **c_id** | **str**| 作品cid/Video cid | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1953,6 +2713,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1965,9 +2726,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     folder_id = '1756059545' # str | 收藏夹id/collection folder id
@@ -1994,7 +2764,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -2018,6 +2788,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -2030,9 +2801,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     folder_id = '1756059545' # str | 收藏夹id/collection folder id
@@ -2059,7 +2839,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -2083,6 +2863,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -2095,9 +2876,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     uid = '178360345' # str | 用户UID
@@ -2124,7 +2914,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -2148,6 +2938,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -2160,9 +2951,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.BilibiliWebAPIApi(api_client)
     uid = '178360345' # str | 用户UID
@@ -2189,7 +2989,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

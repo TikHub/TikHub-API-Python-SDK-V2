@@ -84,6 +84,20 @@ class TestTikTokWebAPIApi(unittest.TestCase):
         """
         pass
 
+    def test_fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post(self):
+        """Test case for fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post
+
+        首页推荐作品/Home Feed  # noqa: E501
+        """
+        pass
+
+    def test_fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post_0(self):
+        """Test case for fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post_0
+
+        首页推荐作品/Home Feed  # noqa: E501
+        """
+        pass
+
     def test_fetch_live_recommend_api_v1_tiktok_web_fetch_live_recommend_get(self):
         """Test case for fetch_live_recommend_api_v1_tiktok_web_fetch_live_recommend_get
 

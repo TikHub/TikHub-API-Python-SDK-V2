@@ -6714,264 +6714,6 @@ class DouyinWebAPIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get(self, keyword, **kwargs):  # noqa: E501
-        """搜索话题/Search Challenge  # noqa: E501
-
-        # [中文] ### 用途: - 搜索话题，此接口不带Cookie请求时只能获取到前30条数据，建议自行提供Cookie获取更多数据。 - Cookie获取方式：打开网页抖音，登录后，按F12打开开发者工具，点击Network，刷新页面，找到第一个请求，复制Cookie。 ### 参数: - keyword: 关键词 - cursor: 偏移量 - count: 数量 - cookie: 用户自行提供的Cookie，用于获取更多数据。 ### 返回: - 话题搜索结果  # [English] ### Purpose: - Search Challenge, when this interface is requested without Cookie, only the first 30 data can be obtained, it is recommended to provide Cookie to get more data. - Cookie acquisition method: Open the Douyin webpage, log in, press F12 to open the developer tool, click Network, refresh the page, find the first request, copy the Cookie. ### Parameters: - keyword: Keyword - cursor: Offset - count: Number - cookie: User provided Cookie, used to get more data. ### Return: - Challenge search results  # [示例/Example] keyword = \"动漫\" cursor = 0 count = 20  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get(keyword, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool: execute request asynchronously
-        :param str keyword: 关键词/Keyword (required)
-        :param int cursor: 偏移量/Offset
-        :param int count: 数量/Number
-        :param str cookie: 用户自行提供的Cookie/User provided Cookie
-        :param _preload_content: if False, the urllib3.HTTPResponse object will
-                                 be returned without reading/decoding response
-                                 data. Default is True.
-        :param _request_timeout: timeout setting for this request. If one
-                                 number provided, it will be total request
-                                 timeout. It can also be a pair (tuple) of
-                                 (connection, read) timeouts.
-        :return: ResponseModel
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        return self.fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_with_http_info(keyword, **kwargs)  # noqa: E501
-
-    def fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_with_http_info(self, keyword, **kwargs):  # noqa: E501
-        """搜索话题/Search Challenge  # noqa: E501
-
-        # [中文] ### 用途: - 搜索话题，此接口不带Cookie请求时只能获取到前30条数据，建议自行提供Cookie获取更多数据。 - Cookie获取方式：打开网页抖音，登录后，按F12打开开发者工具，点击Network，刷新页面，找到第一个请求，复制Cookie。 ### 参数: - keyword: 关键词 - cursor: 偏移量 - count: 数量 - cookie: 用户自行提供的Cookie，用于获取更多数据。 ### 返回: - 话题搜索结果  # [English] ### Purpose: - Search Challenge, when this interface is requested without Cookie, only the first 30 data can be obtained, it is recommended to provide Cookie to get more data. - Cookie acquisition method: Open the Douyin webpage, log in, press F12 to open the developer tool, click Network, refresh the page, find the first request, copy the Cookie. ### Parameters: - keyword: Keyword - cursor: Offset - count: Number - cookie: User provided Cookie, used to get more data. ### Return: - Challenge search results  # [示例/Example] keyword = \"动漫\" cursor = 0 count = 20  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_with_http_info(keyword, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool: execute request asynchronously
-        :param str keyword: 关键词/Keyword (required)
-        :param int cursor: 偏移量/Offset
-        :param int count: 数量/Number
-        :param str cookie: 用户自行提供的Cookie/User provided Cookie
-        :param _return_http_data_only: response data without head status code
-                                       and headers
-        :param _preload_content: if False, the urllib3.HTTPResponse object will
-                                 be returned without reading/decoding response
-                                 data. Default is True.
-        :param _request_timeout: timeout setting for this request. If one
-                                 number provided, it will be total request
-                                 timeout. It can also be a pair (tuple) of
-                                 (connection, read) timeouts.
-        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        local_var_params = locals()
-
-        all_params = [
-            'keyword',
-            'cursor',
-            'count',
-            'cookie'
-        ]
-        all_params.extend(
-            [
-                'async_req',
-                '_return_http_data_only',
-                '_preload_content',
-                '_request_timeout'
-            ]
-        )
-
-        for key, val in six.iteritems(local_var_params['kwargs']):
-            if key not in all_params:
-                raise ApiTypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get" % key
-                )
-            local_var_params[key] = val
-        del local_var_params['kwargs']
-        # verify the required parameter 'keyword' is set
-        if self.api_client.client_side_validation and ('keyword' not in local_var_params or  # noqa: E501
-                                                        local_var_params['keyword'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `keyword` when calling `fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'keyword' in local_var_params and local_var_params['keyword'] is not None:  # noqa: E501
-            query_params.append(('keyword', local_var_params['keyword']))  # noqa: E501
-        if 'cursor' in local_var_params and local_var_params['cursor'] is not None:  # noqa: E501
-            query_params.append(('cursor', local_var_params['cursor']))  # noqa: E501
-        if 'count' in local_var_params and local_var_params['count'] is not None:  # noqa: E501
-            query_params.append(('count', local_var_params['count']))  # noqa: E501
-        if 'cookie' in local_var_params and local_var_params['cookie'] is not None:  # noqa: E501
-            query_params.append(('cookie', local_var_params['cookie']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/api/v1/douyin/web/fetch_search_challenge', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='ResponseModel',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=local_var_params.get('async_req'),
-            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
-            _preload_content=local_var_params.get('_preload_content', True),
-            _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0(self, keyword, **kwargs):  # noqa: E501
-        """搜索话题/Search Challenge  # noqa: E501
-
-        # [中文] ### 用途: - 搜索话题，此接口不带Cookie请求时只能获取到前30条数据，建议自行提供Cookie获取更多数据。 - Cookie获取方式：打开网页抖音，登录后，按F12打开开发者工具，点击Network，刷新页面，找到第一个请求，复制Cookie。 ### 参数: - keyword: 关键词 - cursor: 偏移量 - count: 数量 - cookie: 用户自行提供的Cookie，用于获取更多数据。 ### 返回: - 话题搜索结果  # [English] ### Purpose: - Search Challenge, when this interface is requested without Cookie, only the first 30 data can be obtained, it is recommended to provide Cookie to get more data. - Cookie acquisition method: Open the Douyin webpage, log in, press F12 to open the developer tool, click Network, refresh the page, find the first request, copy the Cookie. ### Parameters: - keyword: Keyword - cursor: Offset - count: Number - cookie: User provided Cookie, used to get more data. ### Return: - Challenge search results  # [示例/Example] keyword = \"动漫\" cursor = 0 count = 20  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0(keyword, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool: execute request asynchronously
-        :param str keyword: 关键词/Keyword (required)
-        :param int cursor: 偏移量/Offset
-        :param int count: 数量/Number
-        :param str cookie: 用户自行提供的Cookie/User provided Cookie
-        :param _preload_content: if False, the urllib3.HTTPResponse object will
-                                 be returned without reading/decoding response
-                                 data. Default is True.
-        :param _request_timeout: timeout setting for this request. If one
-                                 number provided, it will be total request
-                                 timeout. It can also be a pair (tuple) of
-                                 (connection, read) timeouts.
-        :return: ResponseModel
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        return self.fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0_with_http_info(keyword, **kwargs)  # noqa: E501
-
-    def fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0_with_http_info(self, keyword, **kwargs):  # noqa: E501
-        """搜索话题/Search Challenge  # noqa: E501
-
-        # [中文] ### 用途: - 搜索话题，此接口不带Cookie请求时只能获取到前30条数据，建议自行提供Cookie获取更多数据。 - Cookie获取方式：打开网页抖音，登录后，按F12打开开发者工具，点击Network，刷新页面，找到第一个请求，复制Cookie。 ### 参数: - keyword: 关键词 - cursor: 偏移量 - count: 数量 - cookie: 用户自行提供的Cookie，用于获取更多数据。 ### 返回: - 话题搜索结果  # [English] ### Purpose: - Search Challenge, when this interface is requested without Cookie, only the first 30 data can be obtained, it is recommended to provide Cookie to get more data. - Cookie acquisition method: Open the Douyin webpage, log in, press F12 to open the developer tool, click Network, refresh the page, find the first request, copy the Cookie. ### Parameters: - keyword: Keyword - cursor: Offset - count: Number - cookie: User provided Cookie, used to get more data. ### Return: - Challenge search results  # [示例/Example] keyword = \"动漫\" cursor = 0 count = 20  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0_with_http_info(keyword, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool: execute request asynchronously
-        :param str keyword: 关键词/Keyword (required)
-        :param int cursor: 偏移量/Offset
-        :param int count: 数量/Number
-        :param str cookie: 用户自行提供的Cookie/User provided Cookie
-        :param _return_http_data_only: response data without head status code
-                                       and headers
-        :param _preload_content: if False, the urllib3.HTTPResponse object will
-                                 be returned without reading/decoding response
-                                 data. Default is True.
-        :param _request_timeout: timeout setting for this request. If one
-                                 number provided, it will be total request
-                                 timeout. It can also be a pair (tuple) of
-                                 (connection, read) timeouts.
-        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        local_var_params = locals()
-
-        all_params = [
-            'keyword',
-            'cursor',
-            'count',
-            'cookie'
-        ]
-        all_params.extend(
-            [
-                'async_req',
-                '_return_http_data_only',
-                '_preload_content',
-                '_request_timeout'
-            ]
-        )
-
-        for key, val in six.iteritems(local_var_params['kwargs']):
-            if key not in all_params:
-                raise ApiTypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0" % key
-                )
-            local_var_params[key] = val
-        del local_var_params['kwargs']
-        # verify the required parameter 'keyword' is set
-        if self.api_client.client_side_validation and ('keyword' not in local_var_params or  # noqa: E501
-                                                        local_var_params['keyword'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `keyword` when calling `fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'keyword' in local_var_params and local_var_params['keyword'] is not None:  # noqa: E501
-            query_params.append(('keyword', local_var_params['keyword']))  # noqa: E501
-        if 'cursor' in local_var_params and local_var_params['cursor'] is not None:  # noqa: E501
-            query_params.append(('cursor', local_var_params['cursor']))  # noqa: E501
-        if 'count' in local_var_params and local_var_params['count'] is not None:  # noqa: E501
-            query_params.append(('count', local_var_params['count']))  # noqa: E501
-        if 'cookie' in local_var_params and local_var_params['cookie'] is not None:  # noqa: E501
-            query_params.append(('cookie', local_var_params['cookie']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/api/v1/douyin/web/fetch_search_challenge', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='ResponseModel',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=local_var_params.get('async_req'),
-            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
-            _preload_content=local_var_params.get('_preload_content', True),
-            _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
     def fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_post(self, **kwargs):  # noqa: E501
         """搜索话题/Search Challenge  # noqa: E501
 
@@ -7708,6 +7450,254 @@ class DouyinWebAPIApi(object):
 
         return self.api_client.call_api(
             '/api/v1/douyin/web/fetch_user_collection_videos', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get(self, collects_id, **kwargs):  # noqa: E501
+        """获取用户收藏夹数据/Get user collection data  # noqa: E501
+
+        # [中文] ### 用途: - 获取用户收藏夹数据 ### 参数: - collects_id: 收藏夹id - max_cursor: 最大游标 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user collection data ### Parameters: - collects_id: Collection id - max_cursor: Maximum cursor - count: Maximum number ### Return: - User video data  # [示例/Example] collects_id = \"\" max_cursor = 0 counts = 20  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get(collects_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str collects_id: 收藏夹id/Collection id (required)
+        :param int max_cursor: 最大游标/Maximum cursor
+        :param int counts: 每页数量/Number per page
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_with_http_info(collects_id, **kwargs)  # noqa: E501
+
+    def fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_with_http_info(self, collects_id, **kwargs):  # noqa: E501
+        """获取用户收藏夹数据/Get user collection data  # noqa: E501
+
+        # [中文] ### 用途: - 获取用户收藏夹数据 ### 参数: - collects_id: 收藏夹id - max_cursor: 最大游标 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user collection data ### Parameters: - collects_id: Collection id - max_cursor: Maximum cursor - count: Maximum number ### Return: - User video data  # [示例/Example] collects_id = \"\" max_cursor = 0 counts = 20  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_with_http_info(collects_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str collects_id: 收藏夹id/Collection id (required)
+        :param int max_cursor: 最大游标/Maximum cursor
+        :param int counts: 每页数量/Number per page
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'collects_id',
+            'max_cursor',
+            'counts'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'collects_id' is set
+        if self.api_client.client_side_validation and ('collects_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['collects_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `collects_id` when calling `fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'collects_id' in local_var_params and local_var_params['collects_id'] is not None:  # noqa: E501
+            query_params.append(('collects_id', local_var_params['collects_id']))  # noqa: E501
+        if 'max_cursor' in local_var_params and local_var_params['max_cursor'] is not None:  # noqa: E501
+            query_params.append(('max_cursor', local_var_params['max_cursor']))  # noqa: E501
+        if 'counts' in local_var_params and local_var_params['counts'] is not None:  # noqa: E501
+            query_params.append(('counts', local_var_params['counts']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/douyin/web/fetch_user_collects_videos', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0(self, collects_id, **kwargs):  # noqa: E501
+        """获取用户收藏夹数据/Get user collection data  # noqa: E501
+
+        # [中文] ### 用途: - 获取用户收藏夹数据 ### 参数: - collects_id: 收藏夹id - max_cursor: 最大游标 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user collection data ### Parameters: - collects_id: Collection id - max_cursor: Maximum cursor - count: Maximum number ### Return: - User video data  # [示例/Example] collects_id = \"\" max_cursor = 0 counts = 20  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0(collects_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str collects_id: 收藏夹id/Collection id (required)
+        :param int max_cursor: 最大游标/Maximum cursor
+        :param int counts: 每页数量/Number per page
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0_with_http_info(collects_id, **kwargs)  # noqa: E501
+
+    def fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0_with_http_info(self, collects_id, **kwargs):  # noqa: E501
+        """获取用户收藏夹数据/Get user collection data  # noqa: E501
+
+        # [中文] ### 用途: - 获取用户收藏夹数据 ### 参数: - collects_id: 收藏夹id - max_cursor: 最大游标 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user collection data ### Parameters: - collects_id: Collection id - max_cursor: Maximum cursor - count: Maximum number ### Return: - User video data  # [示例/Example] collects_id = \"\" max_cursor = 0 counts = 20  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0_with_http_info(collects_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str collects_id: 收藏夹id/Collection id (required)
+        :param int max_cursor: 最大游标/Maximum cursor
+        :param int counts: 每页数量/Number per page
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'collects_id',
+            'max_cursor',
+            'counts'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'collects_id' is set
+        if self.api_client.client_side_validation and ('collects_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['collects_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `collects_id` when calling `fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'collects_id' in local_var_params and local_var_params['collects_id'] is not None:  # noqa: E501
+            query_params.append(('collects_id', local_var_params['collects_id']))  # noqa: E501
+        if 'max_cursor' in local_var_params and local_var_params['max_cursor'] is not None:  # noqa: E501
+            query_params.append(('max_cursor', local_var_params['max_cursor']))  # noqa: E501
+        if 'counts' in local_var_params and local_var_params['counts'] is not None:  # noqa: E501
+            query_params.append(('counts', local_var_params['counts']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/douyin/web/fetch_user_collects_videos', 'GET',
             path_params,
             query_params,
             header_params,
@@ -17278,6 +17268,234 @@ class DouyinWebAPIApi(object):
 
         return self.api_client.call_api(
             '/api/v1/douyin/web/handler_user_profile_v3', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get(self, sec_user_id, **kwargs):  # noqa: E501
+        """根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)  # noqa: E501
+
+        # [中文] ### 用途: - 获取指定用户的信息 ### 参数: - sec_user_id: 用户sec_user_id ### 返回: - 用户信息，包含性别，年龄，直播等级，直播间牌子 ### 说明： - 性别：1为男，2为女，0为未知，在live_user字段中。 - 年龄：在user字段中，-1为未知。  # [English] ### Purpose: - Get information of specified user ### Parameters: - sec_user_id: User sec_user_id ### Return: - User information, including gender, age, live level, live room brand ### Description: - gender: 1 male, 2 female, 0 unknown, in the live_user field. - age: in the user field, -1 unknown.  # [示例/Example] sec_user_id = \"MS4wLjABAAAAW9FWcqS7RdQAWPd2AA5fL_ilmqsIFUCQ_Iym6Yh9_cUa6ZRqVLjVQSUjlHrfXY1Y\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get(sec_user_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str sec_user_id: 用户sec_user_id/User sec_user_id (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_with_http_info(sec_user_id, **kwargs)  # noqa: E501
+
+    def handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_with_http_info(self, sec_user_id, **kwargs):  # noqa: E501
+        """根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)  # noqa: E501
+
+        # [中文] ### 用途: - 获取指定用户的信息 ### 参数: - sec_user_id: 用户sec_user_id ### 返回: - 用户信息，包含性别，年龄，直播等级，直播间牌子 ### 说明： - 性别：1为男，2为女，0为未知，在live_user字段中。 - 年龄：在user字段中，-1为未知。  # [English] ### Purpose: - Get information of specified user ### Parameters: - sec_user_id: User sec_user_id ### Return: - User information, including gender, age, live level, live room brand ### Description: - gender: 1 male, 2 female, 0 unknown, in the live_user field. - age: in the user field, -1 unknown.  # [示例/Example] sec_user_id = \"MS4wLjABAAAAW9FWcqS7RdQAWPd2AA5fL_ilmqsIFUCQ_Iym6Yh9_cUa6ZRqVLjVQSUjlHrfXY1Y\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_with_http_info(sec_user_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str sec_user_id: 用户sec_user_id/User sec_user_id (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'sec_user_id'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'sec_user_id' is set
+        if self.api_client.client_side_validation and ('sec_user_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['sec_user_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `sec_user_id` when calling `handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sec_user_id' in local_var_params and local_var_params['sec_user_id'] is not None:  # noqa: E501
+            query_params.append(('sec_user_id', local_var_params['sec_user_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/douyin/web/handler_user_profile_v4', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0(self, sec_user_id, **kwargs):  # noqa: E501
+        """根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)  # noqa: E501
+
+        # [中文] ### 用途: - 获取指定用户的信息 ### 参数: - sec_user_id: 用户sec_user_id ### 返回: - 用户信息，包含性别，年龄，直播等级，直播间牌子 ### 说明： - 性别：1为男，2为女，0为未知，在live_user字段中。 - 年龄：在user字段中，-1为未知。  # [English] ### Purpose: - Get information of specified user ### Parameters: - sec_user_id: User sec_user_id ### Return: - User information, including gender, age, live level, live room brand ### Description: - gender: 1 male, 2 female, 0 unknown, in the live_user field. - age: in the user field, -1 unknown.  # [示例/Example] sec_user_id = \"MS4wLjABAAAAW9FWcqS7RdQAWPd2AA5fL_ilmqsIFUCQ_Iym6Yh9_cUa6ZRqVLjVQSUjlHrfXY1Y\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0(sec_user_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str sec_user_id: 用户sec_user_id/User sec_user_id (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0_with_http_info(sec_user_id, **kwargs)  # noqa: E501
+
+    def handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0_with_http_info(self, sec_user_id, **kwargs):  # noqa: E501
+        """根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)  # noqa: E501
+
+        # [中文] ### 用途: - 获取指定用户的信息 ### 参数: - sec_user_id: 用户sec_user_id ### 返回: - 用户信息，包含性别，年龄，直播等级，直播间牌子 ### 说明： - 性别：1为男，2为女，0为未知，在live_user字段中。 - 年龄：在user字段中，-1为未知。  # [English] ### Purpose: - Get information of specified user ### Parameters: - sec_user_id: User sec_user_id ### Return: - User information, including gender, age, live level, live room brand ### Description: - gender: 1 male, 2 female, 0 unknown, in the live_user field. - age: in the user field, -1 unknown.  # [示例/Example] sec_user_id = \"MS4wLjABAAAAW9FWcqS7RdQAWPd2AA5fL_ilmqsIFUCQ_Iym6Yh9_cUa6ZRqVLjVQSUjlHrfXY1Y\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0_with_http_info(sec_user_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str sec_user_id: 用户sec_user_id/User sec_user_id (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'sec_user_id'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'sec_user_id' is set
+        if self.api_client.client_side_validation and ('sec_user_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['sec_user_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `sec_user_id` when calling `handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sec_user_id' in local_var_params and local_var_params['sec_user_id'] is not None:  # noqa: E501
+            query_params.append(('sec_user_id', local_var_params['sec_user_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/douyin/web/handler_user_profile_v4', 'GET',
             path_params,
             query_params,
             header_params,

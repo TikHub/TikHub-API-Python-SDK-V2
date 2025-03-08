@@ -4,8 +4,14 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get**](PiPiXiaAppAPIApi.md#fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get) | **GET** /api/v1/pipixia/app/fetch_hashtag_detail | 获取话题详情/Get hashtag detail
+[**fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get_0**](PiPiXiaAppAPIApi.md#fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get_0) | **GET** /api/v1/pipixia/app/fetch_hashtag_detail | 获取话题详情/Get hashtag detail
+[**fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get**](PiPiXiaAppAPIApi.md#fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get) | **GET** /api/v1/pipixia/app/fetch_hashtag_post_list | 获取话题作品列表/Get hashtag post list
+[**fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get_0**](PiPiXiaAppAPIApi.md#fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get_0) | **GET** /api/v1/pipixia/app/fetch_hashtag_post_list | 获取话题作品列表/Get hashtag post list
 [**fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get**](PiPiXiaAppAPIApi.md#fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get) | **GET** /api/v1/pipixia/app/fetch_home_feed | 获取首页推荐/Get home feed
 [**fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get_0**](PiPiXiaAppAPIApi.md#fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get_0) | **GET** /api/v1/pipixia/app/fetch_home_feed | 获取首页推荐/Get home feed
+[**fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get**](PiPiXiaAppAPIApi.md#fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get) | **GET** /api/v1/pipixia/app/fetch_home_short_drama_feed | 获取首页短剧推荐/Get home short drama feed
+[**fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get_0**](PiPiXiaAppAPIApi.md#fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get_0) | **GET** /api/v1/pipixia/app/fetch_home_short_drama_feed | 获取首页短剧推荐/Get home short drama feed
 [**fetch_hot_search_board_detail_api_v1_pipixia_app_fetch_hot_search_board_detail_get**](PiPiXiaAppAPIApi.md#fetch_hot_search_board_detail_api_v1_pipixia_app_fetch_hot_search_board_detail_get) | **GET** /api/v1/pipixia/app/fetch_hot_search_board_detail | 获取热搜榜单详情/Get hot search board detail
 [**fetch_hot_search_board_detail_api_v1_pipixia_app_fetch_hot_search_board_detail_get_0**](PiPiXiaAppAPIApi.md#fetch_hot_search_board_detail_api_v1_pipixia_app_fetch_hot_search_board_detail_get_0) | **GET** /api/v1/pipixia/app/fetch_hot_search_board_detail | 获取热搜榜单详情/Get hot search board detail
 [**fetch_hot_search_board_list_api_v1_pipixia_app_fetch_hot_search_board_list_get**](PiPiXiaAppAPIApi.md#fetch_hot_search_board_list_api_v1_pipixia_app_fetch_hot_search_board_list_get) | **GET** /api/v1/pipixia/app/fetch_hot_search_board_list | 获取热搜榜单列表/Get hot search board list
@@ -34,15 +40,16 @@ Method | HTTP request | Description
 [**fetch_user_post_list_api_v1_pipixia_app_fetch_user_post_list_get_0**](PiPiXiaAppAPIApi.md#fetch_user_post_list_api_v1_pipixia_app_fetch_user_post_list_get_0) | **GET** /api/v1/pipixia/app/fetch_user_post_list | 获取用户作品列表/Get user post list
 
 
-# **fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get**
-> ResponseModel fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get(cursor=cursor)
+# **fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get**
+> ResponseModel fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get(hashtag_id)
 
-获取首页推荐/Get home feed
+获取话题详情/Get hashtag detail
 
-# [中文] ### 用途: - 获取首页推荐数据。 ### 参数: - cursor: 翻页游标，默认为0，后续页码从上一页返回的 `loadmore_cursor` Key中获取对应值。 ### 返回: - 首页推荐数据  # [English] ### Purpose: - Get home feed data. ### Parameters: - cursor: Page cursor, default is 0, get the corresponding value from the `loadmore_cursor` Key in the previous page. ### Return: - Home feed data  # [示例/Example] cursor = \"0\"
+# [中文] ### 用途: - 获取话题详情数据。 ### 参数: - hashtag_id: 话题id，可以从分享链接中获取。 ### 返回: - 话题详情数据  # [English] ### Purpose: - Get hashtag detail data. ### Parameters: - hashtag_id: AKA hashtag id, can be obtained from the share link. ### Return: - Hashtag detail data # [示例/Example] hashtag_id = \"129559\"
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -55,9 +62,326 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
+    hashtag_id = '129559' # str | 话题id/Hashtag id
+
+    try:
+        # 获取话题详情/Get hashtag detail
+        api_response = api_instance.fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get(hashtag_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling PiPiXiaAppAPIApi->fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hashtag_id** | **str**| 话题id/Hashtag id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get_0**
+> ResponseModel fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get_0(hashtag_id)
+
+获取话题详情/Get hashtag detail
+
+# [中文] ### 用途: - 获取话题详情数据。 ### 参数: - hashtag_id: 话题id，可以从分享链接中获取。 ### 返回: - 话题详情数据  # [English] ### Purpose: - Get hashtag detail data. ### Parameters: - hashtag_id: AKA hashtag id, can be obtained from the share link. ### Return: - Hashtag detail data # [示例/Example] hashtag_id = \"129559\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
+    hashtag_id = '129559' # str | 话题id/Hashtag id
+
+    try:
+        # 获取话题详情/Get hashtag detail
+        api_response = api_instance.fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get_0(hashtag_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling PiPiXiaAppAPIApi->fetch_hashtag_detail_api_v1_pipixia_app_fetch_hashtag_detail_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hashtag_id** | **str**| 话题id/Hashtag id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get**
+> ResponseModel fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get(hashtag_id, cursor=cursor, feed_count=feed_count, hashtag_request_type=hashtag_request_type, hashtag_sort_type=hashtag_sort_type)
+
+获取话题作品列表/Get hashtag post list
+
+# [中文] ### 用途: - 获取话题作品列表数据。 ### 参数: - hashtag_id: 话题id，可以从分享链接中获取。 - cursor: 翻页游标，默认为0，后续页码从上一页返回的 `loadmore_cursor` Key中获取对应值。 - feed_count: 翻页数量，默认为0，后续每次翻页加1，比如第一页为0，第二页为1，第三页为2，以此类推。 - hashtag_request_type: 话题请求类型，默认为0，可用值如下：     - 0: 热门     - 1: 最新     - 2: 精华 - hashtag_sort_type: 话题排序类型，默认为3，可用值如下：     - 3: 按热度     - 2: 按时间，从新到旧     - 1: 精华 ### 返回: - 话题作品列表数据  # [English] ### Purpose: - Get hashtag post list data. ### Parameters: - hashtag_id: AKA hashtag id, can be obtained from the share link. - cursor: Page cursor, default is 0, get the corresponding value from the `loadmore_cursor` Key in the previous page. - feed_count: Page count, default is 0, add 1 for each page, such as 0 for the first page, 1 for the second page, 2 for the third page, and so on. ### Return: - Hashtag post list data  # [示例/Example] hashtag_id = \"129559\" cursor = \"0\" feed_count = \"0\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
+    hashtag_id = '129559' # str | 话题id/Hashtag id
+cursor = '0' # str | 翻页游标/Page cursor (optional) (default to '0')
+feed_count = '0' # str | 翻页数量/Page count (optional) (default to '0')
+hashtag_request_type = '0' # str | 话题请求类型/Hashtag request type (optional) (default to '0')
+hashtag_sort_type = '3' # str | 话题排序类型/Hashtag sort type (optional) (default to '3')
+
+    try:
+        # 获取话题作品列表/Get hashtag post list
+        api_response = api_instance.fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get(hashtag_id, cursor=cursor, feed_count=feed_count, hashtag_request_type=hashtag_request_type, hashtag_sort_type=hashtag_sort_type)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling PiPiXiaAppAPIApi->fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hashtag_id** | **str**| 话题id/Hashtag id | 
+ **cursor** | **str**| 翻页游标/Page cursor | [optional] [default to &#39;0&#39;]
+ **feed_count** | **str**| 翻页数量/Page count | [optional] [default to &#39;0&#39;]
+ **hashtag_request_type** | **str**| 话题请求类型/Hashtag request type | [optional] [default to &#39;0&#39;]
+ **hashtag_sort_type** | **str**| 话题排序类型/Hashtag sort type | [optional] [default to &#39;3&#39;]
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get_0**
+> ResponseModel fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get_0(hashtag_id, cursor=cursor, feed_count=feed_count, hashtag_request_type=hashtag_request_type, hashtag_sort_type=hashtag_sort_type)
+
+获取话题作品列表/Get hashtag post list
+
+# [中文] ### 用途: - 获取话题作品列表数据。 ### 参数: - hashtag_id: 话题id，可以从分享链接中获取。 - cursor: 翻页游标，默认为0，后续页码从上一页返回的 `loadmore_cursor` Key中获取对应值。 - feed_count: 翻页数量，默认为0，后续每次翻页加1，比如第一页为0，第二页为1，第三页为2，以此类推。 - hashtag_request_type: 话题请求类型，默认为0，可用值如下：     - 0: 热门     - 1: 最新     - 2: 精华 - hashtag_sort_type: 话题排序类型，默认为3，可用值如下：     - 3: 按热度     - 2: 按时间，从新到旧     - 1: 精华 ### 返回: - 话题作品列表数据  # [English] ### Purpose: - Get hashtag post list data. ### Parameters: - hashtag_id: AKA hashtag id, can be obtained from the share link. - cursor: Page cursor, default is 0, get the corresponding value from the `loadmore_cursor` Key in the previous page. - feed_count: Page count, default is 0, add 1 for each page, such as 0 for the first page, 1 for the second page, 2 for the third page, and so on. ### Return: - Hashtag post list data  # [示例/Example] hashtag_id = \"129559\" cursor = \"0\" feed_count = \"0\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
+    hashtag_id = '129559' # str | 话题id/Hashtag id
+cursor = '0' # str | 翻页游标/Page cursor (optional) (default to '0')
+feed_count = '0' # str | 翻页数量/Page count (optional) (default to '0')
+hashtag_request_type = '0' # str | 话题请求类型/Hashtag request type (optional) (default to '0')
+hashtag_sort_type = '3' # str | 话题排序类型/Hashtag sort type (optional) (default to '3')
+
+    try:
+        # 获取话题作品列表/Get hashtag post list
+        api_response = api_instance.fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get_0(hashtag_id, cursor=cursor, feed_count=feed_count, hashtag_request_type=hashtag_request_type, hashtag_sort_type=hashtag_sort_type)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling PiPiXiaAppAPIApi->fetch_hashtag_post_list_api_v1_pipixia_app_fetch_hashtag_post_list_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hashtag_id** | **str**| 话题id/Hashtag id | 
+ **cursor** | **str**| 翻页游标/Page cursor | [optional] [default to &#39;0&#39;]
+ **feed_count** | **str**| 翻页数量/Page count | [optional] [default to &#39;0&#39;]
+ **hashtag_request_type** | **str**| 话题请求类型/Hashtag request type | [optional] [default to &#39;0&#39;]
+ **hashtag_sort_type** | **str**| 话题排序类型/Hashtag sort type | [optional] [default to &#39;3&#39;]
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get**
+> ResponseModel fetch_home_feed_api_v1_pipixia_app_fetch_home_feed_get(cursor=cursor)
+
+获取首页推荐/Get home feed
+
+# [中文] ### 用途: - 获取首页推荐数据。 ### 参数: - cursor: 翻页游标，默认为0，后续页码从上一页返回的 `loadmore_cursor` Key中获取对应值。 ### 返回: - 首页推荐数据  # [English] ### Purpose: - Get home feed data. ### Parameters: - cursor: Page cursor, default is 0, get the corresponding value from the `loadmore_cursor` Key in the previous page. ### Return: - Home feed data  # [示例/Example] cursor = \"0\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cursor = '0' # str | 翻页游标/Page cursor (optional) (default to '0')
@@ -82,7 +406,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -106,6 +430,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -118,9 +443,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cursor = '0' # str | 翻页游标/Page cursor (optional) (default to '0')
@@ -145,7 +479,153 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get**
+> ResponseModel fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get(page=page)
+
+获取首页短剧推荐/Get home short drama feed
+
+# [中文] ### 用途: - 获取首页短剧推荐数据。 ### 参数: - page: 页码，默认为1，每次翻页加1。 ### 返回: - 首页短剧推荐数据  # [English] ### Purpose: - Get home short drama feed data. ### Parameters: - page: Page number, default is 1, add 1 for each page. ### Return: - Home short drama feed data  # [示例/Example] page = 1
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
+    page = 1 # int | 页码/Page number (optional) (default to 1)
+
+    try:
+        # 获取首页短剧推荐/Get home short drama feed
+        api_response = api_instance.fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get(page=page)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling PiPiXiaAppAPIApi->fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int**| 页码/Page number | [optional] [default to 1]
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get_0**
+> ResponseModel fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get_0(page=page)
+
+获取首页短剧推荐/Get home short drama feed
+
+# [中文] ### 用途: - 获取首页短剧推荐数据。 ### 参数: - page: 页码，默认为1，每次翻页加1。 ### 返回: - 首页短剧推荐数据  # [English] ### Purpose: - Get home short drama feed data. ### Parameters: - page: Page number, default is 1, add 1 for each page. ### Return: - Home short drama feed data  # [示例/Example] page = 1
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
+    page = 1 # int | 页码/Page number (optional) (default to 1)
+
+    try:
+        # 获取首页短剧推荐/Get home short drama feed
+        api_response = api_instance.fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get_0(page=page)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling PiPiXiaAppAPIApi->fetch_home_short_drama_feed_api_v1_pipixia_app_fetch_home_short_drama_feed_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **int**| 页码/Page number | [optional] [default to 1]
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -169,6 +649,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -181,9 +662,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     block_type = 12 # int | 榜单类型/Board type
@@ -208,7 +698,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -232,6 +722,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -244,9 +735,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     block_type = 12 # int | 榜单类型/Board type
@@ -271,7 +771,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -295,6 +795,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -307,9 +808,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     
@@ -330,7 +840,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -353,6 +863,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -365,9 +876,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     
@@ -388,7 +908,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -411,6 +931,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -423,9 +944,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     
@@ -446,7 +976,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -469,6 +999,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -481,9 +1012,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     
@@ -504,7 +1044,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -527,6 +1067,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -539,9 +1080,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cell_id = '7411193113223371043' # str | 作品id/Video id
@@ -568,7 +1118,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -592,6 +1142,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -604,9 +1155,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cell_id = '7411193113223371043' # str | 作品id/Video id
@@ -633,7 +1193,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -657,6 +1217,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -669,9 +1230,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cell_id = '7411193113223371043' # str | 作品id/Video id
@@ -700,7 +1270,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -724,6 +1294,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -736,9 +1307,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cell_id = '7411193113223371043' # str | 作品id/Video id
@@ -767,7 +1347,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -791,6 +1371,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -803,9 +1384,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cell_id = '7411193113223371043' # str | 作品id/Video id
@@ -832,7 +1422,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -856,6 +1446,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -868,9 +1459,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cell_id = '7411193113223371043' # str | 作品id/Video id
@@ -897,7 +1497,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -921,6 +1521,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -933,9 +1534,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cell_id = '7411193113223371043' # str | 作品id/Video id
@@ -960,7 +1570,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -984,6 +1594,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -996,9 +1607,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     cell_id = '7411193113223371043' # str | 作品id/Video id
@@ -1023,7 +1643,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1047,6 +1667,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1059,9 +1680,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     keyword = '皮皮虾' # str | 搜索关键词/Search keyword
@@ -1090,7 +1720,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1114,6 +1744,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1126,9 +1757,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     keyword = '皮皮虾' # str | 搜索关键词/Search keyword
@@ -1157,7 +1797,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1181,6 +1821,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1193,9 +1834,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     original_url = 'https://h5.pipix.com/item/7385813877985909043' # str | 原始链接/Original URL
@@ -1220,7 +1870,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1244,6 +1894,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1256,9 +1907,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     original_url = 'https://h5.pipix.com/item/7385813877985909043' # str | 原始链接/Original URL
@@ -1283,7 +1943,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1307,6 +1967,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1319,9 +1980,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     user_id = '1310254082831248' # str | 用户id/User id
@@ -1348,7 +2018,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1372,6 +2042,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1384,9 +2055,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     user_id = '1310254082831248' # str | 用户id/User id
@@ -1413,7 +2093,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1437,6 +2117,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1449,9 +2130,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     user_id = '1310254082831248' # str | 用户id/User id
@@ -1478,7 +2168,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1502,6 +2192,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1514,9 +2205,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     user_id = '1310254082831248' # str | 用户id/User id
@@ -1543,7 +2243,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1567,6 +2267,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1579,9 +2280,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     user_id = '1020401' # str | 用户id/User id
@@ -1606,7 +2316,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1630,6 +2340,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1642,9 +2353,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
     user_id = '1020401' # str | 用户id/User id
@@ -1669,7 +2389,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1693,6 +2413,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1705,12 +2426,21 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
-    user_id = '1020401' # str | 用户id/User id
+    user_id = '1310254082831248' # str | 用户id/User id
 cursor = '0' # str | 翻页游标/Page cursor (optional) (default to '0')
 feed_count = '0' # str | 翻页数量/Page count (optional) (default to '0')
 
@@ -1736,7 +2466,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -1760,6 +2490,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -1772,12 +2503,21 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.PiPiXiaAppAPIApi(api_client)
-    user_id = '1020401' # str | 用户id/User id
+    user_id = '1310254082831248' # str | 用户id/User id
 cursor = '0' # str | 翻页游标/Page cursor (optional) (default to '0')
 feed_count = '0' # str | 翻页数量/Page count (optional) (default to '0')
 
@@ -1803,7 +2543,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

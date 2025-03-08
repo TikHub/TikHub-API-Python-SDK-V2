@@ -56,6 +56,20 @@ class TestXiguaAppV2APIApi(unittest.TestCase):
         """
         pass
 
+    def test_fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get(self):
+        """Test case for fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get
+
+        获取单个作品数据 V2/Get single video data V2  # noqa: E501
+        """
+        pass
+
+    def test_fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get_0(self):
+        """Test case for fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get_0
+
+        获取单个作品数据 V2/Get single video data V2  # noqa: E501
+        """
+        pass
+
     def test_fetch_user_info_api_v1_xigua_app_v2_fetch_user_info_get(self):
         """Test case for fetch_user_info_api_v1_xigua_app_v2_fetch_user_info_get
 

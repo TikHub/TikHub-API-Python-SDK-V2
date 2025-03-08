@@ -141,7 +141,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/apply', 'GET',
@@ -264,7 +264,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/apply', 'GET',
@@ -378,7 +378,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/collect', 'POST',
@@ -492,7 +492,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/collect', 'POST',
@@ -606,7 +606,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/follow', 'POST',
@@ -720,7 +720,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/follow', 'POST',
@@ -834,7 +834,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/forward', 'POST',
@@ -948,7 +948,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/forward', 'POST',
@@ -1062,7 +1062,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/like', 'POST',
@@ -1176,7 +1176,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/like', 'POST',
@@ -1290,7 +1290,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/post_comment', 'POST',
@@ -1404,7 +1404,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/post_comment', 'POST',
@@ -1518,7 +1518,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/reply_comment', 'POST',
@@ -1632,7 +1632,7 @@ class TikTokInteractionAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/tiktok/interaction/reply_comment', 'POST',

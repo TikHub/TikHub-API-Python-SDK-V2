@@ -132,7 +132,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_article_info', 'GET',
@@ -246,7 +246,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_article_info', 'GET',
@@ -369,7 +369,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_comments', 'GET',
@@ -492,7 +492,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_comments', 'GET',
@@ -606,7 +606,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_user_id', 'GET',
@@ -720,7 +720,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_user_id', 'GET',
@@ -834,7 +834,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_user_info', 'GET',
@@ -948,7 +948,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_user_info', 'GET',
@@ -1062,7 +1062,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_video_info', 'GET',
@@ -1176,7 +1176,7 @@ class ToutiaoAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/toutiao/app/get_video_info', 'GET',

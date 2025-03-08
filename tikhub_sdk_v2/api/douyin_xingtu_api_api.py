@@ -132,7 +132,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/author_content_hot_comment_keywords_v1', 'GET',
@@ -246,7 +246,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/author_content_hot_comment_keywords_v1', 'GET',
@@ -360,7 +360,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/author_hot_comment_tokens_v1', 'GET',
@@ -474,7 +474,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/author_hot_comment_tokens_v1', 'GET',
@@ -588,7 +588,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/get_xingtu_kolid_by_sec_user_id', 'GET',
@@ -702,7 +702,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/get_xingtu_kolid_by_sec_user_id', 'GET',
@@ -816,7 +816,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/get_xingtu_kolid_by_uid', 'GET',
@@ -930,7 +930,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/get_xingtu_kolid_by_uid', 'GET',
@@ -1044,7 +1044,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/get_xingtu_kolid_by_unique_id', 'GET',
@@ -1158,7 +1158,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/get_xingtu_kolid_by_unique_id', 'GET',
@@ -1272,7 +1272,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_audience_portrait_v1', 'GET',
@@ -1386,7 +1386,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_audience_portrait_v1', 'GET',
@@ -1509,7 +1509,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_base_info_v1', 'GET',
@@ -1632,7 +1632,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_base_info_v1', 'GET',
@@ -1755,7 +1755,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_conversion_ability_analysis_v1', 'GET',
@@ -1878,7 +1878,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_conversion_ability_analysis_v1', 'GET',
@@ -2010,7 +2010,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_convert_video_display_v1', 'GET',
@@ -2142,7 +2142,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_convert_video_display_v1', 'GET',
@@ -2256,7 +2256,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_cp_info_v1', 'GET',
@@ -2370,7 +2370,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_cp_info_v1', 'GET',
@@ -2502,7 +2502,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_daily_fans_v1', 'GET',
@@ -2634,7 +2634,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_daily_fans_v1', 'GET',
@@ -2775,7 +2775,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_data_overview_v1', 'GET',
@@ -2916,7 +2916,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_data_overview_v1', 'GET',
@@ -3030,7 +3030,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_fans_portrait_v1', 'GET',
@@ -3144,7 +3144,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_fans_portrait_v1', 'GET',
@@ -3258,7 +3258,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_link_struct_v1', 'GET',
@@ -3372,7 +3372,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_link_struct_v1', 'GET',
@@ -3486,7 +3486,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_rec_videos_v1', 'GET',
@@ -3600,7 +3600,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_rec_videos_v1', 'GET',
@@ -3723,7 +3723,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_service_price_v1', 'GET',
@@ -3846,7 +3846,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_service_price_v1', 'GET',
@@ -3960,7 +3960,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_touch_distribution_v1', 'GET',
@@ -4074,7 +4074,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_touch_distribution_v1', 'GET',
@@ -4197,7 +4197,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_video_performance_v1', 'GET',
@@ -4320,7 +4320,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_video_performance_v1', 'GET',
@@ -4434,7 +4434,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_xingtu_index_v1', 'GET',
@@ -4548,7 +4548,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/kol_xingtu_index_v1', 'GET',
@@ -4680,7 +4680,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/search_kol_v1', 'GET',
@@ -4812,7 +4812,7 @@ class DouyinXingtuAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/douyin/xingtu/search_kol_v1', 'GET',

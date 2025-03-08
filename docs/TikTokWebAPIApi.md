@@ -12,6 +12,8 @@ Method | HTTP request | Description
 [**fetch_explore_post_api_v1_tiktok_web_fetch_explore_post_get_0**](TikTokWebAPIApi.md#fetch_explore_post_api_v1_tiktok_web_fetch_explore_post_get_0) | **GET** /api/v1/tiktok/web/fetch_explore_post | 获取探索作品数据/Get explore video data
 [**fetch_general_search_api_v1_tiktok_web_fetch_general_search_get**](TikTokWebAPIApi.md#fetch_general_search_api_v1_tiktok_web_fetch_general_search_get) | **GET** /api/v1/tiktok/web/fetch_general_search | 获取综合搜索列表/Get general search list
 [**fetch_general_search_api_v1_tiktok_web_fetch_general_search_get_0**](TikTokWebAPIApi.md#fetch_general_search_api_v1_tiktok_web_fetch_general_search_get_0) | **GET** /api/v1/tiktok/web/fetch_general_search | 获取综合搜索列表/Get general search list
+[**fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post**](TikTokWebAPIApi.md#fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post) | **POST** /api/v1/tiktok/web/fetch_home_feed | 首页推荐作品/Home Feed
+[**fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post_0**](TikTokWebAPIApi.md#fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post_0) | **POST** /api/v1/tiktok/web/fetch_home_feed | 首页推荐作品/Home Feed
 [**fetch_live_recommend_api_v1_tiktok_web_fetch_live_recommend_get**](TikTokWebAPIApi.md#fetch_live_recommend_api_v1_tiktok_web_fetch_live_recommend_get) | **GET** /api/v1/tiktok/web/fetch_live_recommend | 获取直播间首页推荐列表/Get live room homepage recommendation list
 [**fetch_live_recommend_api_v1_tiktok_web_fetch_live_recommend_get_0**](TikTokWebAPIApi.md#fetch_live_recommend_api_v1_tiktok_web_fetch_live_recommend_get_0) | **GET** /api/v1/tiktok/web/fetch_live_recommend | 获取直播间首页推荐列表/Get live room homepage recommendation list
 [**fetch_post_comment_api_v1_tiktok_web_fetch_post_comment_get**](TikTokWebAPIApi.md#fetch_post_comment_api_v1_tiktok_web_fetch_post_comment_get) | **GET** /api/v1/tiktok/web/fetch_post_comment | 获取作品的评论列表/Get video comments
@@ -668,6 +670,152 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post**
+> ResponseModel fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post(unknown_base_type=unknown_base_type)
+
+首页推荐作品/Home Feed
+
+# [中文] ### 用途: - 首页推荐作品 ### 参数: - count: 每页数量 - cookie: 用户自己的cookie，可选参数，用于接口返回数据的个性化推荐。 ### 返回: - 首页推荐作品  # [English] ### Purpose: - Home Feed ### Parameters: - count: Number per page - cookie: User's own cookie, optional parameter, used for personalized recommendations of interface return data. ### Return: - Home Feed  # [示例/Example] count = 15 Cookie = \"Your_Cookie\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokWebAPIApi(api_client)
+    unknown_base_type = tikhub_sdk_v2.UNKNOWN_BASE_TYPE() # UNKNOWN_BASE_TYPE |  (optional)
+
+    try:
+        # 首页推荐作品/Home Feed
+        api_response = api_instance.fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post(unknown_base_type=unknown_base_type)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokWebAPIApi->fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md)|  | [optional] 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post_0**
+> ResponseModel fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post_0(unknown_base_type=unknown_base_type)
+
+首页推荐作品/Home Feed
+
+# [中文] ### 用途: - 首页推荐作品 ### 参数: - count: 每页数量 - cookie: 用户自己的cookie，可选参数，用于接口返回数据的个性化推荐。 ### 返回: - 首页推荐作品  # [English] ### Purpose: - Home Feed ### Parameters: - count: Number per page - cookie: User's own cookie, optional parameter, used for personalized recommendations of interface return data. ### Return: - Home Feed  # [示例/Example] count = 15 Cookie = \"Your_Cookie\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.TikTokWebAPIApi(api_client)
+    unknown_base_type = tikhub_sdk_v2.UNKNOWN_BASE_TYPE() # UNKNOWN_BASE_TYPE |  (optional)
+
+    try:
+        # 首页推荐作品/Home Feed
+        api_response = api_instance.fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post_0(unknown_base_type=unknown_base_type)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling TikTokWebAPIApi->fetch_home_feed_api_v1_tiktok_web_fetch_home_feed_post_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md)|  | [optional] 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

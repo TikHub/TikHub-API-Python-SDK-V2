@@ -133,7 +133,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_brand_top_list', 'GET',
@@ -248,7 +248,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_brand_top_list', 'GET',
@@ -353,7 +353,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_hot_board_categories', 'GET',
@@ -458,7 +458,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_hot_board_categories', 'GET',
@@ -573,7 +573,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_hot_board_detail', 'GET',
@@ -688,7 +688,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_hot_board_detail', 'GET',
@@ -793,7 +793,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_hot_search_person', 'GET',
@@ -898,7 +898,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_hot_search_person', 'GET',
@@ -1013,7 +1013,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_live_top_list', 'GET',
@@ -1128,7 +1128,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_live_top_list', 'GET',
@@ -1242,7 +1242,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_user_v2', 'GET',
@@ -1356,7 +1356,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_user_v2', 'GET',
@@ -1470,7 +1470,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_video_by_url', 'GET',
@@ -1584,7 +1584,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_video_by_url', 'GET',
@@ -1698,7 +1698,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_video', 'GET',
@@ -1812,7 +1812,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_video', 'GET',
@@ -1926,7 +1926,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_video_v2', 'GET',
@@ -2040,7 +2040,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_video_v2', 'GET',
@@ -2155,7 +2155,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_shopping_top_list', 'GET',
@@ -2270,7 +2270,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_shopping_top_list', 'GET',
@@ -2389,7 +2389,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_user_hot_post', 'GET',
@@ -2508,7 +2508,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_user_hot_post', 'GET',
@@ -2622,7 +2622,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_user_live_info', 'GET',
@@ -2736,7 +2736,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_user_live_info', 'GET',
@@ -2855,7 +2855,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_user_post_v2', 'GET',
@@ -2974,7 +2974,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_user_post_v2', 'GET',
@@ -3093,7 +3093,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_video_comment', 'GET',
@@ -3212,7 +3212,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/fetch_one_video_comment', 'GET',
@@ -3326,7 +3326,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/generate_kuaishou_share_link', 'GET',
@@ -3440,7 +3440,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/generate_kuaishou_share_link', 'GET',
@@ -3559,7 +3559,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/search_user_v2', 'GET',
@@ -3678,7 +3678,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/search_user_v2', 'GET',
@@ -3797,7 +3797,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/search_video_v2', 'GET',
@@ -3916,7 +3916,7 @@ class KuaishouAppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/kuaishou/app/search_video_v2', 'GET',

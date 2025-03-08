@@ -123,7 +123,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_all_live_areas', 'GET',
@@ -228,7 +228,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_all_live_areas', 'GET',
@@ -342,7 +342,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_collect_folders', 'GET',
@@ -456,7 +456,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_collect_folders', 'GET',
@@ -566,7 +566,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_com_popular', 'GET',
@@ -676,7 +676,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_com_popular', 'GET',
@@ -804,7 +804,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_comment_reply', 'GET',
@@ -932,7 +932,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_comment_reply', 'GET',
@@ -1046,7 +1046,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_live_room_detail', 'GET',
@@ -1160,7 +1160,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_live_room_detail', 'GET',
@@ -1279,7 +1279,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_live_streamers', 'GET',
@@ -1398,7 +1398,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_live_streamers', 'GET',
@@ -1512,7 +1512,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_live_videos', 'GET',
@@ -1626,7 +1626,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_live_videos', 'GET',
@@ -1745,7 +1745,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_user_dynamic', 'GET',
@@ -1864,7 +1864,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_user_dynamic', 'GET',
@@ -1978,7 +1978,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_user_profile', 'GET',
@@ -2092,7 +2092,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_user_profile', 'GET',
@@ -2211,7 +2211,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_video_comments', 'GET',
@@ -2330,10 +2330,520 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_video_comments', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_general_search_api_v1_bilibili_web_fetch_general_search_get(self, keyword, order, page, page_size, **kwargs):  # noqa: E501
+        """获取综合搜索信息/Get general search data  # noqa: E501
+
+        # [中文] ### 用途: - 获取综合搜索信息 ### 参数: - keyword: 搜索关键词 - order: 排序方式     - totalrank 综合排序     - click 最多播放     - pubdate 最新发布     - dm 最多弹幕     - stow 最多收藏 - page: 页码 - page_size: 每页数量 ### 返回: - 综合搜索信息  # [English] ### Purpose: - Get general search data ### Parameters: - keyword: Search keyword - order: Order method     - totalrank Comprehensive sorting     - click Most played     - pubdate Latest release     - dm Most barrage     - stow Most collection - page: Page number - page_size: Number per page ### Return: - General search data  # [示例/Example] keyword = \"火影忍者\" order = \"totalrank\" page = 1 page_size = 42  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_general_search_api_v1_bilibili_web_fetch_general_search_get(keyword, order, page, page_size, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str keyword: 搜索关键词/Search keyword (required)
+        :param str order: 排序方式/Order method (required)
+        :param int page: 页码/Page number (required)
+        :param int page_size: 每页数量/Number per page (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_with_http_info(keyword, order, page, page_size, **kwargs)  # noqa: E501
+
+    def fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_with_http_info(self, keyword, order, page, page_size, **kwargs):  # noqa: E501
+        """获取综合搜索信息/Get general search data  # noqa: E501
+
+        # [中文] ### 用途: - 获取综合搜索信息 ### 参数: - keyword: 搜索关键词 - order: 排序方式     - totalrank 综合排序     - click 最多播放     - pubdate 最新发布     - dm 最多弹幕     - stow 最多收藏 - page: 页码 - page_size: 每页数量 ### 返回: - 综合搜索信息  # [English] ### Purpose: - Get general search data ### Parameters: - keyword: Search keyword - order: Order method     - totalrank Comprehensive sorting     - click Most played     - pubdate Latest release     - dm Most barrage     - stow Most collection - page: Page number - page_size: Number per page ### Return: - General search data  # [示例/Example] keyword = \"火影忍者\" order = \"totalrank\" page = 1 page_size = 42  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_with_http_info(keyword, order, page, page_size, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str keyword: 搜索关键词/Search keyword (required)
+        :param str order: 排序方式/Order method (required)
+        :param int page: 页码/Page number (required)
+        :param int page_size: 每页数量/Number per page (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'keyword',
+            'order',
+            'page',
+            'page_size'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_general_search_api_v1_bilibili_web_fetch_general_search_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'keyword' is set
+        if self.api_client.client_side_validation and ('keyword' not in local_var_params or  # noqa: E501
+                                                        local_var_params['keyword'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `keyword` when calling `fetch_general_search_api_v1_bilibili_web_fetch_general_search_get`")  # noqa: E501
+        # verify the required parameter 'order' is set
+        if self.api_client.client_side_validation and ('order' not in local_var_params or  # noqa: E501
+                                                        local_var_params['order'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `order` when calling `fetch_general_search_api_v1_bilibili_web_fetch_general_search_get`")  # noqa: E501
+        # verify the required parameter 'page' is set
+        if self.api_client.client_side_validation and ('page' not in local_var_params or  # noqa: E501
+                                                        local_var_params['page'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `page` when calling `fetch_general_search_api_v1_bilibili_web_fetch_general_search_get`")  # noqa: E501
+        # verify the required parameter 'page_size' is set
+        if self.api_client.client_side_validation and ('page_size' not in local_var_params or  # noqa: E501
+                                                        local_var_params['page_size'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `page_size` when calling `fetch_general_search_api_v1_bilibili_web_fetch_general_search_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'keyword' in local_var_params and local_var_params['keyword'] is not None:  # noqa: E501
+            query_params.append(('keyword', local_var_params['keyword']))  # noqa: E501
+        if 'order' in local_var_params and local_var_params['order'] is not None:  # noqa: E501
+            query_params.append(('order', local_var_params['order']))  # noqa: E501
+        if 'page' in local_var_params and local_var_params['page'] is not None:  # noqa: E501
+            query_params.append(('page', local_var_params['page']))  # noqa: E501
+        if 'page_size' in local_var_params and local_var_params['page_size'] is not None:  # noqa: E501
+            query_params.append(('page_size', local_var_params['page_size']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/bilibili/web/fetch_general_search', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0(self, keyword, order, page, page_size, **kwargs):  # noqa: E501
+        """获取综合搜索信息/Get general search data  # noqa: E501
+
+        # [中文] ### 用途: - 获取综合搜索信息 ### 参数: - keyword: 搜索关键词 - order: 排序方式     - totalrank 综合排序     - click 最多播放     - pubdate 最新发布     - dm 最多弹幕     - stow 最多收藏 - page: 页码 - page_size: 每页数量 ### 返回: - 综合搜索信息  # [English] ### Purpose: - Get general search data ### Parameters: - keyword: Search keyword - order: Order method     - totalrank Comprehensive sorting     - click Most played     - pubdate Latest release     - dm Most barrage     - stow Most collection - page: Page number - page_size: Number per page ### Return: - General search data  # [示例/Example] keyword = \"火影忍者\" order = \"totalrank\" page = 1 page_size = 42  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0(keyword, order, page, page_size, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str keyword: 搜索关键词/Search keyword (required)
+        :param str order: 排序方式/Order method (required)
+        :param int page: 页码/Page number (required)
+        :param int page_size: 每页数量/Number per page (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0_with_http_info(keyword, order, page, page_size, **kwargs)  # noqa: E501
+
+    def fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0_with_http_info(self, keyword, order, page, page_size, **kwargs):  # noqa: E501
+        """获取综合搜索信息/Get general search data  # noqa: E501
+
+        # [中文] ### 用途: - 获取综合搜索信息 ### 参数: - keyword: 搜索关键词 - order: 排序方式     - totalrank 综合排序     - click 最多播放     - pubdate 最新发布     - dm 最多弹幕     - stow 最多收藏 - page: 页码 - page_size: 每页数量 ### 返回: - 综合搜索信息  # [English] ### Purpose: - Get general search data ### Parameters: - keyword: Search keyword - order: Order method     - totalrank Comprehensive sorting     - click Most played     - pubdate Latest release     - dm Most barrage     - stow Most collection - page: Page number - page_size: Number per page ### Return: - General search data  # [示例/Example] keyword = \"火影忍者\" order = \"totalrank\" page = 1 page_size = 42  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0_with_http_info(keyword, order, page, page_size, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str keyword: 搜索关键词/Search keyword (required)
+        :param str order: 排序方式/Order method (required)
+        :param int page: 页码/Page number (required)
+        :param int page_size: 每页数量/Number per page (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'keyword',
+            'order',
+            'page',
+            'page_size'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'keyword' is set
+        if self.api_client.client_side_validation and ('keyword' not in local_var_params or  # noqa: E501
+                                                        local_var_params['keyword'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `keyword` when calling `fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0`")  # noqa: E501
+        # verify the required parameter 'order' is set
+        if self.api_client.client_side_validation and ('order' not in local_var_params or  # noqa: E501
+                                                        local_var_params['order'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `order` when calling `fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0`")  # noqa: E501
+        # verify the required parameter 'page' is set
+        if self.api_client.client_side_validation and ('page' not in local_var_params or  # noqa: E501
+                                                        local_var_params['page'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `page` when calling `fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0`")  # noqa: E501
+        # verify the required parameter 'page_size' is set
+        if self.api_client.client_side_validation and ('page_size' not in local_var_params or  # noqa: E501
+                                                        local_var_params['page_size'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `page_size` when calling `fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'keyword' in local_var_params and local_var_params['keyword'] is not None:  # noqa: E501
+            query_params.append(('keyword', local_var_params['keyword']))  # noqa: E501
+        if 'order' in local_var_params and local_var_params['order'] is not None:  # noqa: E501
+            query_params.append(('order', local_var_params['order']))  # noqa: E501
+        if 'page' in local_var_params and local_var_params['page'] is not None:  # noqa: E501
+            query_params.append(('page', local_var_params['page']))  # noqa: E501
+        if 'page_size' in local_var_params and local_var_params['page_size'] is not None:  # noqa: E501
+            query_params.append(('page_size', local_var_params['page_size']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/bilibili/web/fetch_general_search', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get(self, limit, **kwargs):  # noqa: E501
+        """获取热门搜索信息/Get hot search data  # noqa: E501
+
+        # [中文] ### 用途: - 获取热门搜索信息 ### 参数: - limit: 返回数量 ### 返回: - 热门搜索信息 ### 说明: - limit默认为10，上限为50  # [English] ### Purpose: - Get hot search data ### Parameters: - limit: Return number ### Return: - Hot search data ### Note: - limit default is 10, maximum is 50  # [示例/Example] limit = 10  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get(limit, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str limit: 返回数量/Return number (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_with_http_info(limit, **kwargs)  # noqa: E501
+
+    def fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_with_http_info(self, limit, **kwargs):  # noqa: E501
+        """获取热门搜索信息/Get hot search data  # noqa: E501
+
+        # [中文] ### 用途: - 获取热门搜索信息 ### 参数: - limit: 返回数量 ### 返回: - 热门搜索信息 ### 说明: - limit默认为10，上限为50  # [English] ### Purpose: - Get hot search data ### Parameters: - limit: Return number ### Return: - Hot search data ### Note: - limit default is 10, maximum is 50  # [示例/Example] limit = 10  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_with_http_info(limit, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str limit: 返回数量/Return number (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'limit'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'limit' is set
+        if self.api_client.client_side_validation and ('limit' not in local_var_params or  # noqa: E501
+                                                        local_var_params['limit'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `limit` when calling `fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params and local_var_params['limit'] is not None:  # noqa: E501
+            query_params.append(('limit', local_var_params['limit']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/bilibili/web/fetch_hot_search', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0(self, limit, **kwargs):  # noqa: E501
+        """获取热门搜索信息/Get hot search data  # noqa: E501
+
+        # [中文] ### 用途: - 获取热门搜索信息 ### 参数: - limit: 返回数量 ### 返回: - 热门搜索信息 ### 说明: - limit默认为10，上限为50  # [English] ### Purpose: - Get hot search data ### Parameters: - limit: Return number ### Return: - Hot search data ### Note: - limit default is 10, maximum is 50  # [示例/Example] limit = 10  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0(limit, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str limit: 返回数量/Return number (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0_with_http_info(limit, **kwargs)  # noqa: E501
+
+    def fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0_with_http_info(self, limit, **kwargs):  # noqa: E501
+        """获取热门搜索信息/Get hot search data  # noqa: E501
+
+        # [中文] ### 用途: - 获取热门搜索信息 ### 参数: - limit: 返回数量 ### 返回: - 热门搜索信息 ### 说明: - limit默认为10，上限为50  # [English] ### Purpose: - Get hot search data ### Parameters: - limit: Return number ### Return: - Hot search data ### Note: - limit default is 10, maximum is 50  # [示例/Example] limit = 10  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0_with_http_info(limit, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str limit: 返回数量/Return number (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'limit'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'limit' is set
+        if self.api_client.client_side_validation and ('limit' not in local_var_params or  # noqa: E501
+                                                        local_var_params['limit'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `limit` when calling `fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params and local_var_params['limit'] is not None:  # noqa: E501
+            query_params.append(('limit', local_var_params['limit']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/bilibili/web/fetch_hot_search', 'GET',
             path_params,
             query_params,
             header_params,
@@ -2444,7 +2954,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/bv_to_aid', 'GET',
@@ -2558,7 +3068,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/bv_to_aid', 'GET',
@@ -2672,7 +3182,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_one_video', 'GET',
@@ -2786,7 +3296,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_one_video', 'GET',
@@ -2900,7 +3410,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_video_danmaku', 'GET',
@@ -3014,7 +3524,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_video_danmaku', 'GET',
@@ -3128,7 +3638,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_video_parts', 'GET',
@@ -3242,7 +3752,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_video_parts', 'GET',
@@ -3365,7 +3875,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_video_playurl', 'GET',
@@ -3488,10 +3998,256 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_video_playurl', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get(self, a_id, c_id, **kwargs):  # noqa: E501
+        """获取单个视频详情信息V2/Get single video data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取单个视频详情信息V2 ### 参数: - a_id: 作品id - c_id: 作品cid ### 返回: - 视频详情信息V2  # [English] ### Purpose: - Get single video data V2 ### Parameters: - a_id: Video id - c_id: Video cid ### Return: - Video data V2  # [示例/Example] a_id = \"114006081739452\" c_id = \"28400484458\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get(a_id, c_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str a_id: 作品id/Video id (required)
+        :param str c_id: 作品cid/Video cid (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_with_http_info(a_id, c_id, **kwargs)  # noqa: E501
+
+    def fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_with_http_info(self, a_id, c_id, **kwargs):  # noqa: E501
+        """获取单个视频详情信息V2/Get single video data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取单个视频详情信息V2 ### 参数: - a_id: 作品id - c_id: 作品cid ### 返回: - 视频详情信息V2  # [English] ### Purpose: - Get single video data V2 ### Parameters: - a_id: Video id - c_id: Video cid ### Return: - Video data V2  # [示例/Example] a_id = \"114006081739452\" c_id = \"28400484458\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_with_http_info(a_id, c_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str a_id: 作品id/Video id (required)
+        :param str c_id: 作品cid/Video cid (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'a_id',
+            'c_id'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'a_id' is set
+        if self.api_client.client_side_validation and ('a_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['a_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `a_id` when calling `fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get`")  # noqa: E501
+        # verify the required parameter 'c_id' is set
+        if self.api_client.client_side_validation and ('c_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['c_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `c_id` when calling `fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'a_id' in local_var_params and local_var_params['a_id'] is not None:  # noqa: E501
+            query_params.append(('a_id', local_var_params['a_id']))  # noqa: E501
+        if 'c_id' in local_var_params and local_var_params['c_id'] is not None:  # noqa: E501
+            query_params.append(('c_id', local_var_params['c_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/bilibili/web/fetch_one_video_v2', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0(self, a_id, c_id, **kwargs):  # noqa: E501
+        """获取单个视频详情信息V2/Get single video data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取单个视频详情信息V2 ### 参数: - a_id: 作品id - c_id: 作品cid ### 返回: - 视频详情信息V2  # [English] ### Purpose: - Get single video data V2 ### Parameters: - a_id: Video id - c_id: Video cid ### Return: - Video data V2  # [示例/Example] a_id = \"114006081739452\" c_id = \"28400484458\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0(a_id, c_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str a_id: 作品id/Video id (required)
+        :param str c_id: 作品cid/Video cid (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0_with_http_info(a_id, c_id, **kwargs)  # noqa: E501
+
+    def fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0_with_http_info(self, a_id, c_id, **kwargs):  # noqa: E501
+        """获取单个视频详情信息V2/Get single video data V2  # noqa: E501
+
+        # [中文] ### 用途: - 获取单个视频详情信息V2 ### 参数: - a_id: 作品id - c_id: 作品cid ### 返回: - 视频详情信息V2  # [English] ### Purpose: - Get single video data V2 ### Parameters: - a_id: Video id - c_id: Video cid ### Return: - Video data V2  # [示例/Example] a_id = \"114006081739452\" c_id = \"28400484458\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0_with_http_info(a_id, c_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str a_id: 作品id/Video id (required)
+        :param str c_id: 作品cid/Video cid (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'a_id',
+            'c_id'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'a_id' is set
+        if self.api_client.client_side_validation and ('a_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['a_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `a_id` when calling `fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0`")  # noqa: E501
+        # verify the required parameter 'c_id' is set
+        if self.api_client.client_side_validation and ('c_id' not in local_var_params or  # noqa: E501
+                                                        local_var_params['c_id'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `c_id` when calling `fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'a_id' in local_var_params and local_var_params['a_id'] is not None:  # noqa: E501
+            query_params.append(('a_id', local_var_params['a_id']))  # noqa: E501
+        if 'c_id' in local_var_params and local_var_params['c_id'] is not None:  # noqa: E501
+            query_params.append(('c_id', local_var_params['c_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/bilibili/web/fetch_one_video_v2', 'GET',
             path_params,
             query_params,
             header_params,
@@ -3607,7 +4363,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_user_collection_videos', 'GET',
@@ -3726,7 +4482,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_user_collection_videos', 'GET',
@@ -3845,7 +4601,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_user_post_videos', 'GET',
@@ -3964,7 +4720,7 @@ class BilibiliWebAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/bilibili/web/fetch_user_post_videos', 'GET',

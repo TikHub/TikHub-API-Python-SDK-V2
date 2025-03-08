@@ -8,6 +8,8 @@ Method | HTTP request | Description
 [**fetch_one_video_api_v1_xigua_app_v2_fetch_one_video_get_0**](XiguaAppV2APIApi.md#fetch_one_video_api_v1_xigua_app_v2_fetch_one_video_get_0) | **GET** /api/v1/xigua/app/v2/fetch_one_video | 获取单个作品数据/Get single video data
 [**fetch_one_video_play_url_api_v1_xigua_app_v2_fetch_one_video_play_url_get**](XiguaAppV2APIApi.md#fetch_one_video_play_url_api_v1_xigua_app_v2_fetch_one_video_play_url_get) | **GET** /api/v1/xigua/app/v2/fetch_one_video_play_url | 获取单个作品的播放链接/Get single video play URL
 [**fetch_one_video_play_url_api_v1_xigua_app_v2_fetch_one_video_play_url_get_0**](XiguaAppV2APIApi.md#fetch_one_video_play_url_api_v1_xigua_app_v2_fetch_one_video_play_url_get_0) | **GET** /api/v1/xigua/app/v2/fetch_one_video_play_url | 获取单个作品的播放链接/Get single video play URL
+[**fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get**](XiguaAppV2APIApi.md#fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get) | **GET** /api/v1/xigua/app/v2/fetch_one_video_v2 | 获取单个作品数据 V2/Get single video data V2
+[**fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get_0**](XiguaAppV2APIApi.md#fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get_0) | **GET** /api/v1/xigua/app/v2/fetch_one_video_v2 | 获取单个作品数据 V2/Get single video data V2
 [**fetch_user_info_api_v1_xigua_app_v2_fetch_user_info_get**](XiguaAppV2APIApi.md#fetch_user_info_api_v1_xigua_app_v2_fetch_user_info_get) | **GET** /api/v1/xigua/app/v2/fetch_user_info | 个人信息/Personal information
 [**fetch_user_info_api_v1_xigua_app_v2_fetch_user_info_get_0**](XiguaAppV2APIApi.md#fetch_user_info_api_v1_xigua_app_v2_fetch_user_info_get_0) | **GET** /api/v1/xigua/app/v2/fetch_user_info | 个人信息/Personal information
 [**fetch_user_post_list_api_v1_xigua_app_v2_fetch_user_post_list_get**](XiguaAppV2APIApi.md#fetch_user_post_list_api_v1_xigua_app_v2_fetch_user_post_list_get) | **GET** /api/v1/xigua/app/v2/fetch_user_post_list | 获取个人作品列表/Get user post list
@@ -23,7 +25,7 @@ Method | HTTP request | Description
 
 获取单个作品数据/Get single video data
 
-# [中文] ### 用途: - 获取单个作品数据 ### 参数: - item_id: 作品id ### 返回: - 作品数据，其中包含视频链接的Base64编码播放地址，需要前端解码后使用，或者使用 /fetch_one_video_play_url 获取播放链接。  # [English] ### Purpose: - Get single video data ### Parameters: - item_id: Video id ### Return: - Video data, which contains the Base64 encoded playback address of the video link, which needs to be decoded and used by the front end, or use /fetch_one_video_play_url to get the playback link.  # [示例/Example] item_id: \"7354954305222377999\"
+# [中文] ### 用途: - 获取单个作品数据（信息较少，不包含标题等信息，但是包含相关视频的信息） ### 参数: - item_id: 作品id ### 返回: - 作品数据，其中包含视频链接的Base64编码播放地址，需要前端解码后使用，或者使用 /fetch_one_video_play_url 获取播放链接。  # [English] ### Purpose: - Get single video data (less information, does not include title and other information, but includes information about related videos) ### Parameters: - item_id: Video id ### Return: - Video data, which contains the Base64 encoded playback address of the video link, which needs to be decoded and used by the front end, or use /fetch_one_video_play_url to get the playback link.  # [示例/Example] item_id: \"7354954305222377999\"
 
 ### Example
 
@@ -96,7 +98,7 @@ Name | Type | Description  | Notes
 
 获取单个作品数据/Get single video data
 
-# [中文] ### 用途: - 获取单个作品数据 ### 参数: - item_id: 作品id ### 返回: - 作品数据，其中包含视频链接的Base64编码播放地址，需要前端解码后使用，或者使用 /fetch_one_video_play_url 获取播放链接。  # [English] ### Purpose: - Get single video data ### Parameters: - item_id: Video id ### Return: - Video data, which contains the Base64 encoded playback address of the video link, which needs to be decoded and used by the front end, or use /fetch_one_video_play_url to get the playback link.  # [示例/Example] item_id: \"7354954305222377999\"
+# [中文] ### 用途: - 获取单个作品数据（信息较少，不包含标题等信息，但是包含相关视频的信息） ### 参数: - item_id: 作品id ### 返回: - 作品数据，其中包含视频链接的Base64编码播放地址，需要前端解码后使用，或者使用 /fetch_one_video_play_url 获取播放链接。  # [English] ### Purpose: - Get single video data (less information, does not include title and other information, but includes information about related videos) ### Parameters: - item_id: Video id ### Return: - Video data, which contains the Base64 encoded playback address of the video link, which needs to be decoded and used by the front end, or use /fetch_one_video_play_url to get the playback link.  # [示例/Example] item_id: \"7354954305222377999\"
 
 ### Example
 
@@ -281,6 +283,152 @@ with tikhub_sdk_v2.ApiClient(configuration) as api_client:
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling XiguaAppV2APIApi->fetch_one_video_play_url_api_v1_xigua_app_v2_fetch_one_video_play_url_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **item_id** | **str**| 作品id/Video id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get**
+> ResponseModel fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get(item_id)
+
+获取单个作品数据 V2/Get single video data V2
+
+# [中文] ### 用途: - 获取单个作品数据（信息全面，包含标题等信息，但是不包含相关视频推荐信息） ### 参数: - item_id: 作品id ### 返回: - 作品数据，其中包含视频链接的Base64编码播放地址，需要前端解码后使用，或者使用 /fetch_one_video_play_url 获取播放链接。  # [English] ### Purpose: - Get single video data (more comprehensive information, including title and other information, but not including information about related video recommendations) ### Parameters: - item_id: Video id ### Return: - Video data, which contains the Base64 encoded playback address of the video link, which needs to be decoded and used by the front end, or use /fetch_one_video_play_url to get the playback link.  # [示例/Example] item_id: \"7354954305222377999\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.XiguaAppV2APIApi(api_client)
+    item_id = '7354954305222377999' # str | 作品id/Video id
+
+    try:
+        # 获取单个作品数据 V2/Get single video data V2
+        api_response = api_instance.fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get(item_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling XiguaAppV2APIApi->fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **item_id** | **str**| 作品id/Video id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get_0**
+> ResponseModel fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get_0(item_id)
+
+获取单个作品数据 V2/Get single video data V2
+
+# [中文] ### 用途: - 获取单个作品数据（信息全面，包含标题等信息，但是不包含相关视频推荐信息） ### 参数: - item_id: 作品id ### 返回: - 作品数据，其中包含视频链接的Base64编码播放地址，需要前端解码后使用，或者使用 /fetch_one_video_play_url 获取播放链接。  # [English] ### Purpose: - Get single video data (more comprehensive information, including title and other information, but not including information about related video recommendations) ### Parameters: - item_id: Video id ### Return: - Video data, which contains the Base64 encoded playback address of the video link, which needs to be decoded and used by the front end, or use /fetch_one_video_play_url to get the playback link.  # [示例/Example] item_id: \"7354954305222377999\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.XiguaAppV2APIApi(api_client)
+    item_id = '7354954305222377999' # str | 作品id/Video id
+
+    try:
+        # 获取单个作品数据 V2/Get single video data V2
+        api_response = api_instance.fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get_0(item_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling XiguaAppV2APIApi->fetch_one_video_v2_api_v1_xigua_app_v2_fetch_one_video_v2_get_0: %s\n" % e)
 ```
 
 ### Parameters

@@ -406,20 +406,6 @@ class TestDouyinWebAPIApi(unittest.TestCase):
         """
         pass
 
-    def test_fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get(self):
-        """Test case for fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get
-
-        搜索话题/Search Challenge  # noqa: E501
-        """
-        pass
-
-    def test_fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0(self):
-        """Test case for fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0
-
-        搜索话题/Search Challenge  # noqa: E501
-        """
-        pass
-
     def test_fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_post(self):
         """Test case for fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_post
 
@@ -459,6 +445,20 @@ class TestDouyinWebAPIApi(unittest.TestCase):
         """Test case for fetch_user_collection_videos_api_v1_douyin_web_fetch_user_collection_videos_get_0
 
         获取用户收藏作品数据/Get user collection video data  # noqa: E501
+        """
+        pass
+
+    def test_fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get(self):
+        """Test case for fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get
+
+        获取用户收藏夹数据/Get user collection data  # noqa: E501
+        """
+        pass
+
+    def test_fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0(self):
+        """Test case for fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0
+
+        获取用户收藏夹数据/Get user collection data  # noqa: E501
         """
         pass
 
@@ -1019,6 +1019,20 @@ class TestDouyinWebAPIApi(unittest.TestCase):
         """Test case for handler_user_profile_v3_api_v1_douyin_web_handler_user_profile_v3_get_0
 
         根据抖音uid获取指定用户的信息/Get information of specified user by uid  # noqa: E501
+        """
+        pass
+
+    def test_handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get(self):
+        """Test case for handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get
+
+        根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)  # noqa: E501
+        """
+        pass
+
+    def test_handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0(self):
+        """Test case for handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0
+
+        根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)  # noqa: E501
         """
         pass
 

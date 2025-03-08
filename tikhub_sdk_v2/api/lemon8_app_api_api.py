@@ -123,7 +123,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_discover_banners', 'GET',
@@ -228,7 +228,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_discover_banners', 'GET',
@@ -333,7 +333,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_discover_tab', 'GET',
@@ -438,7 +438,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_discover_tab', 'GET',
@@ -543,7 +543,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_discover_tab_information_tabs', 'GET',
@@ -648,7 +648,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_discover_tab_information_tabs', 'GET',
@@ -753,7 +753,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_hot_search_keywords', 'GET',
@@ -858,7 +858,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_hot_search_keywords', 'GET',
@@ -995,7 +995,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_post_comment_list', 'GET',
@@ -1132,7 +1132,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_post_comment_list', 'GET',
@@ -1246,7 +1246,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_post_detail', 'GET',
@@ -1360,7 +1360,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_post_detail', 'GET',
@@ -1494,7 +1494,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_search', 'GET',
@@ -1628,7 +1628,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_search', 'GET',
@@ -1742,7 +1742,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_topic_info', 'GET',
@@ -1856,7 +1856,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_topic_info', 'GET',
@@ -1998,7 +1998,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_topic_post_list', 'GET',
@@ -2140,7 +2140,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_topic_post_list', 'GET',
@@ -2259,7 +2259,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_user_follower_list', 'GET',
@@ -2378,7 +2378,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_user_follower_list', 'GET',
@@ -2497,7 +2497,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_user_following_list', 'GET',
@@ -2616,7 +2616,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_user_following_list', 'GET',
@@ -2730,7 +2730,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/get_item_id', 'GET',
@@ -2844,7 +2844,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/get_item_id', 'GET',
@@ -2958,7 +2958,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/get_item_ids', 'POST',
@@ -3072,7 +3072,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/get_item_ids', 'POST',
@@ -3186,7 +3186,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/get_user_id', 'GET',
@@ -3300,7 +3300,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/get_user_id', 'GET',
@@ -3414,7 +3414,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/get_user_ids', 'POST',
@@ -3528,7 +3528,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/get_user_ids', 'POST',
@@ -3642,7 +3642,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_user_profile', 'GET',
@@ -3756,7 +3756,7 @@ class Lemon8AppAPIApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/v1/lemon8/app/fetch_user_profile', 'GET',

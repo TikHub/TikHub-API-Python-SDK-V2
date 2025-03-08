@@ -28,8 +28,11 @@ from tikhub_sdk_v2.api.tik_tok_web_api_api import TikTokWebAPIApi
 from tikhub_sdk_v2.api.toutiao_app_api_api import ToutiaoAppAPIApi
 from tikhub_sdk_v2.api.toutiao_web_api_api import ToutiaoWebAPIApi
 from tikhub_sdk_v2.api.twitter_web_api_api import TwitterWebAPIApi
+from tikhub_sdk_v2.api.we_chat_media_platform_web_api_api import WeChatMediaPlatformWebAPIApi
 from tikhub_sdk_v2.api.weibo_web_api_api import WeiboWebAPIApi
 from tikhub_sdk_v2.api.xiaohongshu_web_api_api import XiaohongshuWebAPIApi
+from tikhub_sdk_v2.api.xiaohongshu_web_v2_api_api import XiaohongshuWebV2APIApi
 from tikhub_sdk_v2.api.xigua_app_v2_api_api import XiguaAppV2APIApi
 from tikhub_sdk_v2.api.you_tube_web_api_api import YouTubeWebAPIApi
+from tikhub_sdk_v2.api.zhihu_web_api_api import ZhihuWebAPIApi
 from tikhub_sdk_v2.api.i_os_shortcut_api import IOSShortcutApi

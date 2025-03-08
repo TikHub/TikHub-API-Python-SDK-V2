@@ -282,266 +282,6 @@ class TikTokAppV3APIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get(self, aweme_type, item_id, invite_code, **kwargs):  # noqa: E501
-        """TikHub内部测试接口/TikHub internal test interface  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get(aweme_type, item_id, invite_code, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool: execute request asynchronously
-        :param int aweme_type: 作品类型/Video type (required)
-        :param str item_id: 作品id/Video id (required)
-        :param str invite_code: 邀请码/Invite code (required)
-        :param _preload_content: if False, the urllib3.HTTPResponse object will
-                                 be returned without reading/decoding response
-                                 data. Default is True.
-        :param _request_timeout: timeout setting for this request. If one
-                                 number provided, it will be total request
-                                 timeout. It can also be a pair (tuple) of
-                                 (connection, read) timeouts.
-        :return: ResponseModel
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        return self.add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_with_http_info(aweme_type, item_id, invite_code, **kwargs)  # noqa: E501
-
-    def add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_with_http_info(self, aweme_type, item_id, invite_code, **kwargs):  # noqa: E501
-        """TikHub内部测试接口/TikHub internal test interface  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_with_http_info(aweme_type, item_id, invite_code, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool: execute request asynchronously
-        :param int aweme_type: 作品类型/Video type (required)
-        :param str item_id: 作品id/Video id (required)
-        :param str invite_code: 邀请码/Invite code (required)
-        :param _return_http_data_only: response data without head status code
-                                       and headers
-        :param _preload_content: if False, the urllib3.HTTPResponse object will
-                                 be returned without reading/decoding response
-                                 data. Default is True.
-        :param _request_timeout: timeout setting for this request. If one
-                                 number provided, it will be total request
-                                 timeout. It can also be a pair (tuple) of
-                                 (connection, read) timeouts.
-        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        local_var_params = locals()
-
-        all_params = [
-            'aweme_type',
-            'item_id',
-            'invite_code'
-        ]
-        all_params.extend(
-            [
-                'async_req',
-                '_return_http_data_only',
-                '_preload_content',
-                '_request_timeout'
-            ]
-        )
-
-        for key, val in six.iteritems(local_var_params['kwargs']):
-            if key not in all_params:
-                raise ApiTypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get" % key
-                )
-            local_var_params[key] = val
-        del local_var_params['kwargs']
-        # verify the required parameter 'aweme_type' is set
-        if self.api_client.client_side_validation and ('aweme_type' not in local_var_params or  # noqa: E501
-                                                        local_var_params['aweme_type'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `aweme_type` when calling `add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get`")  # noqa: E501
-        # verify the required parameter 'item_id' is set
-        if self.api_client.client_side_validation and ('item_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['item_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `item_id` when calling `add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get`")  # noqa: E501
-        # verify the required parameter 'invite_code' is set
-        if self.api_client.client_side_validation and ('invite_code' not in local_var_params or  # noqa: E501
-                                                        local_var_params['invite_code'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `invite_code` when calling `add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'aweme_type' in local_var_params and local_var_params['aweme_type'] is not None:  # noqa: E501
-            query_params.append(('aweme_type', local_var_params['aweme_type']))  # noqa: E501
-        if 'item_id' in local_var_params and local_var_params['item_id'] is not None:  # noqa: E501
-            query_params.append(('item_id', local_var_params['item_id']))  # noqa: E501
-        if 'invite_code' in local_var_params and local_var_params['invite_code'] is not None:  # noqa: E501
-            query_params.append(('invite_code', local_var_params['invite_code']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/api/v1/tiktok/app/v3/tikhub_internal_test_20241122', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='ResponseModel',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=local_var_params.get('async_req'),
-            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
-            _preload_content=local_var_params.get('_preload_content', True),
-            _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0(self, aweme_type, item_id, invite_code, **kwargs):  # noqa: E501
-        """TikHub内部测试接口/TikHub internal test interface  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0(aweme_type, item_id, invite_code, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool: execute request asynchronously
-        :param int aweme_type: 作品类型/Video type (required)
-        :param str item_id: 作品id/Video id (required)
-        :param str invite_code: 邀请码/Invite code (required)
-        :param _preload_content: if False, the urllib3.HTTPResponse object will
-                                 be returned without reading/decoding response
-                                 data. Default is True.
-        :param _request_timeout: timeout setting for this request. If one
-                                 number provided, it will be total request
-                                 timeout. It can also be a pair (tuple) of
-                                 (connection, read) timeouts.
-        :return: ResponseModel
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        return self.add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0_with_http_info(aweme_type, item_id, invite_code, **kwargs)  # noqa: E501
-
-    def add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0_with_http_info(self, aweme_type, item_id, invite_code, **kwargs):  # noqa: E501
-        """TikHub内部测试接口/TikHub internal test interface  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0_with_http_info(aweme_type, item_id, invite_code, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool: execute request asynchronously
-        :param int aweme_type: 作品类型/Video type (required)
-        :param str item_id: 作品id/Video id (required)
-        :param str invite_code: 邀请码/Invite code (required)
-        :param _return_http_data_only: response data without head status code
-                                       and headers
-        :param _preload_content: if False, the urllib3.HTTPResponse object will
-                                 be returned without reading/decoding response
-                                 data. Default is True.
-        :param _request_timeout: timeout setting for this request. If one
-                                 number provided, it will be total request
-                                 timeout. It can also be a pair (tuple) of
-                                 (connection, read) timeouts.
-        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        local_var_params = locals()
-
-        all_params = [
-            'aweme_type',
-            'item_id',
-            'invite_code'
-        ]
-        all_params.extend(
-            [
-                'async_req',
-                '_return_http_data_only',
-                '_preload_content',
-                '_request_timeout'
-            ]
-        )
-
-        for key, val in six.iteritems(local_var_params['kwargs']):
-            if key not in all_params:
-                raise ApiTypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0" % key
-                )
-            local_var_params[key] = val
-        del local_var_params['kwargs']
-        # verify the required parameter 'aweme_type' is set
-        if self.api_client.client_side_validation and ('aweme_type' not in local_var_params or  # noqa: E501
-                                                        local_var_params['aweme_type'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `aweme_type` when calling `add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0`")  # noqa: E501
-        # verify the required parameter 'item_id' is set
-        if self.api_client.client_side_validation and ('item_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['item_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `item_id` when calling `add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0`")  # noqa: E501
-        # verify the required parameter 'invite_code' is set
-        if self.api_client.client_side_validation and ('invite_code' not in local_var_params or  # noqa: E501
-                                                        local_var_params['invite_code'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `invite_code` when calling `add_video_play_count_api_v1_tiktok_app_v3_tikhub_internal_test20241122_get_0`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'aweme_type' in local_var_params and local_var_params['aweme_type'] is not None:  # noqa: E501
-            query_params.append(('aweme_type', local_var_params['aweme_type']))  # noqa: E501
-        if 'item_id' in local_var_params and local_var_params['item_id'] is not None:  # noqa: E501
-            query_params.append(('item_id', local_var_params['item_id']))  # noqa: E501
-        if 'invite_code' in local_var_params and local_var_params['invite_code'] is not None:  # noqa: E501
-            query_params.append(('invite_code', local_var_params['invite_code']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/api/v1/tiktok/app/v3/tikhub_internal_test_20241122', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='ResponseModel',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=local_var_params.get('async_req'),
-            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
-            _preload_content=local_var_params.get('_preload_content', True),
-            _request_timeout=local_var_params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
     def check_live_room_online_api_v1_tiktok_app_v3_check_live_room_online_get(self, room_id, **kwargs):  # noqa: E501
         """检测直播间是否在线/Check if live room is online  # noqa: E501
 
@@ -2694,16 +2434,17 @@ class TikTokAppV3APIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get(self, **kwargs):  # noqa: E501
+    def fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post(self, **kwargs):  # noqa: E501
         """获取主页视频推荐数据/Get home feed(recommend) video data  # noqa: E501
 
-        # [中文] ### 用途: - 获取主页视频推荐数据 ### 参数: - 无 ### 返回: - 视频推荐数据  # [English] ### Purpose: - Get home feed(recommend) video data ### Parameters: - None ### Return: - Video recommend data  # noqa: E501
+        # [中文] ### 用途: - 获取主页视频推荐数据 ### 参数: - cookie: 用户自己的cookie，可选参数，用于接口返回数据的个性化推荐。 ### 返回: - 视频推荐数据  # [English] ### Purpose: - Get home feed(recommend) video data ### Parameters: - cookie: User's own cookie, optional parameter, used for personalized recommendation of interface returned data. ### Return: - Video recommend data  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get(async_req=True)
+        >>> thread = api.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
+        :param TikTokAppV3HomeFeed tik_tok_app_v3_home_feed:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2716,18 +2457,19 @@ class TikTokAppV3APIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_with_http_info(**kwargs)  # noqa: E501
+        return self.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_with_http_info(**kwargs)  # noqa: E501
 
-    def fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_with_http_info(self, **kwargs):  # noqa: E501
+    def fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_with_http_info(self, **kwargs):  # noqa: E501
         """获取主页视频推荐数据/Get home feed(recommend) video data  # noqa: E501
 
-        # [中文] ### 用途: - 获取主页视频推荐数据 ### 参数: - 无 ### 返回: - 视频推荐数据  # [English] ### Purpose: - Get home feed(recommend) video data ### Parameters: - None ### Return: - Video recommend data  # noqa: E501
+        # [中文] ### 用途: - 获取主页视频推荐数据 ### 参数: - cookie: 用户自己的cookie，可选参数，用于接口返回数据的个性化推荐。 ### 返回: - 视频推荐数据  # [English] ### Purpose: - Get home feed(recommend) video data ### Parameters: - cookie: User's own cookie, optional parameter, used for personalized recommendation of interface returned data. ### Return: - Video recommend data  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_with_http_info(async_req=True)
+        >>> thread = api.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
+        :param TikTokAppV3HomeFeed tik_tok_app_v3_home_feed:
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2745,6 +2487,7 @@ class TikTokAppV3APIApi(object):
         local_var_params = locals()
 
         all_params = [
+            'tik_tok_app_v3_home_feed'
         ]
         all_params.extend(
             [
@@ -2759,7 +2502,7 @@ class TikTokAppV3APIApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get" % key
+                    " to method fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -2776,15 +2519,21 @@ class TikTokAppV3APIApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'tik_tok_app_v3_home_feed' in local_var_params:
+            body_params = local_var_params['tik_tok_app_v3_home_feed']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
             ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v1/tiktok/app/v3/fetch_home_feed', 'GET',
+            '/api/v1/tiktok/app/v3/fetch_home_feed', 'POST',
             path_params,
             query_params,
             header_params,
@@ -2799,16 +2548,17 @@ class TikTokAppV3APIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_0(self, **kwargs):  # noqa: E501
+    def fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_0(self, **kwargs):  # noqa: E501
         """获取主页视频推荐数据/Get home feed(recommend) video data  # noqa: E501
 
-        # [中文] ### 用途: - 获取主页视频推荐数据 ### 参数: - 无 ### 返回: - 视频推荐数据  # [English] ### Purpose: - Get home feed(recommend) video data ### Parameters: - None ### Return: - Video recommend data  # noqa: E501
+        # [中文] ### 用途: - 获取主页视频推荐数据 ### 参数: - cookie: 用户自己的cookie，可选参数，用于接口返回数据的个性化推荐。 ### 返回: - 视频推荐数据  # [English] ### Purpose: - Get home feed(recommend) video data ### Parameters: - cookie: User's own cookie, optional parameter, used for personalized recommendation of interface returned data. ### Return: - Video recommend data  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_0(async_req=True)
+        >>> thread = api.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_0(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
+        :param TikTokAppV3HomeFeed tik_tok_app_v3_home_feed:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2821,18 +2571,19 @@ class TikTokAppV3APIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_0_with_http_info(**kwargs)  # noqa: E501
+        return self.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_0_with_http_info(**kwargs)  # noqa: E501
 
-    def fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_0_with_http_info(self, **kwargs):  # noqa: E501
+    def fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_0_with_http_info(self, **kwargs):  # noqa: E501
         """获取主页视频推荐数据/Get home feed(recommend) video data  # noqa: E501
 
-        # [中文] ### 用途: - 获取主页视频推荐数据 ### 参数: - 无 ### 返回: - 视频推荐数据  # [English] ### Purpose: - Get home feed(recommend) video data ### Parameters: - None ### Return: - Video recommend data  # noqa: E501
+        # [中文] ### 用途: - 获取主页视频推荐数据 ### 参数: - cookie: 用户自己的cookie，可选参数，用于接口返回数据的个性化推荐。 ### 返回: - 视频推荐数据  # [English] ### Purpose: - Get home feed(recommend) video data ### Parameters: - cookie: User's own cookie, optional parameter, used for personalized recommendation of interface returned data. ### Return: - Video recommend data  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_0_with_http_info(async_req=True)
+        >>> thread = api.fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_0_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
+        :param TikTokAppV3HomeFeed tik_tok_app_v3_home_feed:
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2850,6 +2601,7 @@ class TikTokAppV3APIApi(object):
         local_var_params = locals()
 
         all_params = [
+            'tik_tok_app_v3_home_feed'
         ]
         all_params.extend(
             [
@@ -2864,7 +2616,7 @@ class TikTokAppV3APIApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_get_0" % key
+                    " to method fetch_home_feed_api_v1_tiktok_app_v3_fetch_home_feed_post_0" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -2881,15 +2633,21 @@ class TikTokAppV3APIApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'tik_tok_app_v3_home_feed' in local_var_params:
+            body_params = local_var_params['tik_tok_app_v3_home_feed']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
             ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v1/tiktok/app/v3/fetch_home_feed', 'GET',
+            '/api/v1/tiktok/app/v3/fetch_home_feed', 'POST',
             path_params,
             query_params,
             header_params,
@@ -10699,7 +10457,7 @@ class TikTokAppV3APIApi(object):
     def fetch_user_like_videos_api_v1_tiktok_app_v3_fetch_user_like_videos_get(self, sec_user_id, **kwargs):  # noqa: E501
         """获取用户喜欢作品数据/Get user like video data  # noqa: E501
 
-        # [中文] ### 用途: - 获取用户喜欢作品数据 ### 参数: - sec_user_id: 用户sec_user_id - max_cursor: 最大游标，用于翻页，第一页为0，第二页为第一次响应中的max_cursor值。 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user like video data ### Parameters: - sec_user_id: User sec_user_id - max_cursor: Maximum cursor, used for paging, the first page is 0, the second page is the max_cursor value in the first response. - count: Maximum count number ### Return: - User video data  # [示例/Example] sec_user_id = \"MS4wLjABAAAA5u9HhzjGAj-leViCcvZD6b4-qyqHHgr9lVJmcPMzcBUX_Q2NpBeCgz8Uh6KugkfS\" max_cursor = 0 counts = 20  # noqa: E501
+        # [中文] ### 用途: - 获取用户喜欢作品数据 ### 参数: - sec_user_id: 用户sec_user_id - max_cursor: 最大游标，用于翻页，第一页为0，第二页为第一次响应中的max_cursor值。 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user like video data ### Parameters: - sec_user_id: User sec_user_id - max_cursor: Maximum cursor, used for paging, the first page is 0, the second page is the max_cursor value in the first response. - count: Maximum count number ### Return: - User video data  # [示例/Example] sec_user_id = \"MS4wLjABAAAA-RkTGCGXLuLKRM5Xcuuwm7Mclg51I2ECO1RqOA7mJHuXFz99nztdi077Z2XmYHZV\" max_cursor = 0 counts = 20  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.fetch_user_like_videos_api_v1_tiktok_app_v3_fetch_user_like_videos_get(sec_user_id, async_req=True)
@@ -10726,7 +10484,7 @@ class TikTokAppV3APIApi(object):
     def fetch_user_like_videos_api_v1_tiktok_app_v3_fetch_user_like_videos_get_with_http_info(self, sec_user_id, **kwargs):  # noqa: E501
         """获取用户喜欢作品数据/Get user like video data  # noqa: E501
 
-        # [中文] ### 用途: - 获取用户喜欢作品数据 ### 参数: - sec_user_id: 用户sec_user_id - max_cursor: 最大游标，用于翻页，第一页为0，第二页为第一次响应中的max_cursor值。 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user like video data ### Parameters: - sec_user_id: User sec_user_id - max_cursor: Maximum cursor, used for paging, the first page is 0, the second page is the max_cursor value in the first response. - count: Maximum count number ### Return: - User video data  # [示例/Example] sec_user_id = \"MS4wLjABAAAA5u9HhzjGAj-leViCcvZD6b4-qyqHHgr9lVJmcPMzcBUX_Q2NpBeCgz8Uh6KugkfS\" max_cursor = 0 counts = 20  # noqa: E501
+        # [中文] ### 用途: - 获取用户喜欢作品数据 ### 参数: - sec_user_id: 用户sec_user_id - max_cursor: 最大游标，用于翻页，第一页为0，第二页为第一次响应中的max_cursor值。 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user like video data ### Parameters: - sec_user_id: User sec_user_id - max_cursor: Maximum cursor, used for paging, the first page is 0, the second page is the max_cursor value in the first response. - count: Maximum count number ### Return: - User video data  # [示例/Example] sec_user_id = \"MS4wLjABAAAA-RkTGCGXLuLKRM5Xcuuwm7Mclg51I2ECO1RqOA7mJHuXFz99nztdi077Z2XmYHZV\" max_cursor = 0 counts = 20  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.fetch_user_like_videos_api_v1_tiktok_app_v3_fetch_user_like_videos_get_with_http_info(sec_user_id, async_req=True)
@@ -10823,7 +10581,7 @@ class TikTokAppV3APIApi(object):
     def fetch_user_like_videos_api_v1_tiktok_app_v3_fetch_user_like_videos_get_0(self, sec_user_id, **kwargs):  # noqa: E501
         """获取用户喜欢作品数据/Get user like video data  # noqa: E501
 
-        # [中文] ### 用途: - 获取用户喜欢作品数据 ### 参数: - sec_user_id: 用户sec_user_id - max_cursor: 最大游标，用于翻页，第一页为0，第二页为第一次响应中的max_cursor值。 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user like video data ### Parameters: - sec_user_id: User sec_user_id - max_cursor: Maximum cursor, used for paging, the first page is 0, the second page is the max_cursor value in the first response. - count: Maximum count number ### Return: - User video data  # [示例/Example] sec_user_id = \"MS4wLjABAAAA5u9HhzjGAj-leViCcvZD6b4-qyqHHgr9lVJmcPMzcBUX_Q2NpBeCgz8Uh6KugkfS\" max_cursor = 0 counts = 20  # noqa: E501
+        # [中文] ### 用途: - 获取用户喜欢作品数据 ### 参数: - sec_user_id: 用户sec_user_id - max_cursor: 最大游标，用于翻页，第一页为0，第二页为第一次响应中的max_cursor值。 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user like video data ### Parameters: - sec_user_id: User sec_user_id - max_cursor: Maximum cursor, used for paging, the first page is 0, the second page is the max_cursor value in the first response. - count: Maximum count number ### Return: - User video data  # [示例/Example] sec_user_id = \"MS4wLjABAAAA-RkTGCGXLuLKRM5Xcuuwm7Mclg51I2ECO1RqOA7mJHuXFz99nztdi077Z2XmYHZV\" max_cursor = 0 counts = 20  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.fetch_user_like_videos_api_v1_tiktok_app_v3_fetch_user_like_videos_get_0(sec_user_id, async_req=True)
@@ -10850,7 +10608,7 @@ class TikTokAppV3APIApi(object):
     def fetch_user_like_videos_api_v1_tiktok_app_v3_fetch_user_like_videos_get_0_with_http_info(self, sec_user_id, **kwargs):  # noqa: E501
         """获取用户喜欢作品数据/Get user like video data  # noqa: E501
 
-        # [中文] ### 用途: - 获取用户喜欢作品数据 ### 参数: - sec_user_id: 用户sec_user_id - max_cursor: 最大游标，用于翻页，第一页为0，第二页为第一次响应中的max_cursor值。 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user like video data ### Parameters: - sec_user_id: User sec_user_id - max_cursor: Maximum cursor, used for paging, the first page is 0, the second page is the max_cursor value in the first response. - count: Maximum count number ### Return: - User video data  # [示例/Example] sec_user_id = \"MS4wLjABAAAA5u9HhzjGAj-leViCcvZD6b4-qyqHHgr9lVJmcPMzcBUX_Q2NpBeCgz8Uh6KugkfS\" max_cursor = 0 counts = 20  # noqa: E501
+        # [中文] ### 用途: - 获取用户喜欢作品数据 ### 参数: - sec_user_id: 用户sec_user_id - max_cursor: 最大游标，用于翻页，第一页为0，第二页为第一次响应中的max_cursor值。 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user like video data ### Parameters: - sec_user_id: User sec_user_id - max_cursor: Maximum cursor, used for paging, the first page is 0, the second page is the max_cursor value in the first response. - count: Maximum count number ### Return: - User video data  # [示例/Example] sec_user_id = \"MS4wLjABAAAA-RkTGCGXLuLKRM5Xcuuwm7Mclg51I2ECO1RqOA7mJHuXFz99nztdi077Z2XmYHZV\" max_cursor = 0 counts = 20  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.fetch_user_like_videos_api_v1_tiktok_app_v3_fetch_user_like_videos_get_0_with_http_info(sec_user_id, async_req=True)

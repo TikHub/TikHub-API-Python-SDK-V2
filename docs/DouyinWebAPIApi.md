@@ -58,14 +58,14 @@ Method | HTTP request | Description
 [**fetch_real_time_rising_hot_list_api_v1_douyin_web_fetch_real_time_rising_hot_list_get_0**](DouyinWebAPIApi.md#fetch_real_time_rising_hot_list_api_v1_douyin_web_fetch_real_time_rising_hot_list_get_0) | **GET** /api/v1/douyin/web/fetch_real_time_rising_hot_list | 抖音实时上升热点榜/Douyin Real-time Rising Hot List
 [**fetch_related_posts_api_v1_douyin_web_fetch_related_posts_get**](DouyinWebAPIApi.md#fetch_related_posts_api_v1_douyin_web_fetch_related_posts_get) | **GET** /api/v1/douyin/web/fetch_related_posts | 获取相关作品推荐数据/Get related posts recommendation data
 [**fetch_related_posts_api_v1_douyin_web_fetch_related_posts_get_0**](DouyinWebAPIApi.md#fetch_related_posts_api_v1_douyin_web_fetch_related_posts_get_0) | **GET** /api/v1/douyin/web/fetch_related_posts | 获取相关作品推荐数据/Get related posts recommendation data
-[**fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get**](DouyinWebAPIApi.md#fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get) | **GET** /api/v1/douyin/web/fetch_search_challenge | 搜索话题/Search Challenge
-[**fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0**](DouyinWebAPIApi.md#fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0) | **GET** /api/v1/douyin/web/fetch_search_challenge | 搜索话题/Search Challenge
 [**fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_post**](DouyinWebAPIApi.md#fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_post) | **POST** /api/v1/douyin/web/fetch_search_challenge | 搜索话题/Search Challenge
 [**fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_post_0**](DouyinWebAPIApi.md#fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_post_0) | **POST** /api/v1/douyin/web/fetch_search_challenge | 搜索话题/Search Challenge
 [**fetch_series_aweme_api_v1_douyin_web_fetch_series_aweme_get**](DouyinWebAPIApi.md#fetch_series_aweme_api_v1_douyin_web_fetch_series_aweme_get) | **GET** /api/v1/douyin/web/fetch_series_aweme | 短剧作品/Series Video
 [**fetch_series_aweme_api_v1_douyin_web_fetch_series_aweme_get_0**](DouyinWebAPIApi.md#fetch_series_aweme_api_v1_douyin_web_fetch_series_aweme_get_0) | **GET** /api/v1/douyin/web/fetch_series_aweme | 短剧作品/Series Video
 [**fetch_user_collection_videos_api_v1_douyin_web_fetch_user_collection_videos_get**](DouyinWebAPIApi.md#fetch_user_collection_videos_api_v1_douyin_web_fetch_user_collection_videos_get) | **GET** /api/v1/douyin/web/fetch_user_collection_videos | 获取用户收藏作品数据/Get user collection video data
 [**fetch_user_collection_videos_api_v1_douyin_web_fetch_user_collection_videos_get_0**](DouyinWebAPIApi.md#fetch_user_collection_videos_api_v1_douyin_web_fetch_user_collection_videos_get_0) | **GET** /api/v1/douyin/web/fetch_user_collection_videos | 获取用户收藏作品数据/Get user collection video data
+[**fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get**](DouyinWebAPIApi.md#fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get) | **GET** /api/v1/douyin/web/fetch_user_collects_videos | 获取用户收藏夹数据/Get user collection data
+[**fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0**](DouyinWebAPIApi.md#fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0) | **GET** /api/v1/douyin/web/fetch_user_collects_videos | 获取用户收藏夹数据/Get user collection data
 [**fetch_user_fans_interest_api_v1_douyin_web_fetch_user_fans_interest_get**](DouyinWebAPIApi.md#fetch_user_fans_interest_api_v1_douyin_web_fetch_user_fans_interest_get) | **GET** /api/v1/douyin/web/fetch_user_fans_interest | 抖音用户粉丝兴趣/Douyin User Fans Interest
 [**fetch_user_fans_interest_api_v1_douyin_web_fetch_user_fans_interest_get_0**](DouyinWebAPIApi.md#fetch_user_fans_interest_api_v1_douyin_web_fetch_user_fans_interest_get_0) | **GET** /api/v1/douyin/web/fetch_user_fans_interest | 抖音用户粉丝兴趣/Douyin User Fans Interest
 [**fetch_user_fans_list_api_v1_douyin_web_fetch_user_fans_list_get**](DouyinWebAPIApi.md#fetch_user_fans_list_api_v1_douyin_web_fetch_user_fans_list_get) | **GET** /api/v1/douyin/web/fetch_user_fans_list | 获取用户粉丝列表/Get user fans list
@@ -146,6 +146,8 @@ Method | HTTP request | Description
 [**handler_user_profile_v2_api_v1_douyin_web_handler_user_profile_v2_get_0**](DouyinWebAPIApi.md#handler_user_profile_v2_api_v1_douyin_web_handler_user_profile_v2_get_0) | **GET** /api/v1/douyin/web/handler_user_profile_v2 | 根据抖音号获取指定用户的信息/Get information of specified user by unique_id
 [**handler_user_profile_v3_api_v1_douyin_web_handler_user_profile_v3_get**](DouyinWebAPIApi.md#handler_user_profile_v3_api_v1_douyin_web_handler_user_profile_v3_get) | **GET** /api/v1/douyin/web/handler_user_profile_v3 | 根据抖音uid获取指定用户的信息/Get information of specified user by uid
 [**handler_user_profile_v3_api_v1_douyin_web_handler_user_profile_v3_get_0**](DouyinWebAPIApi.md#handler_user_profile_v3_api_v1_douyin_web_handler_user_profile_v3_get_0) | **GET** /api/v1/douyin/web/handler_user_profile_v3 | 根据抖音uid获取指定用户的信息/Get information of specified user by uid
+[**handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get**](DouyinWebAPIApi.md#handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get) | **GET** /api/v1/douyin/web/handler_user_profile_v4 | 根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)
+[**handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0**](DouyinWebAPIApi.md#handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0) | **GET** /api/v1/douyin/web/handler_user_profile_v4 | 根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)
 [**webcast_id2_room_id_api_v1_douyin_web_webcast_id2_room_id_get**](DouyinWebAPIApi.md#webcast_id2_room_id_api_v1_douyin_web_webcast_id2_room_id_get) | **GET** /api/v1/douyin/web/webcast_id_2_room_id | 直播间号转房间号/Webcast id to room id
 [**webcast_id2_room_id_api_v1_douyin_web_webcast_id2_room_id_get_0**](DouyinWebAPIApi.md#webcast_id2_room_id_api_v1_douyin_web_webcast_id2_room_id_get_0) | **GET** /api/v1/douyin/web/webcast_id_2_room_id | 直播间号转房间号/Webcast id to room id
 
@@ -4244,164 +4246,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get**
-> ResponseModel fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get(keyword, cursor=cursor, count=count, cookie=cookie)
-
-搜索话题/Search Challenge
-
-# [中文] ### 用途: - 搜索话题，此接口不带Cookie请求时只能获取到前30条数据，建议自行提供Cookie获取更多数据。 - Cookie获取方式：打开网页抖音，登录后，按F12打开开发者工具，点击Network，刷新页面，找到第一个请求，复制Cookie。 ### 参数: - keyword: 关键词 - cursor: 偏移量 - count: 数量 - cookie: 用户自行提供的Cookie，用于获取更多数据。 ### 返回: - 话题搜索结果  # [English] ### Purpose: - Search Challenge, when this interface is requested without Cookie, only the first 30 data can be obtained, it is recommended to provide Cookie to get more data. - Cookie acquisition method: Open the Douyin webpage, log in, press F12 to open the developer tool, click Network, refresh the page, find the first request, copy the Cookie. ### Parameters: - keyword: Keyword - cursor: Offset - count: Number - cookie: User provided Cookie, used to get more data. ### Return: - Challenge search results  # [示例/Example] keyword = \"动漫\" cursor = 0 count = 20
-
-### Example
-
-* Bearer Authentication (bearer):
-```python
-from __future__ import print_function
-import time
-import tikhub_sdk_v2
-from tikhub_sdk_v2.rest import ApiException
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost
-# See configuration.py for a list of all supported configuration parameters.
-configuration = tikhub_sdk_v2.Configuration(
-    host = "http://localhost"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-# Configure Bearer authorization: bearer
-configuration = tikhub_sdk_v2.Configuration(
-    access_token = 'YOUR_BEARER_TOKEN'
-)
-
-# Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = tikhub_sdk_v2.DouyinWebAPIApi(api_client)
-    keyword = '动漫' # str | 关键词/Keyword
-cursor = 0 # int | 偏移量/Offset (optional) (default to 0)
-count = 30 # int | 数量/Number (optional) (default to 30)
-cookie = 'cookie_example' # str | 用户自行提供的Cookie/User provided Cookie (optional)
-
-    try:
-        # 搜索话题/Search Challenge
-        api_response = api_instance.fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get(keyword, cursor=cursor, count=count, cookie=cookie)
-        pprint(api_response)
-    except ApiException as e:
-        print("Exception when calling DouyinWebAPIApi->fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **keyword** | **str**| 关键词/Keyword | 
- **cursor** | **int**| 偏移量/Offset | [optional] [default to 0]
- **count** | **int**| 数量/Number | [optional] [default to 30]
- **cookie** | **str**| 用户自行提供的Cookie/User provided Cookie | [optional] 
-
-### Return type
-
-[**ResponseModel**](ResponseModel.md)
-
-### Authorization
-
-[bearer](../README.md#bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Successful Response |  -  |
-**422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0**
-> ResponseModel fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0(keyword, cursor=cursor, count=count, cookie=cookie)
-
-搜索话题/Search Challenge
-
-# [中文] ### 用途: - 搜索话题，此接口不带Cookie请求时只能获取到前30条数据，建议自行提供Cookie获取更多数据。 - Cookie获取方式：打开网页抖音，登录后，按F12打开开发者工具，点击Network，刷新页面，找到第一个请求，复制Cookie。 ### 参数: - keyword: 关键词 - cursor: 偏移量 - count: 数量 - cookie: 用户自行提供的Cookie，用于获取更多数据。 ### 返回: - 话题搜索结果  # [English] ### Purpose: - Search Challenge, when this interface is requested without Cookie, only the first 30 data can be obtained, it is recommended to provide Cookie to get more data. - Cookie acquisition method: Open the Douyin webpage, log in, press F12 to open the developer tool, click Network, refresh the page, find the first request, copy the Cookie. ### Parameters: - keyword: Keyword - cursor: Offset - count: Number - cookie: User provided Cookie, used to get more data. ### Return: - Challenge search results  # [示例/Example] keyword = \"动漫\" cursor = 0 count = 20
-
-### Example
-
-* Bearer Authentication (bearer):
-```python
-from __future__ import print_function
-import time
-import tikhub_sdk_v2
-from tikhub_sdk_v2.rest import ApiException
-from pprint import pprint
-# Defining the host is optional and defaults to http://localhost
-# See configuration.py for a list of all supported configuration parameters.
-configuration = tikhub_sdk_v2.Configuration(
-    host = "http://localhost"
-)
-
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
-
-# Configure Bearer authorization: bearer
-configuration = tikhub_sdk_v2.Configuration(
-    access_token = 'YOUR_BEARER_TOKEN'
-)
-
-# Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = tikhub_sdk_v2.DouyinWebAPIApi(api_client)
-    keyword = '动漫' # str | 关键词/Keyword
-cursor = 0 # int | 偏移量/Offset (optional) (default to 0)
-count = 30 # int | 数量/Number (optional) (default to 30)
-cookie = 'cookie_example' # str | 用户自行提供的Cookie/User provided Cookie (optional)
-
-    try:
-        # 搜索话题/Search Challenge
-        api_response = api_instance.fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0(keyword, cursor=cursor, count=count, cookie=cookie)
-        pprint(api_response)
-    except ApiException as e:
-        print("Exception when calling DouyinWebAPIApi->fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_get_0: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **keyword** | **str**| 关键词/Keyword | 
- **cursor** | **int**| 偏移量/Offset | [optional] [default to 0]
- **count** | **int**| 数量/Number | [optional] [default to 30]
- **cookie** | **str**| 用户自行提供的Cookie/User provided Cookie | [optional] 
-
-### Return type
-
-[**ResponseModel**](ResponseModel.md)
-
-### Authorization
-
-[bearer](../README.md#bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-**200** | Successful Response |  -  |
-**422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_post**
 > ResponseModel fetch_search_challenge_api_v1_douyin_web_fetch_search_challenge_post(search_challenge_request=search_challenge_request)
 
@@ -4836,6 +4680,160 @@ counts = 20 # int | 每页数量/Number per page (optional) (default to 20)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cookie** | **str**| 用户网页版抖音Cookie/Your web version of Douyin Cookie | 
+ **max_cursor** | **int**| 最大游标/Maximum cursor | [optional] [default to 0]
+ **counts** | **int**| 每页数量/Number per page | [optional] [default to 20]
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get**
+> ResponseModel fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get(collects_id, max_cursor=max_cursor, counts=counts)
+
+获取用户收藏夹数据/Get user collection data
+
+# [中文] ### 用途: - 获取用户收藏夹数据 ### 参数: - collects_id: 收藏夹id - max_cursor: 最大游标 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user collection data ### Parameters: - collects_id: Collection id - max_cursor: Maximum cursor - count: Maximum number ### Return: - User video data  # [示例/Example] collects_id = \"\" max_cursor = 0 counts = 20
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.DouyinWebAPIApi(api_client)
+    collects_id = 'collects_id_example' # str | 收藏夹id/Collection id
+max_cursor = 0 # int | 最大游标/Maximum cursor (optional) (default to 0)
+counts = 20 # int | 每页数量/Number per page (optional) (default to 20)
+
+    try:
+        # 获取用户收藏夹数据/Get user collection data
+        api_response = api_instance.fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get(collects_id, max_cursor=max_cursor, counts=counts)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling DouyinWebAPIApi->fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **collects_id** | **str**| 收藏夹id/Collection id | 
+ **max_cursor** | **int**| 最大游标/Maximum cursor | [optional] [default to 0]
+ **counts** | **int**| 每页数量/Number per page | [optional] [default to 20]
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0**
+> ResponseModel fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0(collects_id, max_cursor=max_cursor, counts=counts)
+
+获取用户收藏夹数据/Get user collection data
+
+# [中文] ### 用途: - 获取用户收藏夹数据 ### 参数: - collects_id: 收藏夹id - max_cursor: 最大游标 - count: 最大数量 ### 返回: - 用户作品数据  # [English] ### Purpose: - Get user collection data ### Parameters: - collects_id: Collection id - max_cursor: Maximum cursor - count: Maximum number ### Return: - User video data  # [示例/Example] collects_id = \"\" max_cursor = 0 counts = 20
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.DouyinWebAPIApi(api_client)
+    collects_id = 'collects_id_example' # str | 收藏夹id/Collection id
+max_cursor = 0 # int | 最大游标/Maximum cursor (optional) (default to 0)
+counts = 20 # int | 每页数量/Number per page (optional) (default to 20)
+
+    try:
+        # 获取用户收藏夹数据/Get user collection data
+        api_response = api_instance.fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0(collects_id, max_cursor=max_cursor, counts=counts)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling DouyinWebAPIApi->fetch_user_collects_videos_api_v1_douyin_web_fetch_user_collects_videos_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **collects_id** | **str**| 收藏夹id/Collection id | 
  **max_cursor** | **int**| 最大游标/Maximum cursor | [optional] [default to 0]
  **counts** | **int**| 每页数量/Number per page | [optional] [default to 20]
 
@@ -10840,6 +10838,152 @@ with tikhub_sdk_v2.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uid** | **str**| 用户uid(short_id)/User uid(short_id) | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get**
+> ResponseModel handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get(sec_user_id)
+
+根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)
+
+# [中文] ### 用途: - 获取指定用户的信息 ### 参数: - sec_user_id: 用户sec_user_id ### 返回: - 用户信息，包含性别，年龄，直播等级，直播间牌子 ### 说明： - 性别：1为男，2为女，0为未知，在live_user字段中。 - 年龄：在user字段中，-1为未知。  # [English] ### Purpose: - Get information of specified user ### Parameters: - sec_user_id: User sec_user_id ### Return: - User information, including gender, age, live level, live room brand ### Description: - gender: 1 male, 2 female, 0 unknown, in the live_user field. - age: in the user field, -1 unknown.  # [示例/Example] sec_user_id = \"MS4wLjABAAAAW9FWcqS7RdQAWPd2AA5fL_ilmqsIFUCQ_Iym6Yh9_cUa6ZRqVLjVQSUjlHrfXY1Y\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.DouyinWebAPIApi(api_client)
+    sec_user_id = 'MS4wLjABAAAAW9FWcqS7RdQAWPd2AA5fL_ilmqsIFUCQ_Iym6Yh9_cUa6ZRqVLjVQSUjlHrfXY1Y' # str | 用户sec_user_id/User sec_user_id
+
+    try:
+        # 根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)
+        api_response = api_instance.handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get(sec_user_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling DouyinWebAPIApi->handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **sec_user_id** | **str**| 用户sec_user_id/User sec_user_id | 
+
+### Return type
+
+[**ResponseModel**](ResponseModel.md)
+
+### Authorization
+
+[bearer](../README.md#bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | Successful Response |  -  |
+**422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0**
+> ResponseModel handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0(sec_user_id)
+
+根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)
+
+# [中文] ### 用途: - 获取指定用户的信息 ### 参数: - sec_user_id: 用户sec_user_id ### 返回: - 用户信息，包含性别，年龄，直播等级，直播间牌子 ### 说明： - 性别：1为男，2为女，0为未知，在live_user字段中。 - 年龄：在user字段中，-1为未知。  # [English] ### Purpose: - Get information of specified user ### Parameters: - sec_user_id: User sec_user_id ### Return: - User information, including gender, age, live level, live room brand ### Description: - gender: 1 male, 2 female, 0 unknown, in the live_user field. - age: in the user field, -1 unknown.  # [示例/Example] sec_user_id = \"MS4wLjABAAAAW9FWcqS7RdQAWPd2AA5fL_ilmqsIFUCQ_Iym6Yh9_cUa6ZRqVLjVQSUjlHrfXY1Y\"
+
+### Example
+
+* Bearer Authentication (bearer):
+```python
+from __future__ import print_function
+import time
+import tikhub_sdk_v2
+from tikhub_sdk_v2.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = tikhub_sdk_v2.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = tikhub_sdk_v2.DouyinWebAPIApi(api_client)
+    sec_user_id = 'MS4wLjABAAAAW9FWcqS7RdQAWPd2AA5fL_ilmqsIFUCQ_Iym6Yh9_cUa6ZRqVLjVQSUjlHrfXY1Y' # str | 用户sec_user_id/User sec_user_id
+
+    try:
+        # 根据sec_user_id获取指定用户的信息（性别，年龄，直播等级、牌子）/Get information of specified user by sec_user_id (gender, age, live level、brand)
+        api_response = api_instance.handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0(sec_user_id)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling DouyinWebAPIApi->handler_user_profile_v4_api_v1_douyin_web_handler_user_profile_v4_get_0: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **sec_user_id** | **str**| 用户sec_user_id/User sec_user_id | 
 
 ### Return type
 

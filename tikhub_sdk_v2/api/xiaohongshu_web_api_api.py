@@ -36,18 +36,17 @@ class XiaohongshuWebAPIApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get(self, **kwargs):  # noqa: E501
+    def get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post(self, **kwargs):  # noqa: E501
         """获取首页推荐/Get home recommend  # noqa: E501
 
-        # [中文] ### 用途: - 获取首页推荐 ### 参数: - feed_type: 推荐类型     - 全部: 0     - 穿搭: 1     - 美食: 2     - 彩妆: 3     - 影视: 4     - 职场: 5     - 情感: 6     - 家居: 7     - 游戏: 8     - 旅行: 9     - 健身: 10 - need_filter_image: 是否只看图文笔记 ### 返回: - 推荐列表  # [English] ### Purpose: - Get home recommend ### Parameters: - feed_type: Feed type     - Dress: 1     - Food: 2     - Makeup: 3     - Film: 4     - Workplace: 5     - Emotion: 6     - Home: 7     - Game: 8     - Travel: 9     - Fitness: 10 - need_filter_image: Whether to view only image notes ### Return: - Recommend list  # [示例/Example] feed_type=\"0\" need_filter_image=False  # noqa: E501
+        # [中文] ### 用途: - 获取首页推荐 ### 参数: - feed_type: 推荐类型     - 全部: 0     - 穿搭: 1     - 美食: 2     - 彩妆: 3     - 影视: 4     - 职场: 5     - 情感: 6     - 家居: 7     - 游戏: 8     - 旅行: 9     - 健身: 10 - need_filter_image: 是否只看图文笔记，默认为 False - cookie: 可选参数，用户自行提供的已登录的网页Cookie获取个性化推荐，如果不提供，则使用游客模式 - proxy: 可选参数，网络代理，可降低封号概率，格式：http://用户名:密码@IP:端口/Proxy, format: http://username:password@IP:port ### 返回: - 推荐列表  # [English] ### Purpose: - Get home recommend ### Parameters: - feed_type: Feed type     - Dress: 1     - Food: 2     - Makeup: 3     - Film: 4     - Workplace: 5     - Emotion: 6     - Home: 7     - Game: 8     - Travel: 9     - Fitness: 10 - need_filter_image: Whether to view only image notes, default is False - cookie: Optional parameter, user-provided logged-in web Cookie to get personalized recommendations, if not provided, use visitor mode - proxy: Optional parameter, network proxy, can reduce the probability of account ban, format: http://username:password@IP:port ### Return: - Recommend list  # [示例/Example] feed_type=\"0\" need_filter_image=False  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get(async_req=True)
+        >>> thread = api.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str feed_type: 推荐类型/Feed type
-        :param bool need_filter_image: 是否只看图文笔记/Whether to view only image notes
+        :param GetHomeFeedRequest get_home_feed_request:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -60,20 +59,19 @@ class XiaohongshuWebAPIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_with_http_info(**kwargs)  # noqa: E501
+        return self.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_with_http_info(**kwargs)  # noqa: E501
 
-    def get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_with_http_info(self, **kwargs):  # noqa: E501
+    def get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_with_http_info(self, **kwargs):  # noqa: E501
         """获取首页推荐/Get home recommend  # noqa: E501
 
-        # [中文] ### 用途: - 获取首页推荐 ### 参数: - feed_type: 推荐类型     - 全部: 0     - 穿搭: 1     - 美食: 2     - 彩妆: 3     - 影视: 4     - 职场: 5     - 情感: 6     - 家居: 7     - 游戏: 8     - 旅行: 9     - 健身: 10 - need_filter_image: 是否只看图文笔记 ### 返回: - 推荐列表  # [English] ### Purpose: - Get home recommend ### Parameters: - feed_type: Feed type     - Dress: 1     - Food: 2     - Makeup: 3     - Film: 4     - Workplace: 5     - Emotion: 6     - Home: 7     - Game: 8     - Travel: 9     - Fitness: 10 - need_filter_image: Whether to view only image notes ### Return: - Recommend list  # [示例/Example] feed_type=\"0\" need_filter_image=False  # noqa: E501
+        # [中文] ### 用途: - 获取首页推荐 ### 参数: - feed_type: 推荐类型     - 全部: 0     - 穿搭: 1     - 美食: 2     - 彩妆: 3     - 影视: 4     - 职场: 5     - 情感: 6     - 家居: 7     - 游戏: 8     - 旅行: 9     - 健身: 10 - need_filter_image: 是否只看图文笔记，默认为 False - cookie: 可选参数，用户自行提供的已登录的网页Cookie获取个性化推荐，如果不提供，则使用游客模式 - proxy: 可选参数，网络代理，可降低封号概率，格式：http://用户名:密码@IP:端口/Proxy, format: http://username:password@IP:port ### 返回: - 推荐列表  # [English] ### Purpose: - Get home recommend ### Parameters: - feed_type: Feed type     - Dress: 1     - Food: 2     - Makeup: 3     - Film: 4     - Workplace: 5     - Emotion: 6     - Home: 7     - Game: 8     - Travel: 9     - Fitness: 10 - need_filter_image: Whether to view only image notes, default is False - cookie: Optional parameter, user-provided logged-in web Cookie to get personalized recommendations, if not provided, use visitor mode - proxy: Optional parameter, network proxy, can reduce the probability of account ban, format: http://username:password@IP:port ### Return: - Recommend list  # [示例/Example] feed_type=\"0\" need_filter_image=False  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_with_http_info(async_req=True)
+        >>> thread = api.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str feed_type: 推荐类型/Feed type
-        :param bool need_filter_image: 是否只看图文笔记/Whether to view only image notes
+        :param GetHomeFeedRequest get_home_feed_request:
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -91,8 +89,7 @@ class XiaohongshuWebAPIApi(object):
         local_var_params = locals()
 
         all_params = [
-            'feed_type',
-            'need_filter_image'
+            'get_home_feed_request'
         ]
         all_params.extend(
             [
@@ -107,7 +104,7 @@ class XiaohongshuWebAPIApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get" % key
+                    " to method get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -117,10 +114,6 @@ class XiaohongshuWebAPIApi(object):
         path_params = {}
 
         query_params = []
-        if 'feed_type' in local_var_params and local_var_params['feed_type'] is not None:  # noqa: E501
-            query_params.append(('feed_type', local_var_params['feed_type']))  # noqa: E501
-        if 'need_filter_image' in local_var_params and local_var_params['need_filter_image'] is not None:  # noqa: E501
-            query_params.append(('need_filter_image', local_var_params['need_filter_image']))  # noqa: E501
 
         header_params = {}
 
@@ -128,15 +121,21 @@ class XiaohongshuWebAPIApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'get_home_feed_request' in local_var_params:
+            body_params = local_var_params['get_home_feed_request']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
             ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v1/xiaohongshu/web/get_home_recommend', 'GET',
+            '/api/v1/xiaohongshu/web/get_home_recommend', 'POST',
             path_params,
             query_params,
             header_params,
@@ -151,18 +150,17 @@ class XiaohongshuWebAPIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_0(self, **kwargs):  # noqa: E501
+    def get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_0(self, **kwargs):  # noqa: E501
         """获取首页推荐/Get home recommend  # noqa: E501
 
-        # [中文] ### 用途: - 获取首页推荐 ### 参数: - feed_type: 推荐类型     - 全部: 0     - 穿搭: 1     - 美食: 2     - 彩妆: 3     - 影视: 4     - 职场: 5     - 情感: 6     - 家居: 7     - 游戏: 8     - 旅行: 9     - 健身: 10 - need_filter_image: 是否只看图文笔记 ### 返回: - 推荐列表  # [English] ### Purpose: - Get home recommend ### Parameters: - feed_type: Feed type     - Dress: 1     - Food: 2     - Makeup: 3     - Film: 4     - Workplace: 5     - Emotion: 6     - Home: 7     - Game: 8     - Travel: 9     - Fitness: 10 - need_filter_image: Whether to view only image notes ### Return: - Recommend list  # [示例/Example] feed_type=\"0\" need_filter_image=False  # noqa: E501
+        # [中文] ### 用途: - 获取首页推荐 ### 参数: - feed_type: 推荐类型     - 全部: 0     - 穿搭: 1     - 美食: 2     - 彩妆: 3     - 影视: 4     - 职场: 5     - 情感: 6     - 家居: 7     - 游戏: 8     - 旅行: 9     - 健身: 10 - need_filter_image: 是否只看图文笔记，默认为 False - cookie: 可选参数，用户自行提供的已登录的网页Cookie获取个性化推荐，如果不提供，则使用游客模式 - proxy: 可选参数，网络代理，可降低封号概率，格式：http://用户名:密码@IP:端口/Proxy, format: http://username:password@IP:port ### 返回: - 推荐列表  # [English] ### Purpose: - Get home recommend ### Parameters: - feed_type: Feed type     - Dress: 1     - Food: 2     - Makeup: 3     - Film: 4     - Workplace: 5     - Emotion: 6     - Home: 7     - Game: 8     - Travel: 9     - Fitness: 10 - need_filter_image: Whether to view only image notes, default is False - cookie: Optional parameter, user-provided logged-in web Cookie to get personalized recommendations, if not provided, use visitor mode - proxy: Optional parameter, network proxy, can reduce the probability of account ban, format: http://username:password@IP:port ### Return: - Recommend list  # [示例/Example] feed_type=\"0\" need_filter_image=False  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_0(async_req=True)
+        >>> thread = api.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_0(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str feed_type: 推荐类型/Feed type
-        :param bool need_filter_image: 是否只看图文笔记/Whether to view only image notes
+        :param GetHomeFeedRequest get_home_feed_request:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -175,20 +173,19 @@ class XiaohongshuWebAPIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_0_with_http_info(**kwargs)  # noqa: E501
+        return self.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_0_with_http_info(**kwargs)  # noqa: E501
 
-    def get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_0_with_http_info(self, **kwargs):  # noqa: E501
+    def get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_0_with_http_info(self, **kwargs):  # noqa: E501
         """获取首页推荐/Get home recommend  # noqa: E501
 
-        # [中文] ### 用途: - 获取首页推荐 ### 参数: - feed_type: 推荐类型     - 全部: 0     - 穿搭: 1     - 美食: 2     - 彩妆: 3     - 影视: 4     - 职场: 5     - 情感: 6     - 家居: 7     - 游戏: 8     - 旅行: 9     - 健身: 10 - need_filter_image: 是否只看图文笔记 ### 返回: - 推荐列表  # [English] ### Purpose: - Get home recommend ### Parameters: - feed_type: Feed type     - Dress: 1     - Food: 2     - Makeup: 3     - Film: 4     - Workplace: 5     - Emotion: 6     - Home: 7     - Game: 8     - Travel: 9     - Fitness: 10 - need_filter_image: Whether to view only image notes ### Return: - Recommend list  # [示例/Example] feed_type=\"0\" need_filter_image=False  # noqa: E501
+        # [中文] ### 用途: - 获取首页推荐 ### 参数: - feed_type: 推荐类型     - 全部: 0     - 穿搭: 1     - 美食: 2     - 彩妆: 3     - 影视: 4     - 职场: 5     - 情感: 6     - 家居: 7     - 游戏: 8     - 旅行: 9     - 健身: 10 - need_filter_image: 是否只看图文笔记，默认为 False - cookie: 可选参数，用户自行提供的已登录的网页Cookie获取个性化推荐，如果不提供，则使用游客模式 - proxy: 可选参数，网络代理，可降低封号概率，格式：http://用户名:密码@IP:端口/Proxy, format: http://username:password@IP:port ### 返回: - 推荐列表  # [English] ### Purpose: - Get home recommend ### Parameters: - feed_type: Feed type     - Dress: 1     - Food: 2     - Makeup: 3     - Film: 4     - Workplace: 5     - Emotion: 6     - Home: 7     - Game: 8     - Travel: 9     - Fitness: 10 - need_filter_image: Whether to view only image notes, default is False - cookie: Optional parameter, user-provided logged-in web Cookie to get personalized recommendations, if not provided, use visitor mode - proxy: Optional parameter, network proxy, can reduce the probability of account ban, format: http://username:password@IP:port ### Return: - Recommend list  # [示例/Example] feed_type=\"0\" need_filter_image=False  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_0_with_http_info(async_req=True)
+        >>> thread = api.get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_0_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str feed_type: 推荐类型/Feed type
-        :param bool need_filter_image: 是否只看图文笔记/Whether to view only image notes
+        :param GetHomeFeedRequest get_home_feed_request:
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -206,8 +203,7 @@ class XiaohongshuWebAPIApi(object):
         local_var_params = locals()
 
         all_params = [
-            'feed_type',
-            'need_filter_image'
+            'get_home_feed_request'
         ]
         all_params.extend(
             [
@@ -222,7 +218,7 @@ class XiaohongshuWebAPIApi(object):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_0" % key
+                    " to method get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_0" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
@@ -232,10 +228,6 @@ class XiaohongshuWebAPIApi(object):
         path_params = {}
 
         query_params = []
-        if 'feed_type' in local_var_params and local_var_params['feed_type'] is not None:  # noqa: E501
-            query_params.append(('feed_type', local_var_params['feed_type']))  # noqa: E501
-        if 'need_filter_image' in local_var_params and local_var_params['need_filter_image'] is not None:  # noqa: E501
-            query_params.append(('need_filter_image', local_var_params['need_filter_image']))  # noqa: E501
 
         header_params = {}
 
@@ -243,15 +235,21 @@ class XiaohongshuWebAPIApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'get_home_feed_request' in local_var_params:
+            body_params = local_var_params['get_home_feed_request']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
             ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['bearer']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v1/xiaohongshu/web/get_home_recommend', 'GET',
+            '/api/v1/xiaohongshu/web/get_home_recommend', 'POST',
             path_params,
             query_params,
             header_params,
@@ -267,9 +265,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get(self, note_id, comment_id, **kwargs):  # noqa: E501
-        """获取笔记评论回复/Get note comment replies  # noqa: E501
+        """获取笔记评论回复 V1/Get note comment replies V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论回复 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论回复 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get(note_id, comment_id, async_req=True)
@@ -294,9 +292,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_with_http_info(note_id, comment_id, **kwargs)  # noqa: E501
 
     def get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_with_http_info(self, note_id, comment_id, **kwargs):  # noqa: E501
-        """获取笔记评论回复/Get note comment replies  # noqa: E501
+        """获取笔记评论回复 V1/Get note comment replies V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论回复 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论回复 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_with_http_info(note_id, comment_id, async_req=True)
@@ -395,9 +393,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_0(self, note_id, comment_id, **kwargs):  # noqa: E501
-        """获取笔记评论回复/Get note comment replies  # noqa: E501
+        """获取笔记评论回复 V1/Get note comment replies V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论回复 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论回复 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_0(note_id, comment_id, async_req=True)
@@ -422,9 +420,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_0_with_http_info(note_id, comment_id, **kwargs)  # noqa: E501
 
     def get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_0_with_http_info(self, note_id, comment_id, **kwargs):  # noqa: E501
-        """获取笔记评论回复/Get note comment replies  # noqa: E501
+        """获取笔记评论回复 V1/Get note comment replies V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论回复 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论回复 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_0_with_http_info(note_id, comment_id, async_req=True)
@@ -523,9 +521,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get(self, note_id, comment_id, **kwargs):  # noqa: E501
-        """获取笔记评论回复/Get note comment replies  # noqa: E501
+        """获取笔记评论回复 V2/Get note comment replies V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论回复 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论回复 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get(note_id, comment_id, async_req=True)
@@ -550,9 +548,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_with_http_info(note_id, comment_id, **kwargs)  # noqa: E501
 
     def get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_with_http_info(self, note_id, comment_id, **kwargs):  # noqa: E501
-        """获取笔记评论回复/Get note comment replies  # noqa: E501
+        """获取笔记评论回复 V2/Get note comment replies V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论回复 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论回复 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_with_http_info(note_id, comment_id, async_req=True)
@@ -651,9 +649,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_0(self, note_id, comment_id, **kwargs):  # noqa: E501
-        """获取笔记评论回复/Get note comment replies  # noqa: E501
+        """获取笔记评论回复 V2/Get note comment replies V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论回复 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论回复 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_0(note_id, comment_id, async_req=True)
@@ -678,9 +676,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_0_with_http_info(note_id, comment_id, **kwargs)  # noqa: E501
 
     def get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_0_with_http_info(self, note_id, comment_id, **kwargs):  # noqa: E501
-        """获取笔记评论回复/Get note comment replies  # noqa: E501
+        """获取笔记评论回复 V2/Get note comment replies V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论回复 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论回复 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - comment_id: 评论ID - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论回复列表  # [English] ### Purpose: - Get note comment replies V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - comment_id: Comment ID - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comment replies list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" comment_id=\"6683ec5b000000000303b91a\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_0_with_http_info(note_id, comment_id, async_req=True)
@@ -779,9 +777,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记评论/Get note comments  # noqa: E501
+        """获取笔记评论 V1/Get note comments V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get(note_id, async_req=True)
@@ -805,9 +803,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_with_http_info(note_id, **kwargs)  # noqa: E501
 
     def get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记评论/Get note comments  # noqa: E501
+        """获取笔记评论 V1/Get note comments V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_with_http_info(note_id, async_req=True)
@@ -898,9 +896,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_0(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记评论/Get note comments  # noqa: E501
+        """获取笔记评论 V1/Get note comments V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_0(note_id, async_req=True)
@@ -924,9 +922,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_0_with_http_info(note_id, **kwargs)  # noqa: E501
 
     def get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_0_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记评论/Get note comments  # noqa: E501
+        """获取笔记评论 V1/Get note comments V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_0_with_http_info(note_id, async_req=True)
@@ -1017,9 +1015,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记评论/Get note comments  # noqa: E501
+        """获取笔记评论 V2/Get note comments V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get(note_id, async_req=True)
@@ -1043,9 +1041,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_with_http_info(note_id, **kwargs)  # noqa: E501
 
     def get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记评论/Get note comments  # noqa: E501
+        """获取笔记评论 V2/Get note comments V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_with_http_info(note_id, async_req=True)
@@ -1136,9 +1134,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_0(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记评论/Get note comments  # noqa: E501
+        """获取笔记评论 V2/Get note comments V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_0(note_id, async_req=True)
@@ -1162,9 +1160,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_0_with_http_info(note_id, **kwargs)  # noqa: E501
 
     def get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_0_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记评论/Get note comments  # noqa: E501
+        """获取笔记评论 V2/Get note comments V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记评论 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取笔记评论 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的游标 ### 返回: - 笔记评论列表  # [English] ### Purpose: - Get note comments V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the cursor returned in the last response for subsequent requests ### Return: - Note comments list  # [示例/Example] note_id=\"6683b283000000001f0052bf\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_0_with_http_info(note_id, async_req=True)
@@ -1254,17 +1252,17 @@ class XiaohongshuWebAPIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get(self, share_text, **kwargs):  # noqa: E501
+        """通过分享链接获取小红书的Note ID 和 xsec_token/Get Xiaohongshu Note ID and xsec_token by share link  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 通过分享链接获取小红书的Note ID 和 xsec_token ### 参数: - share_text: 小红书分享链接（支持APP和Web端分享链接） ### 返回: - Note ID 和 xsec_token  # [English] ### Purpose: - Get Xiaohongshu Note ID and xsec_token by share link ### Parameters: - share_text: Xiaohongshu sharing link (support APP and Web sharing link) ### Return: - Note ID and xsec_token  # [示例/Example] share_text=\"https://xhslink.com/a/EZ4M9TwMA6c3\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get(note_id, async_req=True)
+        >>> thread = api.get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get(share_text, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str share_text: 分享链接/Share link (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1277,19 +1275,19 @@ class XiaohongshuWebAPIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_with_http_info(note_id, **kwargs)  # noqa: E501
+        return self.get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_with_http_info(share_text, **kwargs)  # noqa: E501
 
-    def get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_with_http_info(self, share_text, **kwargs):  # noqa: E501
+        """通过分享链接获取小红书的Note ID 和 xsec_token/Get Xiaohongshu Note ID and xsec_token by share link  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 通过分享链接获取小红书的Note ID 和 xsec_token ### 参数: - share_text: 小红书分享链接（支持APP和Web端分享链接） ### 返回: - Note ID 和 xsec_token  # [English] ### Purpose: - Get Xiaohongshu Note ID and xsec_token by share link ### Parameters: - share_text: Xiaohongshu sharing link (support APP and Web sharing link) ### Return: - Note ID and xsec_token  # [示例/Example] share_text=\"https://xhslink.com/a/EZ4M9TwMA6c3\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_with_http_info(note_id, async_req=True)
+        >>> thread = api.get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_with_http_info(share_text, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str share_text: 分享链接/Share link (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1307,7 +1305,238 @@ class XiaohongshuWebAPIApi(object):
         local_var_params = locals()
 
         all_params = [
-            'note_id'
+            'share_text'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'share_text' is set
+        if self.api_client.client_side_validation and ('share_text' not in local_var_params or  # noqa: E501
+                                                        local_var_params['share_text'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `share_text` when calling `get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'share_text' in local_var_params and local_var_params['share_text'] is not None:  # noqa: E501
+            query_params.append(('share_text', local_var_params['share_text']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/xiaohongshu/web/get_note_id_and_xsec_token', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_0(self, share_text, **kwargs):  # noqa: E501
+        """通过分享链接获取小红书的Note ID 和 xsec_token/Get Xiaohongshu Note ID and xsec_token by share link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取小红书的Note ID 和 xsec_token ### 参数: - share_text: 小红书分享链接（支持APP和Web端分享链接） ### 返回: - Note ID 和 xsec_token  # [English] ### Purpose: - Get Xiaohongshu Note ID and xsec_token by share link ### Parameters: - share_text: Xiaohongshu sharing link (support APP and Web sharing link) ### Return: - Note ID and xsec_token  # [示例/Example] share_text=\"https://xhslink.com/a/EZ4M9TwMA6c3\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_0(share_text, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_text: 分享链接/Share link (required)
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_0_with_http_info(share_text, **kwargs)  # noqa: E501
+
+    def get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_0_with_http_info(self, share_text, **kwargs):  # noqa: E501
+        """通过分享链接获取小红书的Note ID 和 xsec_token/Get Xiaohongshu Note ID and xsec_token by share link  # noqa: E501
+
+        # [中文] ### 用途: - 通过分享链接获取小红书的Note ID 和 xsec_token ### 参数: - share_text: 小红书分享链接（支持APP和Web端分享链接） ### 返回: - Note ID 和 xsec_token  # [English] ### Purpose: - Get Xiaohongshu Note ID and xsec_token by share link ### Parameters: - share_text: Xiaohongshu sharing link (support APP and Web sharing link) ### Return: - Note ID and xsec_token  # [示例/Example] share_text=\"https://xhslink.com/a/EZ4M9TwMA6c3\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_0_with_http_info(share_text, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str share_text: 分享链接/Share link (required)
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'share_text'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_0" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+        # verify the required parameter 'share_text' is set
+        if self.api_client.client_side_validation and ('share_text' not in local_var_params or  # noqa: E501
+                                                        local_var_params['share_text'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `share_text` when calling `get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_0`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'share_text' in local_var_params and local_var_params['share_text'] is not None:  # noqa: E501
+            query_params.append(('share_text', local_var_params['share_text']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/api/v1/xiaohongshu/web/get_note_id_and_xsec_token', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ResponseModel',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V1/Get note info V1  # noqa: E501
+
+        # [中文] ### 用途: - 获取笔记信息 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: ResponseModel
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_with_http_info(**kwargs)  # noqa: E501
+
+    def get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_with_http_info(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V1/Get note info V1  # noqa: E501
+
+        # [中文] ### 用途: - 获取笔记信息 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(ResponseModel, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'note_id',
+            'share_text'
         ]
         all_params.extend(
             [
@@ -1326,10 +1555,6 @@ class XiaohongshuWebAPIApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'note_id' is set
-        if self.api_client.client_side_validation and ('note_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['note_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `note_id` when calling `get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1338,6 +1563,8 @@ class XiaohongshuWebAPIApi(object):
         query_params = []
         if 'note_id' in local_var_params and local_var_params['note_id'] is not None:  # noqa: E501
             query_params.append(('note_id', local_var_params['note_id']))  # noqa: E501
+        if 'share_text' in local_var_params and local_var_params['share_text'] is not None:  # noqa: E501
+            query_params.append(('share_text', local_var_params['share_text']))  # noqa: E501
 
         header_params = {}
 
@@ -1368,17 +1595,18 @@ class XiaohongshuWebAPIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V1/Get note info V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0(note_id, async_req=True)
+        >>> thread = api.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1391,19 +1619,20 @@ class XiaohongshuWebAPIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0_with_http_info(note_id, **kwargs)  # noqa: E501
+        return self.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0_with_http_info(**kwargs)  # noqa: E501
 
-    def get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0_with_http_info(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V1/Get note info V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息 V1 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V1 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0_with_http_info(note_id, async_req=True)
+        >>> thread = api.get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1421,7 +1650,8 @@ class XiaohongshuWebAPIApi(object):
         local_var_params = locals()
 
         all_params = [
-            'note_id'
+            'note_id',
+            'share_text'
         ]
         all_params.extend(
             [
@@ -1440,10 +1670,6 @@ class XiaohongshuWebAPIApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'note_id' is set
-        if self.api_client.client_side_validation and ('note_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['note_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `note_id` when calling `get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1452,6 +1678,8 @@ class XiaohongshuWebAPIApi(object):
         query_params = []
         if 'note_id' in local_var_params and local_var_params['note_id'] is not None:  # noqa: E501
             query_params.append(('note_id', local_var_params['note_id']))  # noqa: E501
+        if 'share_text' in local_var_params and local_var_params['share_text'] is not None:  # noqa: E501
+            query_params.append(('share_text', local_var_params['share_text']))  # noqa: E501
 
         header_params = {}
 
@@ -1482,17 +1710,18 @@ class XiaohongshuWebAPIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V2/Get note info V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get(note_id, async_req=True)
+        >>> thread = api.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1505,19 +1734,20 @@ class XiaohongshuWebAPIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_with_http_info(note_id, **kwargs)  # noqa: E501
+        return self.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_with_http_info(**kwargs)  # noqa: E501
 
-    def get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_with_http_info(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V2/Get note info V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_with_http_info(note_id, async_req=True)
+        >>> thread = api.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1535,7 +1765,8 @@ class XiaohongshuWebAPIApi(object):
         local_var_params = locals()
 
         all_params = [
-            'note_id'
+            'note_id',
+            'share_text'
         ]
         all_params.extend(
             [
@@ -1554,10 +1785,6 @@ class XiaohongshuWebAPIApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'note_id' is set
-        if self.api_client.client_side_validation and ('note_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['note_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `note_id` when calling `get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1566,6 +1793,8 @@ class XiaohongshuWebAPIApi(object):
         query_params = []
         if 'note_id' in local_var_params and local_var_params['note_id'] is not None:  # noqa: E501
             query_params.append(('note_id', local_var_params['note_id']))  # noqa: E501
+        if 'share_text' in local_var_params and local_var_params['share_text'] is not None:  # noqa: E501
+            query_params.append(('share_text', local_var_params['share_text']))  # noqa: E501
 
         header_params = {}
 
@@ -1596,17 +1825,18 @@ class XiaohongshuWebAPIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V2/Get note info V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0(note_id, async_req=True)
+        >>> thread = api.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1619,19 +1849,20 @@ class XiaohongshuWebAPIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0_with_http_info(note_id, **kwargs)  # noqa: E501
+        return self.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0_with_http_info(**kwargs)  # noqa: E501
 
-    def get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0_with_http_info(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V2/Get note info V2  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息 V2 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V2 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0_with_http_info(note_id, async_req=True)
+        >>> thread = api.get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1649,7 +1880,8 @@ class XiaohongshuWebAPIApi(object):
         local_var_params = locals()
 
         all_params = [
-            'note_id'
+            'note_id',
+            'share_text'
         ]
         all_params.extend(
             [
@@ -1668,10 +1900,6 @@ class XiaohongshuWebAPIApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'note_id' is set
-        if self.api_client.client_side_validation and ('note_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['note_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `note_id` when calling `get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0`")  # noqa: E501
 
         collection_formats = {}
 
@@ -1680,6 +1908,8 @@ class XiaohongshuWebAPIApi(object):
         query_params = []
         if 'note_id' in local_var_params and local_var_params['note_id'] is not None:  # noqa: E501
             query_params.append(('note_id', local_var_params['note_id']))  # noqa: E501
+        if 'share_text' in local_var_params and local_var_params['share_text'] is not None:  # noqa: E501
+            query_params.append(('share_text', local_var_params['share_text']))  # noqa: E501
 
         header_params = {}
 
@@ -1711,7 +1941,7 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get(self, share_text, **kwargs):  # noqa: E501
-        """通过分享链接获取笔记信息/Get note info by share link  # noqa: E501
+        """获取笔记信息 V3 (游客)/Get note info V3 (Visitor)  # noqa: E501
 
         # [中文] ### 用途: - 获取笔记信息V3，仅支持完整的小红书分享链接 ### 参数: - share_text: 完整的小红书分享链接（支持APP和Web端分享链接） ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V3, only support complete Xiaohongshu sharing link ### Parameters: - share_text: Complete Xiaohongshu sharing link(support APP and Web sharing link) ### Return: - Note info  # [示例/Example] share_text=\"https://xhslink.com/a/EZ4M9TwMA6c3\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -1736,7 +1966,7 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get_with_http_info(share_text, **kwargs)  # noqa: E501
 
     def get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get_with_http_info(self, share_text, **kwargs):  # noqa: E501
-        """通过分享链接获取笔记信息/Get note info by share link  # noqa: E501
+        """获取笔记信息 V3 (游客)/Get note info V3 (Visitor)  # noqa: E501
 
         # [中文] ### 用途: - 获取笔记信息V3，仅支持完整的小红书分享链接 ### 参数: - share_text: 完整的小红书分享链接（支持APP和Web端分享链接） ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V3, only support complete Xiaohongshu sharing link ### Parameters: - share_text: Complete Xiaohongshu sharing link(support APP and Web sharing link) ### Return: - Note info  # [示例/Example] share_text=\"https://xhslink.com/a/EZ4M9TwMA6c3\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -1825,7 +2055,7 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get_0(self, share_text, **kwargs):  # noqa: E501
-        """通过分享链接获取笔记信息/Get note info by share link  # noqa: E501
+        """获取笔记信息 V3 (游客)/Get note info V3 (Visitor)  # noqa: E501
 
         # [中文] ### 用途: - 获取笔记信息V3，仅支持完整的小红书分享链接 ### 参数: - share_text: 完整的小红书分享链接（支持APP和Web端分享链接） ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V3, only support complete Xiaohongshu sharing link ### Parameters: - share_text: Complete Xiaohongshu sharing link(support APP and Web sharing link) ### Return: - Note info  # [示例/Example] share_text=\"https://xhslink.com/a/EZ4M9TwMA6c3\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -1850,7 +2080,7 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get_0_with_http_info(share_text, **kwargs)  # noqa: E501
 
     def get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get_0_with_http_info(self, share_text, **kwargs):  # noqa: E501
-        """通过分享链接获取笔记信息/Get note info by share link  # noqa: E501
+        """获取笔记信息 V3 (游客)/Get note info V3 (Visitor)  # noqa: E501
 
         # [中文] ### 用途: - 获取笔记信息V3，仅支持完整的小红书分享链接 ### 参数: - share_text: 完整的小红书分享链接（支持APP和Web端分享链接） ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V3, only support complete Xiaohongshu sharing link ### Parameters: - share_text: Complete Xiaohongshu sharing link(support APP and Web sharing link) ### Return: - Note info  # [示例/Example] share_text=\"https://xhslink.com/a/EZ4M9TwMA6c3\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -1938,17 +2168,18 @@ class XiaohongshuWebAPIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V4/Get note info V4  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V4 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V4 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息V4 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V4 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get(note_id, async_req=True)
+        >>> thread = api.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1961,19 +2192,20 @@ class XiaohongshuWebAPIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_with_http_info(note_id, **kwargs)  # noqa: E501
+        return self.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_with_http_info(**kwargs)  # noqa: E501
 
-    def get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_with_http_info(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V4/Get note info V4  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V4 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V4 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息V4 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V4 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_with_http_info(note_id, async_req=True)
+        >>> thread = api.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1991,7 +2223,8 @@ class XiaohongshuWebAPIApi(object):
         local_var_params = locals()
 
         all_params = [
-            'note_id'
+            'note_id',
+            'share_text'
         ]
         all_params.extend(
             [
@@ -2010,10 +2243,6 @@ class XiaohongshuWebAPIApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'note_id' is set
-        if self.api_client.client_side_validation and ('note_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['note_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `note_id` when calling `get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2022,6 +2251,8 @@ class XiaohongshuWebAPIApi(object):
         query_params = []
         if 'note_id' in local_var_params and local_var_params['note_id'] is not None:  # noqa: E501
             query_params.append(('note_id', local_var_params['note_id']))  # noqa: E501
+        if 'share_text' in local_var_params and local_var_params['share_text'] is not None:  # noqa: E501
+            query_params.append(('share_text', local_var_params['share_text']))  # noqa: E501
 
         header_params = {}
 
@@ -2052,17 +2283,18 @@ class XiaohongshuWebAPIApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V4/Get note info V4  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V4 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V4 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息V4 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V4 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0(note_id, async_req=True)
+        >>> thread = api.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2075,19 +2307,20 @@ class XiaohongshuWebAPIApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0_with_http_info(note_id, **kwargs)  # noqa: E501
+        return self.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0_with_http_info(**kwargs)  # noqa: E501
 
-    def get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0_with_http_info(self, note_id, **kwargs):  # noqa: E501
-        """获取笔记信息/Get note info  # noqa: E501
+    def get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0_with_http_info(self, **kwargs):  # noqa: E501
+        """获取笔记信息 V4/Get note info V4  # noqa: E501
 
-        # [中文] ### 用途: - 获取笔记信息V4 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V4 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
+        # [中文] ### 用途: - 获取笔记信息V4 ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - share_text: 小红书分享链接（支持APP和Web端分享链接） - 优先使用`note_id`，如果没有则使用`share_text`，两个参数二选一，如都携带则以`note_id`为准。 ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V4 ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - share_text: Xiaohongshu sharing link (support APP and Web sharing link) - Prefer to use `note_id`, if not, use `share_text`, one of the two parameters is required, if both are carried, `note_id` shall prevail. ### Return: - Note info  # [示例/Example] note_id=\"665f95200000000006005624\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0_with_http_info(note_id, async_req=True)
+        >>> thread = api.get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param str note_id: 笔记ID/Note ID (required)
+        :param str note_id: 笔记ID/Note ID
+        :param str share_text: 分享链接/Share link
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2105,7 +2338,8 @@ class XiaohongshuWebAPIApi(object):
         local_var_params = locals()
 
         all_params = [
-            'note_id'
+            'note_id',
+            'share_text'
         ]
         all_params.extend(
             [
@@ -2124,10 +2358,6 @@ class XiaohongshuWebAPIApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'note_id' is set
-        if self.api_client.client_side_validation and ('note_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['note_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `note_id` when calling `get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0`")  # noqa: E501
 
         collection_formats = {}
 
@@ -2136,6 +2366,8 @@ class XiaohongshuWebAPIApi(object):
         query_params = []
         if 'note_id' in local_var_params and local_var_params['note_id'] is not None:  # noqa: E501
             query_params.append(('note_id', local_var_params['note_id']))  # noqa: E501
+        if 'share_text' in local_var_params and local_var_params['share_text'] is not None:  # noqa: E501
+            query_params.append(('share_text', local_var_params['share_text']))  # noqa: E501
 
         header_params = {}
 
@@ -2167,7 +2399,7 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post(self, **kwargs):  # noqa: E501
-        """自带Cookie 获取笔记信息/Get note info with Cookie  # noqa: E501
+        """获取笔记信息 V5 (自带Cookie)/Get note info V5 (Self-provided Cookie)  # noqa: E501
 
         # [中文] ### 用途: - 获取笔记信息V5，用户自行提供Cookie来获取笔记信息 - 此接口收费0.001$ ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - xsec_token: X-Sec-Token，可以从搜索接口中获取，分享链接中也有/X-Sec-Token, can be obtained from the search interface, also in the sharing link - cookie: 用户自行提供的已登录的网页Cookie - proxy: 代理，格式：http://用户名:密码@IP:端口/Proxy, format: http://username:password@IP:port - 最好使用代理，避免被封号或其他未知问题。  ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V5, user provides Cookie to get note info - This interface charges 0.001$ ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - xsec_token: X-Sec-Token, can be obtained from the search interface, also in the sharing link - cookie: User provided logged-in web Cookie - proxy: Proxy, format: http://username:password@IP:port - It is recommended to use a proxy to avoid being banned or other unknown issues. ### Return: - Note info  # [示例/Example] note_id = \"67855d09000000001703d449\" xsec_token = \"ABfpRSESmZDRbX-EX7lzEztktMngxPVC9kU-dgQmuQoNo=\" cookie = \"Your Cookie\" proxy = \"http://username:password@IP:port\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2192,7 +2424,7 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post_with_http_info(**kwargs)  # noqa: E501
 
     def get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post_with_http_info(self, **kwargs):  # noqa: E501
-        """自带Cookie 获取笔记信息/Get note info with Cookie  # noqa: E501
+        """获取笔记信息 V5 (自带Cookie)/Get note info V5 (Self-provided Cookie)  # noqa: E501
 
         # [中文] ### 用途: - 获取笔记信息V5，用户自行提供Cookie来获取笔记信息 - 此接口收费0.001$ ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - xsec_token: X-Sec-Token，可以从搜索接口中获取，分享链接中也有/X-Sec-Token, can be obtained from the search interface, also in the sharing link - cookie: 用户自行提供的已登录的网页Cookie - proxy: 代理，格式：http://用户名:密码@IP:端口/Proxy, format: http://username:password@IP:port - 最好使用代理，避免被封号或其他未知问题。  ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V5, user provides Cookie to get note info - This interface charges 0.001$ ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - xsec_token: X-Sec-Token, can be obtained from the search interface, also in the sharing link - cookie: User provided logged-in web Cookie - proxy: Proxy, format: http://username:password@IP:port - It is recommended to use a proxy to avoid being banned or other unknown issues. ### Return: - Note info  # [示例/Example] note_id = \"67855d09000000001703d449\" xsec_token = \"ABfpRSESmZDRbX-EX7lzEztktMngxPVC9kU-dgQmuQoNo=\" cookie = \"Your Cookie\" proxy = \"http://username:password@IP:port\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2281,7 +2513,7 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post_0(self, **kwargs):  # noqa: E501
-        """自带Cookie 获取笔记信息/Get note info with Cookie  # noqa: E501
+        """获取笔记信息 V5 (自带Cookie)/Get note info V5 (Self-provided Cookie)  # noqa: E501
 
         # [中文] ### 用途: - 获取笔记信息V5，用户自行提供Cookie来获取笔记信息 - 此接口收费0.001$ ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - xsec_token: X-Sec-Token，可以从搜索接口中获取，分享链接中也有/X-Sec-Token, can be obtained from the search interface, also in the sharing link - cookie: 用户自行提供的已登录的网页Cookie - proxy: 代理，格式：http://用户名:密码@IP:端口/Proxy, format: http://username:password@IP:port - 最好使用代理，避免被封号或其他未知问题。  ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V5, user provides Cookie to get note info - This interface charges 0.001$ ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - xsec_token: X-Sec-Token, can be obtained from the search interface, also in the sharing link - cookie: User provided logged-in web Cookie - proxy: Proxy, format: http://username:password@IP:port - It is recommended to use a proxy to avoid being banned or other unknown issues. ### Return: - Note info  # [示例/Example] note_id = \"67855d09000000001703d449\" xsec_token = \"ABfpRSESmZDRbX-EX7lzEztktMngxPVC9kU-dgQmuQoNo=\" cookie = \"Your Cookie\" proxy = \"http://username:password@IP:port\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2306,7 +2538,7 @@ class XiaohongshuWebAPIApi(object):
         return self.get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post_0_with_http_info(**kwargs)  # noqa: E501
 
     def get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post_0_with_http_info(self, **kwargs):  # noqa: E501
-        """自带Cookie 获取笔记信息/Get note info with Cookie  # noqa: E501
+        """获取笔记信息 V5 (自带Cookie)/Get note info V5 (Self-provided Cookie)  # noqa: E501
 
         # [中文] ### 用途: - 获取笔记信息V5，用户自行提供Cookie来获取笔记信息 - 此接口收费0.001$ ### 参数: - note_id: 笔记ID，可以从小红书的分享链接中获取 - xsec_token: X-Sec-Token，可以从搜索接口中获取，分享链接中也有/X-Sec-Token, can be obtained from the search interface, also in the sharing link - cookie: 用户自行提供的已登录的网页Cookie - proxy: 代理，格式：http://用户名:密码@IP:端口/Proxy, format: http://username:password@IP:port - 最好使用代理，避免被封号或其他未知问题。  ### 返回: - 笔记信息  # [English] ### Purpose: - Get note info V5, user provides Cookie to get note info - This interface charges 0.001$ ### Parameters: - note_id: Note ID, can be obtained from the sharing link of Xiaohongshu website. - xsec_token: X-Sec-Token, can be obtained from the search interface, also in the sharing link - cookie: User provided logged-in web Cookie - proxy: Proxy, format: http://username:password@IP:port - It is recommended to use a proxy to avoid being banned or other unknown issues. ### Return: - Note info  # [示例/Example] note_id = \"67855d09000000001703d449\" xsec_token = \"ABfpRSESmZDRbX-EX7lzEztktMngxPVC9kU-dgQmuQoNo=\" cookie = \"Your Cookie\" proxy = \"http://username:password@IP:port\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2395,7 +2627,7 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_user_info_api_v1_xiaohongshu_web_get_user_info_get(self, user_id, **kwargs):  # noqa: E501
-        """获取用户信息/Get user info  # noqa: E501
+        """获取用户信息 V1/Get user info V1  # noqa: E501
 
         # [中文] ### 用途: - 获取用户信息 V1 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 ### 返回: - 用户信息  # [English] ### Purpose: - Get user info V1 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - User info  # [示例/Example] user_id=\"5f4a10070000000001006fc7\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2420,7 +2652,7 @@ class XiaohongshuWebAPIApi(object):
         return self.get_user_info_api_v1_xiaohongshu_web_get_user_info_get_with_http_info(user_id, **kwargs)  # noqa: E501
 
     def get_user_info_api_v1_xiaohongshu_web_get_user_info_get_with_http_info(self, user_id, **kwargs):  # noqa: E501
-        """获取用户信息/Get user info  # noqa: E501
+        """获取用户信息 V1/Get user info V1  # noqa: E501
 
         # [中文] ### 用途: - 获取用户信息 V1 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 ### 返回: - 用户信息  # [English] ### Purpose: - Get user info V1 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - User info  # [示例/Example] user_id=\"5f4a10070000000001006fc7\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2509,7 +2741,7 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_user_info_api_v1_xiaohongshu_web_get_user_info_get_0(self, user_id, **kwargs):  # noqa: E501
-        """获取用户信息/Get user info  # noqa: E501
+        """获取用户信息 V1/Get user info V1  # noqa: E501
 
         # [中文] ### 用途: - 获取用户信息 V1 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 ### 返回: - 用户信息  # [English] ### Purpose: - Get user info V1 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - User info  # [示例/Example] user_id=\"5f4a10070000000001006fc7\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2534,7 +2766,7 @@ class XiaohongshuWebAPIApi(object):
         return self.get_user_info_api_v1_xiaohongshu_web_get_user_info_get_0_with_http_info(user_id, **kwargs)  # noqa: E501
 
     def get_user_info_api_v1_xiaohongshu_web_get_user_info_get_0_with_http_info(self, user_id, **kwargs):  # noqa: E501
-        """获取用户信息/Get user info  # noqa: E501
+        """获取用户信息 V1/Get user info V1  # noqa: E501
 
         # [中文] ### 用途: - 获取用户信息 V1 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 ### 返回: - 用户信息  # [English] ### Purpose: - Get user info V1 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - User info  # [示例/Example] user_id=\"5f4a10070000000001006fc7\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2843,7 +3075,7 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get(self, user_id, **kwargs):  # noqa: E501
-        """获取用户信息/Get user info  # noqa: E501
+        """获取用户信息 V3/Get user info V3  # noqa: E501
 
         # [中文] ### 用途: - 获取用户信息 V3 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 ### 返回: - 用户信息  # [English] ### Purpose: - Get user info V3 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - User info  # [示例/Example] user_id=\"5f4a10070000000001006fc7\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2868,7 +3100,7 @@ class XiaohongshuWebAPIApi(object):
         return self.get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get_with_http_info(user_id, **kwargs)  # noqa: E501
 
     def get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get_with_http_info(self, user_id, **kwargs):  # noqa: E501
-        """获取用户信息/Get user info  # noqa: E501
+        """获取用户信息 V3/Get user info V3  # noqa: E501
 
         # [中文] ### 用途: - 获取用户信息 V3 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 ### 返回: - 用户信息  # [English] ### Purpose: - Get user info V3 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - User info  # [示例/Example] user_id=\"5f4a10070000000001006fc7\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2957,7 +3189,7 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get_0(self, user_id, **kwargs):  # noqa: E501
-        """获取用户信息/Get user info  # noqa: E501
+        """获取用户信息 V3/Get user info V3  # noqa: E501
 
         # [中文] ### 用途: - 获取用户信息 V3 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 ### 返回: - 用户信息  # [English] ### Purpose: - Get user info V3 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - User info  # [示例/Example] user_id=\"5f4a10070000000001006fc7\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -2982,7 +3214,7 @@ class XiaohongshuWebAPIApi(object):
         return self.get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get_0_with_http_info(user_id, **kwargs)  # noqa: E501
 
     def get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get_0_with_http_info(self, user_id, **kwargs):  # noqa: E501
-        """获取用户信息/Get user info  # noqa: E501
+        """获取用户信息 V3/Get user info V3  # noqa: E501
 
         # [中文] ### 用途: - 获取用户信息 V3 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 ### 返回: - 用户信息  # [English] ### Purpose: - Get user info V3 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. ### Return: - User info  # [示例/Example] user_id=\"5f4a10070000000001006fc7\"  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -3071,9 +3303,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get(self, user_id, **kwargs):  # noqa: E501
-        """获取用户的笔记/Get user notes  # noqa: E501
+        """获取用户的笔记 V1/Get user notes V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取用户的笔记 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的最后一个NoteID     - 例如: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### 返回: - 用户的笔记列表  # [English] ### Purpose: - Get user notes ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the last NoteID returned in the last response for subsequent requests     - Example: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### Return: - User notes list  # [示例/Example] user_id=\"5f4a10070000000001006fc7\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取用户的笔记 V1 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的最后一个NoteID     - 例如: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### 返回: - 用户的笔记列表  # [English] ### Purpose: - Get user notes V1 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the last NoteID returned in the last response for subsequent requests     - Example: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### Return: - User notes list  # [示例/Example] user_id=\"5f4a10070000000001006fc7\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get(user_id, async_req=True)
@@ -3097,9 +3329,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_with_http_info(user_id, **kwargs)  # noqa: E501
 
     def get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_with_http_info(self, user_id, **kwargs):  # noqa: E501
-        """获取用户的笔记/Get user notes  # noqa: E501
+        """获取用户的笔记 V1/Get user notes V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取用户的笔记 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的最后一个NoteID     - 例如: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### 返回: - 用户的笔记列表  # [English] ### Purpose: - Get user notes ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the last NoteID returned in the last response for subsequent requests     - Example: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### Return: - User notes list  # [示例/Example] user_id=\"5f4a10070000000001006fc7\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取用户的笔记 V1 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的最后一个NoteID     - 例如: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### 返回: - 用户的笔记列表  # [English] ### Purpose: - Get user notes V1 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the last NoteID returned in the last response for subsequent requests     - Example: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### Return: - User notes list  # [示例/Example] user_id=\"5f4a10070000000001006fc7\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_with_http_info(user_id, async_req=True)
@@ -3190,9 +3422,9 @@ class XiaohongshuWebAPIApi(object):
             collection_formats=collection_formats)
 
     def get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_0(self, user_id, **kwargs):  # noqa: E501
-        """获取用户的笔记/Get user notes  # noqa: E501
+        """获取用户的笔记 V1/Get user notes V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取用户的笔记 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的最后一个NoteID     - 例如: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### 返回: - 用户的笔记列表  # [English] ### Purpose: - Get user notes ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the last NoteID returned in the last response for subsequent requests     - Example: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### Return: - User notes list  # [示例/Example] user_id=\"5f4a10070000000001006fc7\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取用户的笔记 V1 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的最后一个NoteID     - 例如: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### 返回: - 用户的笔记列表  # [English] ### Purpose: - Get user notes V1 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the last NoteID returned in the last response for subsequent requests     - Example: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### Return: - User notes list  # [示例/Example] user_id=\"5f4a10070000000001006fc7\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_0(user_id, async_req=True)
@@ -3216,9 +3448,9 @@ class XiaohongshuWebAPIApi(object):
         return self.get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_0_with_http_info(user_id, **kwargs)  # noqa: E501
 
     def get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_0_with_http_info(self, user_id, **kwargs):  # noqa: E501
-        """获取用户的笔记/Get user notes  # noqa: E501
+        """获取用户的笔记 V1/Get user notes V1  # noqa: E501
 
-        # [中文] ### 用途: - 获取用户的笔记 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的最后一个NoteID     - 例如: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### 返回: - 用户的笔记列表  # [English] ### Purpose: - Get user notes ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the last NoteID returned in the last response for subsequent requests     - Example: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### Return: - User notes list  # [示例/Example] user_id=\"5f4a10070000000001006fc7\" lastCursor=None  # noqa: E501
+        # [中文] ### 用途: - 获取用户的笔记 V1 ### 参数: - user_id: 用户ID，可以从小红书的分享链接中获取 - lastCursor: 第一次请求时为空，之后请求时使用上一次请求响应中返回的最后一个NoteID     - 例如: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### 返回: - 用户的笔记列表  # [English] ### Purpose: - Get user notes V1 ### Parameters: - user_id: User ID, can be obtained from the sharing link of Xiaohongshu website. - lastCursor: Last cursor, empty for the first request, use the last NoteID returned in the last response for subsequent requests     - Example: \"662908190000000001007366\"     - JSON Path: $.data.data.notes.[-1].id ### Return: - User notes list  # [示例/Example] user_id=\"5f4a10070000000001006fc7\" lastCursor=None  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_0_with_http_info(user_id, async_req=True)
@@ -3549,7 +3781,7 @@ class XiaohongshuWebAPIApi(object):
     def get_visitor_cookie_api_v1_xiaohongshu_web_get_visitor_cookie_get(self, **kwargs):  # noqa: E501
         """获取游客Cookie/Get visitor cookie  # noqa: E501
 
-        # [中文] ### 用途: - 获取游客Cookie，可以用于爬取小红书的一些数据。 ### 返回: - 游客Cookie  # [English] ### Purpose: - Get visitor cookie, which can be used to crawl some data of Xiaohongshu. ### Return: - Visitor cookie  # noqa: E501
+        # [中文] ### 用途: - 获取小红书网页版的游客Cookie，可以用于爬取小红书的一些数据。 ### 返回: - 游客Cookie  # [English] ### Purpose: - Get Xiaohongshu web visitor cookie, which can be used to crawl some data of Xiaohongshu. ### Return: - Visitor cookie  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_visitor_cookie_api_v1_xiaohongshu_web_get_visitor_cookie_get(async_req=True)
@@ -3573,7 +3805,7 @@ class XiaohongshuWebAPIApi(object):
     def get_visitor_cookie_api_v1_xiaohongshu_web_get_visitor_cookie_get_with_http_info(self, **kwargs):  # noqa: E501
         """获取游客Cookie/Get visitor cookie  # noqa: E501
 
-        # [中文] ### 用途: - 获取游客Cookie，可以用于爬取小红书的一些数据。 ### 返回: - 游客Cookie  # [English] ### Purpose: - Get visitor cookie, which can be used to crawl some data of Xiaohongshu. ### Return: - Visitor cookie  # noqa: E501
+        # [中文] ### 用途: - 获取小红书网页版的游客Cookie，可以用于爬取小红书的一些数据。 ### 返回: - 游客Cookie  # [English] ### Purpose: - Get Xiaohongshu web visitor cookie, which can be used to crawl some data of Xiaohongshu. ### Return: - Visitor cookie  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_visitor_cookie_api_v1_xiaohongshu_web_get_visitor_cookie_get_with_http_info(async_req=True)
@@ -3654,7 +3886,7 @@ class XiaohongshuWebAPIApi(object):
     def get_visitor_cookie_api_v1_xiaohongshu_web_get_visitor_cookie_get_0(self, **kwargs):  # noqa: E501
         """获取游客Cookie/Get visitor cookie  # noqa: E501
 
-        # [中文] ### 用途: - 获取游客Cookie，可以用于爬取小红书的一些数据。 ### 返回: - 游客Cookie  # [English] ### Purpose: - Get visitor cookie, which can be used to crawl some data of Xiaohongshu. ### Return: - Visitor cookie  # noqa: E501
+        # [中文] ### 用途: - 获取小红书网页版的游客Cookie，可以用于爬取小红书的一些数据。 ### 返回: - 游客Cookie  # [English] ### Purpose: - Get Xiaohongshu web visitor cookie, which can be used to crawl some data of Xiaohongshu. ### Return: - Visitor cookie  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_visitor_cookie_api_v1_xiaohongshu_web_get_visitor_cookie_get_0(async_req=True)
@@ -3678,7 +3910,7 @@ class XiaohongshuWebAPIApi(object):
     def get_visitor_cookie_api_v1_xiaohongshu_web_get_visitor_cookie_get_0_with_http_info(self, **kwargs):  # noqa: E501
         """获取游客Cookie/Get visitor cookie  # noqa: E501
 
-        # [中文] ### 用途: - 获取游客Cookie，可以用于爬取小红书的一些数据。 ### 返回: - 游客Cookie  # [English] ### Purpose: - Get visitor cookie, which can be used to crawl some data of Xiaohongshu. ### Return: - Visitor cookie  # noqa: E501
+        # [中文] ### 用途: - 获取小红书网页版的游客Cookie，可以用于爬取小红书的一些数据。 ### 返回: - 游客Cookie  # [English] ### Purpose: - Get Xiaohongshu web visitor cookie, which can be used to crawl some data of Xiaohongshu. ### Return: - Visitor cookie  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.get_visitor_cookie_api_v1_xiaohongshu_web_get_visitor_cookie_get_0_with_http_info(async_req=True)

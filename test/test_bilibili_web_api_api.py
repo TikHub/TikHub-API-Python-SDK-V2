@@ -168,6 +168,34 @@ class TestBilibiliWebAPIApi(unittest.TestCase):
         """
         pass
 
+    def test_fetch_general_search_api_v1_bilibili_web_fetch_general_search_get(self):
+        """Test case for fetch_general_search_api_v1_bilibili_web_fetch_general_search_get
+
+        获取综合搜索信息/Get general search data  # noqa: E501
+        """
+        pass
+
+    def test_fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0(self):
+        """Test case for fetch_general_search_api_v1_bilibili_web_fetch_general_search_get_0
+
+        获取综合搜索信息/Get general search data  # noqa: E501
+        """
+        pass
+
+    def test_fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get(self):
+        """Test case for fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get
+
+        获取热门搜索信息/Get hot search data  # noqa: E501
+        """
+        pass
+
+    def test_fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0(self):
+        """Test case for fetch_hot_search_api_v1_bilibili_web_fetch_hot_search_get_0
+
+        获取热门搜索信息/Get hot search data  # noqa: E501
+        """
+        pass
+
     def test_fetch_one_video_api_v1_bilibili_web_bv_to_aid_get(self):
         """Test case for fetch_one_video_api_v1_bilibili_web_bv_to_aid_get
 
@@ -235,6 +263,20 @@ class TestBilibiliWebAPIApi(unittest.TestCase):
         """Test case for fetch_one_video_api_v1_bilibili_web_fetch_video_playurl_get_0
 
         获取视频流地址/Get video playurl  # noqa: E501
+        """
+        pass
+
+    def test_fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get(self):
+        """Test case for fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get
+
+        获取单个视频详情信息V2/Get single video data V2  # noqa: E501
+        """
+        pass
+
+    def test_fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0(self):
+        """Test case for fetch_one_video_v2_api_v1_bilibili_web_fetch_one_video_v2_get_0
+
+        获取单个视频详情信息V2/Get single video data V2  # noqa: E501
         """
         pass
 

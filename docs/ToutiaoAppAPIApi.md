@@ -25,6 +25,7 @@ Method | HTTP request | Description
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -37,9 +38,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     group_id = '7450114952884503059' # str | 作品ID/Post ID
@@ -64,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -88,6 +98,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -100,9 +111,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     group_id = '7450114952884503059' # str | 作品ID/Post ID
@@ -127,7 +147,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -151,6 +171,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -163,9 +184,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     group_id = '7453372680222523931' # str | 作品ID/Post ID
@@ -192,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -216,6 +246,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -228,9 +259,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     group_id = '7453372680222523931' # str | 作品ID/Post ID
@@ -257,7 +297,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -281,6 +321,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -293,9 +334,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     user_profile_url = 'https://www.toutiao.com/c/user/token/MS4wLjABAAAAwK6echNksY69R8l2vcZudupfhTItbGSGt-8ineO5UaB4L-djqkYDgB6TkAdMvrmW/' # str | 用户主页链接/User profile URL
@@ -320,7 +370,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -344,6 +394,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -356,9 +407,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     user_profile_url = 'https://www.toutiao.com/c/user/token/MS4wLjABAAAAwK6echNksY69R8l2vcZudupfhTItbGSGt-8ineO5UaB4L-djqkYDgB6TkAdMvrmW/' # str | 用户主页链接/User profile URL
@@ -383,7 +443,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -407,6 +467,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -419,9 +480,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     user_id = '1352838578180211' # str | 用户ID/User ID
@@ -446,7 +516,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -470,6 +540,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -482,9 +553,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     user_id = '1352838578180211' # str | 用户ID/User ID
@@ -509,7 +589,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -533,6 +613,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -545,9 +626,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     group_id = '7431543350882206242' # str | 作品ID/Post ID
@@ -572,7 +662,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 
@@ -596,6 +686,7 @@ No authorization required
 
 ### Example
 
+* Bearer Authentication (bearer):
 ```python
 from __future__ import print_function
 import time
@@ -608,9 +699,18 @@ configuration = tikhub_sdk_v2.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure Bearer authorization: bearer
+configuration = tikhub_sdk_v2.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
 
 # Enter a context with an instance of the API client
-with tikhub_sdk_v2.ApiClient() as api_client:
+with tikhub_sdk_v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = tikhub_sdk_v2.ToutiaoAppAPIApi(api_client)
     group_id = '7431543350882206242' # str | 作品ID/Post ID
@@ -635,7 +735,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearer](../README.md#bearer)
 
 ### HTTP request headers
 

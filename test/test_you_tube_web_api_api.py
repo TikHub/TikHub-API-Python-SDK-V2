@@ -98,20 +98,6 @@ class TestYouTubeWebAPIApi(unittest.TestCase):
         """
         pass
 
-    def test_get_short_video_info_api_v1_youtube_web_get_short_video_info_get(self):
-        """Test case for get_short_video_info_api_v1_youtube_web_get_short_video_info_get
-
-        获取短视频信息/Get short video information  # noqa: E501
-        """
-        pass
-
-    def test_get_short_video_info_api_v1_youtube_web_get_short_video_info_get_0(self):
-        """Test case for get_short_video_info_api_v1_youtube_web_get_short_video_info_get_0
-
-        获取短视频信息/Get short video information  # noqa: E501
-        """
-        pass
-
     def test_get_trending_videos_api_v1_youtube_web_get_trending_videos_get(self):
         """Test case for get_trending_videos_api_v1_youtube_web_get_trending_videos_get
 
@@ -151,20 +137,6 @@ class TestYouTubeWebAPIApi(unittest.TestCase):
         """Test case for get_video_info_api_v1_youtube_web_get_video_info_get_0
 
         获取视频信息/Get video information  # noqa: E501
-        """
-        pass
-
-    def test_get_video_stream_api_v1_youtube_web_get_video_stream_get(self):
-        """Test case for get_video_stream_api_v1_youtube_web_get_video_stream_get
-
-        获取视频播放链接/Get video stream  # noqa: E501
-        """
-        pass
-
-    def test_get_video_stream_api_v1_youtube_web_get_video_stream_get_0(self):
-        """Test case for get_video_stream_api_v1_youtube_web_get_video_stream_get_0
-
-        获取视频播放链接/Get video stream  # noqa: E501
         """
         pass
 

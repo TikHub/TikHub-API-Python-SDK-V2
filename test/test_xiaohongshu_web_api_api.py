@@ -28,15 +28,15 @@ class TestXiaohongshuWebAPIApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get(self):
-        """Test case for get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get
+    def test_get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post(self):
+        """Test case for get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post
 
         获取首页推荐/Get home recommend  # noqa: E501
         """
         pass
 
-    def test_get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_0(self):
-        """Test case for get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_get_0
+    def test_get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_0(self):
+        """Test case for get_home_recommend_api_v1_xiaohongshu_web_get_home_recommend_post_0
 
         获取首页推荐/Get home recommend  # noqa: E501
         """
@@ -45,140 +45,154 @@ class TestXiaohongshuWebAPIApi(unittest.TestCase):
     def test_get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get(self):
         """Test case for get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get
 
-        获取笔记评论回复/Get note comment replies  # noqa: E501
+        获取笔记评论回复 V1/Get note comment replies V1  # noqa: E501
         """
         pass
 
     def test_get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_0(self):
         """Test case for get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_get_0
 
-        获取笔记评论回复/Get note comment replies  # noqa: E501
+        获取笔记评论回复 V1/Get note comment replies V1  # noqa: E501
         """
         pass
 
     def test_get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get(self):
         """Test case for get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get
 
-        获取笔记评论回复/Get note comment replies  # noqa: E501
+        获取笔记评论回复 V2/Get note comment replies V2  # noqa: E501
         """
         pass
 
     def test_get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_0(self):
         """Test case for get_note_comment_replies_api_v1_xiaohongshu_web_get_note_comment_replies_v2_get_0
 
-        获取笔记评论回复/Get note comment replies  # noqa: E501
+        获取笔记评论回复 V2/Get note comment replies V2  # noqa: E501
         """
         pass
 
     def test_get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get(self):
         """Test case for get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get
 
-        获取笔记评论/Get note comments  # noqa: E501
+        获取笔记评论 V1/Get note comments V1  # noqa: E501
         """
         pass
 
     def test_get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_0(self):
         """Test case for get_note_comments_api_v1_xiaohongshu_web_get_note_comments_get_0
 
-        获取笔记评论/Get note comments  # noqa: E501
+        获取笔记评论 V1/Get note comments V1  # noqa: E501
         """
         pass
 
     def test_get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get(self):
         """Test case for get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get
 
-        获取笔记评论/Get note comments  # noqa: E501
+        获取笔记评论 V2/Get note comments V2  # noqa: E501
         """
         pass
 
     def test_get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_0(self):
         """Test case for get_note_comments_api_v1_xiaohongshu_web_get_note_comments_v2_get_0
 
-        获取笔记评论/Get note comments  # noqa: E501
+        获取笔记评论 V2/Get note comments V2  # noqa: E501
+        """
+        pass
+
+    def test_get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get(self):
+        """Test case for get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get
+
+        通过分享链接获取小红书的Note ID 和 xsec_token/Get Xiaohongshu Note ID and xsec_token by share link  # noqa: E501
+        """
+        pass
+
+    def test_get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_0(self):
+        """Test case for get_note_id_and_xsec_token_api_v1_xiaohongshu_web_get_note_id_and_xsec_token_get_0
+
+        通过分享链接获取小红书的Note ID 和 xsec_token/Get Xiaohongshu Note ID and xsec_token by share link  # noqa: E501
         """
         pass
 
     def test_get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get(self):
         """Test case for get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get
 
-        获取笔记信息/Get note info  # noqa: E501
+        获取笔记信息 V1/Get note info V1  # noqa: E501
         """
         pass
 
     def test_get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0(self):
         """Test case for get_note_info_v1_api_v1_xiaohongshu_web_get_note_info_get_0
 
-        获取笔记信息/Get note info  # noqa: E501
+        获取笔记信息 V1/Get note info V1  # noqa: E501
         """
         pass
 
     def test_get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get(self):
         """Test case for get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get
 
-        获取笔记信息/Get note info  # noqa: E501
+        获取笔记信息 V2/Get note info V2  # noqa: E501
         """
         pass
 
     def test_get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0(self):
         """Test case for get_note_info_v2_api_v1_xiaohongshu_web_get_note_info_v2_get_0
 
-        获取笔记信息/Get note info  # noqa: E501
+        获取笔记信息 V2/Get note info V2  # noqa: E501
         """
         pass
 
     def test_get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get(self):
         """Test case for get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get
 
-        通过分享链接获取笔记信息/Get note info by share link  # noqa: E501
+        获取笔记信息 V3 (游客)/Get note info V3 (Visitor)  # noqa: E501
         """
         pass
 
     def test_get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get_0(self):
         """Test case for get_note_info_v3_api_v1_xiaohongshu_web_get_note_info_v3_get_0
 
-        通过分享链接获取笔记信息/Get note info by share link  # noqa: E501
+        获取笔记信息 V3 (游客)/Get note info V3 (Visitor)  # noqa: E501
         """
         pass
 
     def test_get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get(self):
         """Test case for get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get
 
-        获取笔记信息/Get note info  # noqa: E501
+        获取笔记信息 V4/Get note info V4  # noqa: E501
         """
         pass
 
     def test_get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0(self):
         """Test case for get_note_info_v4_api_v1_xiaohongshu_web_get_note_info_v4_get_0
 
-        获取笔记信息/Get note info  # noqa: E501
+        获取笔记信息 V4/Get note info V4  # noqa: E501
         """
         pass
 
     def test_get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post(self):
         """Test case for get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post
 
-        自带Cookie 获取笔记信息/Get note info with Cookie  # noqa: E501
+        获取笔记信息 V5 (自带Cookie)/Get note info V5 (Self-provided Cookie)  # noqa: E501
         """
         pass
 
     def test_get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post_0(self):
         """Test case for get_note_info_v5_api_v1_xiaohongshu_web_get_note_info_v5_post_0
 
-        自带Cookie 获取笔记信息/Get note info with Cookie  # noqa: E501
+        获取笔记信息 V5 (自带Cookie)/Get note info V5 (Self-provided Cookie)  # noqa: E501
         """
         pass
 
     def test_get_user_info_api_v1_xiaohongshu_web_get_user_info_get(self):
         """Test case for get_user_info_api_v1_xiaohongshu_web_get_user_info_get
 
-        获取用户信息/Get user info  # noqa: E501
+        获取用户信息 V1/Get user info V1  # noqa: E501
         """
         pass
 
     def test_get_user_info_api_v1_xiaohongshu_web_get_user_info_get_0(self):
         """Test case for get_user_info_api_v1_xiaohongshu_web_get_user_info_get_0
 
-        获取用户信息/Get user info  # noqa: E501
+        获取用户信息 V1/Get user info V1  # noqa: E501
         """
         pass
 
@@ -199,28 +213,28 @@ class TestXiaohongshuWebAPIApi(unittest.TestCase):
     def test_get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get(self):
         """Test case for get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get
 
-        获取用户信息/Get user info  # noqa: E501
+        获取用户信息 V3/Get user info V3  # noqa: E501
         """
         pass
 
     def test_get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get_0(self):
         """Test case for get_user_info_v3_api_v1_xiaohongshu_web_get_user_info_v3_get_0
 
-        获取用户信息/Get user info  # noqa: E501
+        获取用户信息 V3/Get user info V3  # noqa: E501
         """
         pass
 
     def test_get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get(self):
         """Test case for get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get
 
-        获取用户的笔记/Get user notes  # noqa: E501
+        获取用户的笔记 V1/Get user notes V1  # noqa: E501
         """
         pass
 
     def test_get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_0(self):
         """Test case for get_user_notes_api_v1_xiaohongshu_web_get_user_notes_get_0
 
-        获取用户的笔记/Get user notes  # noqa: E501
+        获取用户的笔记 V1/Get user notes V1  # noqa: E501
         """
         pass
 
